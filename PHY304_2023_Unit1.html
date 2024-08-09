@@ -1,0 +1,934 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. Units and Special Relativity &#8212; PHY304. Particle Physics Lecture notes (2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PHY304_2023_Unit1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="PHY304: Particle Physics" href="PHY304_2023_Intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="PHY304_2023_Intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="PHY304_2023_Intro.html">
+                    PHY304: Particle Physics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Units and Special Relativity</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPHY304_2023_Unit1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/PHY304_2023_Unit1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Units and Special Relativity</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-particles">1.1. Elementary particles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-energy-momentum-and-mass">1.2. Units of energy, momentum and mass</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-relativity-recap">1.3. Special relativity recap</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-momentum">1.4. Energy and momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laboratory-frame-rest-frame-and-centre-of-mass-frame">1.5. Laboratory frame, rest frame, and centre of mass frame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-kinetic-energy">1.6. Energy and kinetic energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-for-decays-and-collisions">1.7. Problem solving for decays and collisions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-reading-material">1.8. Additional reading material</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="units-and-special-relativity">
+<span id="unit1"></span><h1><span class="section-number">1. </span>Units and Special Relativity<a class="headerlink" href="#units-and-special-relativity" title="Link to this heading">#</a></h1>
+<p>Learning objectives: be able to calculate the kinematics of 2-body interactions and decays.</p>
+<section id="elementary-particles">
+<h2><span class="section-number">1.1. </span>Elementary particles<a class="headerlink" href="#elementary-particles" title="Link to this heading">#</a></h2>
+<p>From a historical point of view, particle physics begins in the 3rd century BC, with the Democritus particle theory. Democritus, a Greek philosopher, believed that the world was made of indivisible “atoms”. This was, in fact, correct as we now know that the basic components of matter are “elementary particles”. Such elementary particles do not have a known substructure and are considered to be point-like. In the past century, we saw great advancements in our understanding of the structure of matter. Broadly speaking, these advancements were achieved by bombarding matter with “probes”.</p>
+<p>In the case of a microscope, such a probe is a photon, which will be able to study structures larger than the wavelength <span class="math notranslate nohighlight">\(\lambda\)</span> of the photons. If the probe is another type of particles, we should use the associated De Broglie wavelength <span class="math notranslate nohighlight">\(\lambda=h / p\)</span>, where <span class="math notranslate nohighlight">\(p\)</span> is the particle momentum and <span class="math notranslate nohighlight">\(h\)</span> the Planck constant. As an example, if we use visible light as a probe, such as in an optical microscope, we can explore structure of the size of <span class="math notranslate nohighlight">\(500 \mathrm{~nm}\)</span>, much larger than the size of an atom (compare with the Bohr radius of <span class="math notranslate nohighlight">\(0.5 \mathrm{~nm}\)</span> ), but sufficient to study most biological objects. Using X-rays, we can observe structures of the size of a few nm, which is why we use X-rays in applications such as crystallography. If we want to probe the subatomic structure of the atom, we will need shorter wavelengths and use probes of higher momentum. In the case of the Rutherford experiment, alpha-particles were used with a kinetic energy of <span class="math notranslate nohighlight">\(5.30\ \mathrm{MeV}\)</span>, corresponding to a wavelength of about <span class="math notranslate nohighlight">\(6.3\ \mathrm{fm}\)</span>, much smaller than the size of the atom, and sufficient to discover the presence of a hard nucleus inside an atom.</p>
+<p>Alpha particles in the Rutherford experiment, however, did not have sufficient momentum to probe the nucleus structure. The story of particle physics and the quest for more energetic probes and “higher resolution” experiments began over a century ago and is still ongoing with the modern Large Hadron Collider.</p>
+</section>
+<section id="units-of-energy-momentum-and-mass">
+<h2><span class="section-number">1.2. </span>Units of energy, momentum and mass<a class="headerlink" href="#units-of-energy-momentum-and-mass" title="Link to this heading">#</a></h2>
+<p>As in atomic and solid state physics, a useful unit of energy in particle and nuclear physics is the electron volt (eV). This is the amount of kinetic energy gained by an electron when it is accelerated through a potential difference of one volt. Normally the energies involved in nuclear reactions are millions of electron volts <span class="math notranslate nohighlight">\((\mathrm{MeV})\)</span> and in high energy particle interactions they may be billions of electron volts or Giga electron volts <span class="math notranslate nohighlight">\(\left(\mathrm{GeV}=10^{9}\ \mathrm{eV}\right)\)</span>.</p>
+<p>A convenient unit for particle masses makes use of the Einstein mass-energy relationship <span class="math notranslate nohighlight">\(E=m c^{2}\)</span>. This yields a unit for mass expressed as energy divided by
+the square of the velocity of light, <span class="math notranslate nohighlight">\(\mathrm{MeV} / \mathrm{c}^{2}\)</span> or <span class="math notranslate nohighlight">\(\mathrm{GeV}/\mathrm{c}^{2}.\)</span> For example</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\text { proton mass } &amp; =938.3\ \mathrm{MeV} / c^{2}  \\
+\text { electron mass } &amp; =0.511\ \mathrm{MeV} / c^{2} 
+\end{align*}
+\end{split}\]</div>
+<p>This system of units is extended to momentum through the relativistic relationship for the energy of a particle of rest mass <span class="math notranslate nohighlight">\(m\)</span> moving with momentum <span class="math notranslate nohighlight">\(p\)</span>,</p>
+<div class="math notranslate nohighlight" id="equation-eq-e2p2">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-e2p2" title="Link to this equation">#</a></span>\[
+E^{2}=p^{2} c^{2}+m^{2} c^{4} 
+\]</div>
+<p>Therefore,  we express momentum in the units of energy divided by the velocity of light (<span class="math notranslate nohighlight">\(\mathrm{GeV} / \mathrm{c}\)</span>), and we have a self-consistent system in which the velocity of light is implicitly used, but its value does not have to be explicitly put in to the calculations. In several textbooks, you will find the convention <span class="math notranslate nohighlight">\(c=1\)</span>, e.g. the speed of light is not explicitly indicated in the formulae. This is a common notation used in particle physics, where particle masses are expressed in <span class="math notranslate nohighlight">\(\mathrm{GeV}\)</span> by implicitly multiplying their mass by <span class="math notranslate nohighlight">\(c^{2}\)</span>. For clarity, I will avoid this notation in my introductory lectures, but this is something you will slowly get used to. Finally, a useful value to remember is that of</p>
+<div class="math notranslate nohighlight" id="equation-hbarc">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-hbarc" title="Link to this equation">#</a></span>\[\hbar c=197\ \mathrm{MeV}\  \mathrm{fm} \]</div>
+<div class="admonition-example-1-1-de-broglie-wavelength admonition">
+<p class="admonition-title">Example 1.1. De Broglie wavelength.</p>
+<p>Evaluate the de Broglie wavelength of an alpha particle of kinetic energy <span class="math notranslate nohighlight">\(E_{K}=5.3\ \mathrm{MeV}\)</span>. <span class="math notranslate nohighlight">\(\left[m_{\alpha}=6.64 \times 10^{-27} \mathrm{~kg}=3.73\ \mathrm{GeV} / \mathrm{c}^{2}\right]\)</span></p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Solution 1:</strong></p>
+<p class="sd-card-text">First we solve using SI units for all the quantities. We calculate the momentum of the alpha particle as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+p &amp; =\sqrt{2 m_{\alpha} E_{K}}=\sqrt{2 \times\left(6.64 \times 10^{-27}\right) \times\left(5.3 \times 10^{6}\right) \times\left(1.6 \times 10^{-19}\right)}\ \mathrm{kg}\ \mathrm{m}\ \mathrm{s}^{-1}= \\
+&amp; =1.06 \times 10^{-19} \mathrm{~kg}\ \mathrm{~m}\ \mathrm{~s}^{-1} 
+\end{align*}
+\end{split}\]</div>
+<p class="sd-card-text">We then use the De Broglie formula to evaluate <span class="math notranslate nohighlight">\(\lambda\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\lambda=\frac{h}{p}=\frac{\left(6.63 \times 10^{-34} \mathrm{~kg} \mathrm{~m}^{2} \mathrm{~s}^{-1}\right)}{\left(1.06 \times 10^{-19} \mathrm{~kg} \mathrm{~m} \mathrm{~s}^{-1}\right)}=6.25 \times 10^{-15}\ \mathrm{~m}=6.25\ \mathrm{fm} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text"><strong>Solution 2:</strong></p>
+<p class="sd-card-text">We can also calculate the De Broglie wavelength using particle physics units and
+instead of <span class="math notranslate nohighlight">\(p\)</span> we work with <span class="math notranslate nohighlight">\(p c\)</span> and make use of equation <a class="reference internal" href="#equation-hbarc">(1.2)</a>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+p c &amp; =\sqrt{2 m c^{2} E_{K}}=\sqrt{(2 \times(3730\ \mathrm{MeV}) \times(5.3\ \mathrm{MeV})}=198\ \mathrm{MeV} \\
+\lambda &amp; =\frac{h}{p}=\frac{(2 \pi \hbar c)}{p c}=\frac{6.28 \times 197\ \mathrm{MeV}\ \mathrm{fm}}{198\ \mathrm{MeV}}=6.25\ \mathrm{fm} 
+\end{align*}
+\end{split}\]</div>
+</div>
+</details></section>
+<section id="special-relativity-recap">
+<h2><span class="section-number">1.3. </span>Special relativity recap<a class="headerlink" href="#special-relativity-recap" title="Link to this heading">#</a></h2>
+<p>In particle physics we study particles that move at high speed, approaching the speed of light, so we will have to use special relativity when working with their energy and momentum. You studied special relativity last year (PHY21004), here we recall the basic concepts that will be used in the following. The main assumption in special relativity are:</p>
+<ul class="simple">
+<li><p>Physics laws are independent of reference frame</p></li>
+<li><p>The speed of light <span class="math notranslate nohighlight">\(c\)</span> is independent of the reference frame</p></li>
+</ul>
+<p>In your previous course you saw that, by changing coordinates between two inertial frames moving with a relative velocity <span class="math notranslate nohighlight">\(v\)</span>, the space-time coordinates will transform following the Lorentz transformations. Figure <a class="reference internal" href="#lorentztransf"><span class="std std-numref">Fig. 1.1</span></a> shows the Lorentz transformations between two reference frames ( <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^{\prime}\)</span> ) moving with a relative velocity <span class="math notranslate nohighlight">\(v\)</span> in the <span class="math notranslate nohighlight">\(x\)</span>-direction.</p>
+<figure class="align-center" id="lorentztransf">
+<a class="reference internal image-reference" href="_images/Lorentz.png"><img alt="Lorentz transformation" src="_images/Lorentz.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Diagram showing the Lorentz transformation between two different reference frames.</span><a class="headerlink" href="#lorentztransf" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Mathematically they are expressed as</p>
+<div class="math notranslate nohighlight" id="equation-eq-lorentztransf1">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-eq-lorentztransf1" title="Link to this equation">#</a></span>\[\begin{split}
+\left\{\begin{array}{l}
+t^{\prime}=\gamma\left(t-\frac{v}{c^{2}} x\right) \\
+x^{\prime}=\gamma(x-v t) \\
+y^{\prime}=y \\
+z^{\prime}=z
+\end{array}\right.
+\end{split}\]</div>
+<p>It is useful to rewrite these equations using consistent units, e.g. use the quantity <span class="math notranslate nohighlight">\(c t\)</span> instead of time. So we are now dealing with 4-coordinates that have the dimension of a length and can be measured in metres. We therefore rewrite them as</p>
+<div class="math notranslate nohighlight" id="equation-eq-lorentztransf">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-eq-lorentztransf" title="Link to this equation">#</a></span>\[\begin{split}
+\left\{\begin{array}{l}
+c t^{\prime}=\gamma(c t-\beta x) \\
+x^{\prime}=\gamma(x-\beta c t) \\
+y^{\prime}=y \\
+z^{\prime}=z
+\end{array}\right.
+\end{split}\]</div>
+<p>Since the equations mix space and time we group the four coordinates together into a “4-vector” <span class="math notranslate nohighlight">\(x^{\mu}\)</span> which is defined as</p>
+<div class="math notranslate nohighlight">
+\[
+x^{\mu}=(c t, x, y, z) 
+\]</div>
+<p>the index <span class="math notranslate nohighlight">\(\mu\)</span> has values <span class="math notranslate nohighlight">\(0,1,2,3\)</span> with <span class="math notranslate nohighlight">\(c t\)</span> as the component 0 , and <span class="math notranslate nohighlight">\((x, y, z)\)</span> the three components of a vector <span class="math notranslate nohighlight">\(\vec{x}\)</span>. We will not use the 4 -vector notation in this course, however we define here for completeness as it is used in several textbooks. Those who will take more advanced physics courses, such as advanced particle physics or general relativity, will make use of this notation.</p>
+<p>In your special relativity course, you used the Lorentz transformation to derive the properties of time dilation and space contraction. However we will not be using these here, rather concentrate on the energy and momentum quantities.</p>
+</section>
+<section id="energy-and-momentum">
+<h2><span class="section-number">1.4. </span>Energy and momentum<a class="headerlink" href="#energy-and-momentum" title="Link to this heading">#</a></h2>
+<p>Particle physics is studied by observing decays of particles and reaction between particles. The position and time of a phenomenon is of little importance, and we assume the laws of physics do not depend on when or where a phenomenon is observed. Instead the quantities that we use to study the kinematics of a reaction or a decay are the energy and momentum of the particles. In special relativity the energy of a particle, <span class="math notranslate nohighlight">\(E\)</span>, and its momentum multiplied by the speed of light <span class="math notranslate nohighlight">\(c \vec{p}\)</span> form a 4 -vector similar to the space-time 4 -vector. The four components are</p>
+<div class="math notranslate nohighlight">
+\[
+p^{\mu}=\left(E, c p_{x}, c p_{y}, c p_{z}\right)
+\]</div>
+<p>Energy and momentum of a system follow similar Lorentz transformation when changing reference frames. For example, if the observer is moving with a velocity <span class="math notranslate nohighlight">\(\beta\)</span> along the <span class="math notranslate nohighlight">\(x\)</span>-axis as in Fig. 1, then, employing Lorentz transformations, the observed
+total energy and momentum of the particles will be</p>
+<div class="math notranslate nohighlight" id="equation-eq-lorentztranse">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-eq-lorentztranse" title="Link to this equation">#</a></span>\[\begin{split}
+\left\{\begin{array}{l}
+E^{\prime}=\gamma\left(E-\beta c p_{x}\right) \\ 
+c p_{x}^{\prime}=\gamma\left(c p_{x}-\beta E\right) \\ 
+c p_{y}^{\prime}=c p_{y} \\ 
+c p_{z}^{\prime}=c p_{z}
+\end{array}\right.
+\end{split}\]</div>
+<p>Using the Lorentz transformation above, you can show that</p>
+<div class="math notranslate nohighlight" id="equation-eq-lorentinv">
+<span class="eqno">(1.6)<a class="headerlink" href="#equation-eq-lorentinv" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+E^{2}-(c p)^{2}=\left(E^{\prime}\right)^{2}-\left(c p^{\prime}\right)^{2} 
+\end{equation*}
+\]</div>
+<p>is Lorentz invariant, e.g. it does not depend on the reference frame in which it is calculated. In case of a system composed by a single particle, in the reference frame where the particle is at rest (rest frame), the total energy of the particle is <span class="math notranslate nohighlight">\(m c^{2}\)</span>, and the momentum is zero. In this reference frame, we calculate the Lorentz invariant quantity as <span class="math notranslate nohighlight">\(m c^{2}\)</span>. Since the value is the same in any reference frame we can write the invariant as</p>
+<div class="math notranslate nohighlight" id="equation-eq-ecp">
+<span class="eqno">(1.7)<a class="headerlink" href="#equation-eq-ecp" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+E^{2}-(c p)^{2}=\left(m c^{2}\right)^{2}
+\end{equation*}
+\]</div>
+<p>we define <span class="math notranslate nohighlight">\(m\)</span> as the invariant mass of the particle. We should stress that this is a Lorentz invariant quantity and is an intrinsic property of the particle itself, which does not depend on the reference frame in which we measure the particle. We will encounter several particles in this course, all with a different mass.</p>
+<p>We normally assume that in the initial state the incoming particle and target are well separated and so non-interacting, and that this is also true of the produced particles in the final state. Thus there are no forces between them and no potential energy term in the expression for the total energy. Therefore the energy and momentum are conserved in the interaction. These are the total energy and momentum, and we should consider that different particles may be produced as a result of a reaction.</p>
+</section>
+<section id="laboratory-frame-rest-frame-and-centre-of-mass-frame">
+<h2><span class="section-number">1.5. </span>Laboratory frame, rest frame, and centre of mass frame<a class="headerlink" href="#laboratory-frame-rest-frame-and-centre-of-mass-frame" title="Link to this heading">#</a></h2>
+<p>In relativistic kinematics we use different reference frames, listed below:</p>
+<ul class="simple">
+<li><p>laboratory frame. This is the reference frame in which an experiment is conducted. You can view this as the frame in which the experimental equipment has zero total velocity;</p></li>
+<li><p>rest frame: For a particle, this is defined as the reference frame in which the particle is at rest, e.g. it has zero momentum. In this reference frame the total energy of the particle is equal to its <span class="math notranslate nohighlight">\(m c^{2}\)</span>;</p></li>
+<li><p>centre-of-mass frame. For a system of particles, this is the frame moving with the centre-of-mass of the system. Although individual particles (in general) have non-zero momentum in this frame, the vector sum of their momenta must be zero.</p></li>
+</ul>
+<p>For a system of particles we express the total energy and total momentum as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E=\sum_{i} E_{i} \quad , \quad \vec{p}=\sum_{i} \overrightarrow{p_{i}} 
+\end{equation*}
+\]</div>
+<p>Similarly to the definition in equation <a class="reference internal" href="#equation-eq-ecp">(1.7)</a> we define the effective mass quantity as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\left(\sum_{i} E_{i}\right)^{2}-\left|\sum_{i}\left(c \vec{p}_{i}\right)\right|^{2}=\left(M c^{2}\right)^{2} 
+\end{equation*}
+\]</div>
+<p>The effective mass is the total energy of the system in the centre-of-mass frame, as the sum of the momenta in that frame is, by construction, zero and is a Lorentz invariant quantity.</p>
+<p>Using the Lorentz transformations in equation (12), we can calculate the value of <span class="math notranslate nohighlight">\(\beta_{\mathrm{cm}}\)</span> of the centre of mass of a group of particles in the laboratory as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\beta_{\mathrm{cm}}=\frac{c\left|p_{\mathrm{lab}}\right|}{E_{\mathrm{lab}}} 
+\end{equation*}
+\]</div>
+</section>
+<section id="energy-and-kinetic-energy">
+<h2><span class="section-number">1.6. </span>Energy and kinetic energy<a class="headerlink" href="#energy-and-kinetic-energy" title="Link to this heading">#</a></h2>
+<p>A common source of confusion when solving relativistic kinematics problems is the role of the particles rest mass. In non-relativistic situations, the mass of the particles is not included in the total energy and we assume that the kinetic energy is conserved. In relativistic kinematics, it is the total energy that is conserved, and the kinetic energy is of very little use. In fact, you should rarely need to calculate the kinetic energy of a particle, unless you are explicitly asked.</p>
+<p>To clarify the difference between the total and kinetic energy, we consider a single particle. Using equation <a class="reference internal" href="#equation-eq-ecp">(1.7)</a> the energy of a particle can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E^{2}=p^{2} c^{2}+m^{2} c^{4} 
+\end{equation*}
+\]</div>
+<p>which includes the contribution from the particle mass and its momentum. The kinetic energy is defined as the difference between the total energy and the mass of the particle</p>
+<div class="math notranslate nohighlight" id="equation-eq-kinetice">
+<span class="eqno">(1.8)<a class="headerlink" href="#equation-eq-kinetice" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+T=E-m c^{2} 
+\end{equation*}
+\]</div>
+<p>It should be noted that the kinetic energy is not a Lorentz invariant and also that it is not equal to <span class="math notranslate nohighlight">\(c p\)</span>.</p>
+<p>An alternative expression for the energy can be found by transforming the energy and momentum from the particle rest-frame to a frame moving with a velocity <span class="math notranslate nohighlight">\(v\)</span>. In this case, the energy of the particle in the moving frame is given by</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E=\gamma\left(E_{\mathrm{rf}}-\beta c p_{\mathrm{rf}, \mathrm{x}}\right)=m c^{2} \gamma 
+\end{equation*}
+\]</div>
+<p>Given the fact that the momentum of the particle in the rest frame <span class="math notranslate nohighlight">\(\left(c p_{\mathrm{rf}, \mathrm{x}}\right)\)</span> is zero and its energy is <span class="math notranslate nohighlight">\(m c^{2}\)</span>. In the non-relativistic limit <span class="math notranslate nohighlight">\((\beta \ll 1)\)</span> we derive the non-relativistic expression for the kinetic energy</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E=m c^{2} \gamma=m c^{2} \frac{1}{\sqrt{1-\beta^{2}}} \approx m c^{2}\left(1-\frac{\beta^{2}}{2}\right)=m c^{2}+\frac{1}{2} m v^{2} 
+\end{equation*}
+\]</div>
+<p>e.g. in the non-relativistic limit, the total energy of a particle is equal to <span class="math notranslate nohighlight">\(m c^{2}\)</span> plus its kinetic energy.</p>
+</section>
+<section id="problem-solving-for-decays-and-collisions">
+<h2><span class="section-number">1.7. </span>Problem solving for decays and collisions<a class="headerlink" href="#problem-solving-for-decays-and-collisions" title="Link to this heading">#</a></h2>
+<p>As part of this course, we will work through increasingly sophisticated examples of particle decays and two-body reactions. Some examples are provided in the lectures, but most instances will be covered in a programme of homeworks. The physical principles employed in solving all these problems are the same: conservation of energy, conservation of momentum and the use of the Lorentz invariant of equation <a class="reference internal" href="#equation-eq-ecp">(1.7)</a>.</p>
+<p>In general there will be some initial or final particles for which conditions are specified - e.g. particles at rest, or moving with a certain (total) energy - or required to be found. There are also likely to be particles whose kinematic properties are neither given nor of concern. For example, a pion decays into a muon and neutrino, and you may be asked for the energy of the muon but not for the neutrino.</p>
+<p>NOTE: Very often we omit writing “c” in the equations, this is effectively equivalent to considering <span class="math notranslate nohighlight">\(c=1\)</span>, e.g. working with a set of units where momenta and masses are measured in <span class="math notranslate nohighlight">\(\mathrm{GeV}\)</span>. This is difficult at first, but will become easier with practice. I tried to retain the <span class="math notranslate nohighlight">\(c\)</span> in the right place in this section, but I will make use more and more of the convention <span class="math notranslate nohighlight">\(c=1\)</span>, to follow what most textbooks do. The advantage of this notation is that we don’t have awkward expressions such as <span class="math notranslate nohighlight">\(\left(m c^{2}\right)^{2}\)</span></p>
+<p>The simplest problem solving strategy is then as follows.</p>
+<ul class="simple">
+<li><p>Draw a diagram showing the motion of the particles “Before” and “After” a collision or decay happens;</p></li>
+<li><p>Write down equations embodying conservation of energy and momentum;</p></li>
+<li><p>Eliminate from these equations the properties of the “uninteresting” particle(s), e.g. by using the relationship between <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(p\)</span> for these particles.</p></li>
+<li><p>Finally, rearrange the resulting equation to determine the required quantity. If asked for the energy of a particle, you may at this stage need to express its (unknown) momentum in terms of that energy.</p></li>
+</ul>
+<p>Although it is possible to carry out these steps in a different order, that will generally result in mathematically more complex calculations, and may introduce additional, possibly non-physical, solutions.</p>
+<div class="admonition-example-1-2-two-body-decay-into-massless-particles admonition">
+<p class="admonition-title">Example 1.2. Two-body decay into massless particles.</p>
+<p>A <span class="math notranslate nohighlight">\(\pi^{0}\)</span> particle (mass <span class="math notranslate nohighlight">\(135 \mathrm{MeV} / c^{2}\)</span> ) at rest decays into 2 photons. Calculate the energies and momenta of the photons.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A drawing of the kinematic configuration is shown below, with the <span class="math notranslate nohighlight">\(\pi^{0}\)</span> at rest before the decay and the two photons decaying in opposite directions after the decay. We indicate with (1) the photon traveling to the right and (2) the one traveling to the left.</p>
+<p class="sd-card-text"><img alt="Pi0 decay" src="_images/ExamplePi0Decay.png" /></p>
+<p class="sd-card-text">The problem is one-dimensional and we choose a coordinate system with <span class="math notranslate nohighlight">\(x\)</span>-axis along the direction of travel of the two photons. The photons have zero mass, so using equation 14 we can relate the energy and momenta of the two photons as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; c p_{1}=E_{1} \\
+&amp; c p_{2}=-E_{2} 
+\end{align*}
+\end{split}\]</div>
+<p class="sd-card-text">Energy and momentum conservation is expressed as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}m_{\pi} c^{2} &amp; =E_{1}+E_{2}  \\ 0 &amp; =c p_{1}+c p_{2}\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">combining the momentum equation with equation (22) we obtain</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E_{1}-E_{2}=0 \Rightarrow E_{1}=E_{2}=E, 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">where we define <span class="math notranslate nohighlight">\(E\)</span> the energy of the two photons. Finally the energy conservation equation leads to</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E=\frac{m_{\pi} c^{2}}{2}=67.5 \mathrm{MeV}
+\end{equation*}
+\]</div>
+</div>
+</details><div class="admonition-example-1-3-two-body-decay-into-massive-particles admonition">
+<p class="admonition-title">Example 1.3. Two-body decay into massive particles</p>
+<p>A <span class="math notranslate nohighlight">\(\rho^{0}\)</span> meson (mass <span class="math notranslate nohighlight">\(770\ \mathrm{MeV} / c^{2}\)</span> ) at rest decays into 2 charged pions (mass <span class="math notranslate nohighlight">\(140\ \mathrm{MeV} / c^{2}\)</span> ). Calculate the energies and momenta of the pions.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A drawing of the kinematic configuration is shown below, with the <span class="math notranslate nohighlight">\(\rho^{0}\)</span> at rest before the decay and the two pions decaying in opposite directions after the decay. We choose a coordinate system with the <span class="math notranslate nohighlight">\(\pi^{+}\)</span>traveling along the positive <span class="math notranslate nohighlight">\(x\)</span> direction and the <span class="math notranslate nohighlight">\(\pi^{-}\)</span>along the negative <span class="math notranslate nohighlight">\(x\)</span> direction.</p>
+<p class="sd-card-text"><img alt="Rho0 decay" src="_images/ExampleRho0Decay.png" /></p>
+<p class="sd-card-text">The solution is similar as before, the main difference is with the calculation of the momenta of the two decaying pions. Energy and momentum conservation is written as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}m_{\rho} c^{2} &amp; =E_{+}+E_{-}  \\ 0 &amp; =c p_{+}+c p_{-}\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">With the consequence that the momenta of the two particles have the same magnitude ( <span class="math notranslate nohighlight">\(p\)</span> ) and opposite direction (which is kind of obvious…), this means that</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+p_{+}=-p_{-}=p 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">Now we use the Lorentz invariant equation for the pions and write</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E_{-}=E_{+}=\sqrt{p^{2}+\left(m_{\pi} c^{2}\right)^{2}} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">The energies of the two pios are the same, since the particles have the same mass, so</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E_{+}=E_{-}=\left(m_{\rho} c^{2}\right) / 2=385\ \mathrm{MeV} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">Finally the momenta can be calculated as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+c p=\sqrt{E^{2}-\left(m_{\pi} c^{2}\right)^{2}}=359\ \mathrm{MeV} / c 
+\end{equation*}
+\]</div>
+</div>
+</details><div class="admonition-example-1-4-two-body-collision admonition">
+<p class="admonition-title">Example 1.4. Two-body Collision</p>
+<p>In a collision between pions and protons at rest, we observe the following process:</p>
+<div class="math notranslate nohighlight">
+\[
+\pi^{+}+p \rightarrow \Delta^{++}
+\]</div>
+<p>Calculate the energy pions must have to strike a proton at rest in order to produce a <span class="math notranslate nohighlight">\(\Delta^{++}\)</span>particle.</p>
+<p><span class="math notranslate nohighlight">\(\left[m\left(\Delta^{++}\right)=1232\ \mathrm{MeV} / c^{2}, m(p)=938.3\ \mathrm{MeV} / c^{2}, m\left(\pi^{+}\right)=139.6\ \mathrm{MeV} / c^{2}\right]\)</span></p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="DeltaPP decay" src="_images/ExampleDeltaProduction.png" /></p>
+<p class="sd-card-text">This is a one-dimensional problem, so we can consider only the momentum in the x-direction. In this example we make use of the notation <span class="math notranslate nohighlight">\(c=1\)</span></p>
+<ul class="simple">
+<li><p class="sd-card-text">The energy and momentum of the pion before the collision are indicated as <span class="math notranslate nohighlight">\(E_{\pi}\)</span> and <span class="math notranslate nohighlight">\(p_{\pi}\)</span></p></li>
+<li><p class="sd-card-text">The proton is stationary, so its momentum is zero, and its energy is <span class="math notranslate nohighlight">\(E_{p}=m_{p}\)</span>;</p></li>
+<li><p class="sd-card-text">The energy and momentum of the <span class="math notranslate nohighlight">\(\Delta^{++}\)</span>after the collision are indicated as <span class="math notranslate nohighlight">\(E_{\Delta}\)</span> and <span class="math notranslate nohighlight">\(p_{\Delta}\)</span>.</p></li>
+</ul>
+<p class="sd-card-text">Energy and momentum conservation give the following equations</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}E_{\pi}+m_{p} &amp; =E_{\Delta}  \\ p_{\pi}+0 &amp; =p_{\Delta}\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">following the momentum conservation, we define <span class="math notranslate nohighlight">\(p=p_{\pi}=p_{\Delta}\)</span>. We square both sides of the energy conservation equation</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E_{\pi}^{2}+m_{p}^{2}+2 E_{\pi} m_{p}=E_{\Delta}^{2} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">The square of the energies can be related to the square of the momenta using equation 14</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_{\Delta}^{2}-p^{2} &amp; =m_{\Delta}^{2} \\
+E_{\pi}^{2}-p^{2} &amp; =m_{\pi}^{2} 
+\end{align*}
+\end{split}\]</div>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(E_{\Delta}\)</span> and <span class="math notranslate nohighlight">\(E_{\pi}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+p^{2}+m_{\pi}^{2}+m_{p}^{2}+2 E_{\pi} m_{p}=p^{2}+m_{\Delta}^{2} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">And finally</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E_{\pi}=\frac{m_{\Delta}^{2}-m_{\pi}^{2}-m_{p}^{2}}{2 m_{p}}=329.3\ \mathrm{MeV} 
+\end{equation*}
+\]</div>
+</div>
+</details><div class="admonition-example-1-5-neutral-pion-decay-not-at-rest admonition">
+<p class="admonition-title">Example 1.5. Neutral pion decay (not at rest)</p>
+<p>An energetic <span class="math notranslate nohighlight">\(\pi^{0}\)</span> decays into two photons. If the photons both make the same angle of <span class="math notranslate nohighlight">\(20^{\circ}\)</span> with the original  <span class="math notranslate nohighlight">\(\pi^{0}\)</span> direction of travel, calculate the energy of the photons. <br />
+[Mass of <span class="math notranslate nohighlight">\(\pi^{0}\)</span> is <span class="math notranslate nohighlight">\(135\ \mathrm{MeV} / c^{2}\)</span> ]</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="Pi0 decay" src="_images/ExamplePi0Angle.png" /></p>
+<p class="sd-card-text">The momenta of the photons are</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; \vec{p}_{\gamma 1}=\left(E_{\gamma 1} \cos \theta, E_{\gamma 1} \sin \theta, 0\right) \\
+&amp; \vec{p}_{\gamma 2}=\left(E_{\gamma 2} \cos \theta,-E_{\gamma 2} \sin \theta, 0\right) 
+\end{align*}
+\end{split}\]</div>
+<p class="sd-card-text">Energy-momentum conservation will give the following equations</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}E_{\pi} &amp; =E_{\gamma 1}+E_{\gamma 2}  \\ p_{\pi} &amp; =E_{\gamma 1} \cos \theta+E_{\gamma 2} \cos \theta \\ 0 &amp; =E_{\gamma 1} \sin \theta-E_{\gamma 2} \sin \theta\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">The last equation (momentum conservation along <span class="math notranslate nohighlight">\(y\)</span> ) gives</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E_{\gamma 1}=E_{\gamma 2}=E_{\gamma} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">And the two remaining equations are rewritten as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}E_{\pi} &amp; =2 E_{\gamma}  \\ p_{\pi} &amp; =2 E_{\gamma} \cos \theta\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">We square both equations and take the difference to make use of the invariant mass relation of equation <a class="reference internal" href="#equation-eq-ecp">(1.7)</a></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_{\pi}^{2}-p_{\pi}^{2} &amp; =4 E_{\gamma}^{2}\left(1-\cos ^{2} \theta\right) \\
+m_{\pi}^{2} &amp; =4 E_{\gamma}^{2} \sin ^{2} \theta \\
+E_{\gamma} &amp; =\frac{m_{\pi}}{2 \sin \theta} 
+\end{align*}
+\end{split}\]</div>
+<p class="sd-card-text">Finally, we work out <span class="math notranslate nohighlight">\(E_{\pi}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E_{\pi}=2 E_{\gamma}=\frac{m_{\pi}}{\sin \theta}=395\ \mathrm{MeV} 
+\end{equation*}
+\]</div>
+</div>
+</details></section>
+<section id="additional-reading-material">
+<h2><span class="section-number">1.8. </span>Additional reading material<a class="headerlink" href="#additional-reading-material" title="Link to this heading">#</a></h2>
+<p>The books referred here can be found in the reading list on Blackboard</p>
+<ul class="simple">
+<li><p>For a historical introduction on the development of particle physics, refer to the first chapter of [Dodd] or [Perkins];</p></li>
+<li><p>The units of particle physics are discussed in the Introduction of [Griffiths] and chapter 1.1 of <span class="math notranslate nohighlight">\([\)</span> Perkins];</p></li>
+<li><p>For a full review of special relativity, you should refer to your notes from PHY21004. In particular Chapter 9. (also included in Blackboard).</p></li>
+<li><p>The relativistic notation is introduced in [Perkins] Chapter 1.1. Note that we will use the notation with the Energy as component 0 and will not make use of the imaginary notation for the Energy. Also discussed in [Griffiths] Chapter 3</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="PHY304_2023_Intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PHY304: Particle Physics</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-particles">1.1. Elementary particles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-energy-momentum-and-mass">1.2. Units of energy, momentum and mass</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-relativity-recap">1.3. Special relativity recap</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-momentum">1.4. Energy and momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laboratory-frame-rest-frame-and-centre-of-mass-frame">1.5. Laboratory frame, rest frame, and centre of mass frame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-kinetic-energy">1.6. Energy and kinetic energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-for-decays-and-collisions">1.7. Problem solving for decays and collisions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-reading-material">1.8. Additional reading material</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Davide Costanzo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
