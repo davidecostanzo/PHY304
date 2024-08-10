@@ -1,0 +1,1096 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2. Scattering, cross sections and decays &#8212; PHY304. Particle Physics Lecture notes (2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PHY304_2023_Unit2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="1. Units and Special Relativity" href="PHY304_2023_Unit1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="PHY304_2023_Intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="PHY304_2023_Intro.html">
+                    PHY304: Particle Physics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="PHY304_2023_Unit1.html">1. Units and Special Relativity</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Scattering, cross sections and decays</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPHY304_2023_Unit2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/PHY304_2023_Unit2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Scattering, cross sections and decays</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-sections">2.1. Cross sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-and-differential-cross-sections">2.2. Partial and differential cross sections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-spherical-coordinates-in-three-dimensions">2.2.1. Reminder: Spherical coordinates in three dimensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-and-matrix-elements">2.3. Scattering and matrix elements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-definitions">2.3.1. Scattering definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-golden-rule-and-matrix-element">2.3.2. Fermi golden rule and matrix element</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-states">2.3.3. Density of states</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-in-a-coulomb-potential">2.4. Elastic scattering in a Coulomb potential</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulomb-potential">2.4.1. Coulomb potential</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">2.4.2. Rutherford scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-scattering-on-a-nucleus">2.4.3. Electron scattering on a nucleus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-history">2.4.4. A bit of history</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-charge-distribution-and-form-factor">2.5. Nuclear charge distribution and form factor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-approximations-made">2.6. Summary of approximations made</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">2.7. Further reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="scattering-cross-sections-and-decays">
+<span id="unit2"></span><h1><span class="section-number">2. </span>Scattering, cross sections and decays<a class="headerlink" href="#scattering-cross-sections-and-decays" title="Link to this heading">#</a></h1>
+<p>Learning Objectives: understand scattering, and the role of form factors, being able to calculate the form factor for simple charge distributions</p>
+<section id="cross-sections">
+<h2><span class="section-number">2.1. </span>Cross sections<a class="headerlink" href="#cross-sections" title="Link to this heading">#</a></h2>
+<p>The cross section is a measurable quantity related to a process in particle and nuclear physics. By measuring cross sections, theory can be compared to experiment. It is the job of the experimental physicists to measure cross sections, and that of the theorists to use models to calculate them. We will use this concept throughout the course, so we introduce it at very beginning, rather than leaving it for later, as some textbooks do.</p>
+<p>The idea of cross-section arises from the simplest model of a nucleus (or some other particle) as a completely absorbing sphere of cross-sectional area <span class="math notranslate nohighlight">\(\sigma\)</span>, as described in figure <a class="reference internal" href="#xsec"><span class="std std-numref">Fig. 2.1</span></a>. We define the flux <span class="math notranslate nohighlight">\(J\)</span> as the number of particles per unit time and unit area incident on a thin sheet of material. If there are <span class="math notranslate nohighlight">\(N\)</span> nuclei illuminated by the beam, the effective nuclear area for absorption is <span class="math notranslate nohighlight">\(\sigma_{r} N\)</span>.</p>
+<figure class="align-center" id="xsec">
+<a class="reference internal image-reference" href="_images/Xsec.png"><img alt="Schematic of cross section" src="_images/Xsec.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Diagram showing a beam with a flux <span class="math notranslate nohighlight">\(J\)</span> particles per unit time and unit area on a target with interaction centres of cross section <span class="math notranslate nohighlight">\(\sigma_r\)</span></span><a class="headerlink" href="#xsec" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The rate at which particles interact via a specific process indicated by the subscript <span class="math notranslate nohighlight">\(r\)</span> is then</p>
+<div class="math notranslate nohighlight" id="equation-eq-xsecrate">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-eq-xsecrate" title="Link to this equation">#</a></span>\[
+W_{r}=J N \sigma_{r} 
+\]</div>
+<p>From an experimental point of view, the quantity <span class="math notranslate nohighlight">\(J N\)</span> is defined by the design parameters of the experiment and is referred to as the “luminosity” <span class="math notranslate nohighlight">\(L\)</span> of the experiment. <span class="math notranslate nohighlight">\(W_{r}\)</span> is measured experimentally, as the observed rate of interaction. Using the equation above, we can measure <span class="math notranslate nohighlight">\(\sigma_{r}\)</span>, which is a quantity that holds the basic physics of the interaction as it does not depend on the experiment design parameters and can be calculated from theory.</p>
+<p>The unit of cross-section used in nuclear and particle interactions is the barn, <span class="math notranslate nohighlight">\(b\)</span>, equal to <span class="math notranslate nohighlight">\(10^{-28} \mathrm{~m}^{2}\)</span>. In interactions between high energy particles, smaller units such as the millibarn <span class="math notranslate nohighlight">\(\left(\mathrm{mb}=10^{-3} \mathrm{~b}\right)\)</span> or even picobarn <span class="math notranslate nohighlight">\(\left(\mathrm{pb}=10^{-12} \mathrm{~b}\right)\)</span> are often used.</p>
+<div class="admonition-example-2-1-alpha-particle-cross-sections-on-gold admonition">
+<p class="admonition-title">Example 2.1. Alpha particle cross sections on gold.</p>
+<p>A gold atom has a nuclear radius of 7 fm . Calculate its geometrical cross section. Compare with the measured cross sections for alpha particles of kinetic energy of 6 MeV scattering above <span class="math notranslate nohighlight">\(30^{\circ}\)</span>, which is 157.3 b .</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The geometrical cross section is simply <span class="math notranslate nohighlight">\(\pi R^{2}=154 \times 10^{-30} \mathrm{~m}^{2}=1.54 \mathrm{~b}\)</span></p>
+</div>
+</details></section>
+<section id="partial-and-differential-cross-sections">
+<h2><span class="section-number">2.2. </span>Partial and differential cross sections<a class="headerlink" href="#partial-and-differential-cross-sections" title="Link to this heading">#</a></h2>
+<p>In most cases there are several possible reactions between the incident and target particles, and the cross-section for each will be different. These individual crosssections are known as partial cross-sections, and their overall sum is the total crosssection. If <span class="math notranslate nohighlight">\(r\)</span> indicates a specific interaction process, then the total cross section is written as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+\sigma=\sum_{r} \sigma_{r} 
+\end{equation}
+\]</div>
+<p>After a reaction or scattering has occurred the outgoing particles often have an anisotropic distribution, with different rates observed in different angular directions as sketched in figure <a class="reference internal" href="#diffxsec"><span class="std std-numref">Fig. 2.2</span></a>.</p>
+<figure class="align-center" id="diffxsec">
+<a class="reference internal image-reference" href="_images/diffXsec.png"><img alt="Schematic of cross section" src="_images/diffXsec.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Diagram showing the dependence of the cross-section as a function of the angle <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> in polar coordinated.</span><a class="headerlink" href="#diffxsec" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The observation of the interaction rate as a function of the scattering angles <span class="math notranslate nohighlight">\((\theta, \phi)\)</span> is used to measure a differential cross section. Then the number of particles scattered per second into the solid angle <span class="math notranslate nohighlight">\(d \Omega\)</span> at coordinates <span class="math notranslate nohighlight">\((\theta, \phi)\)</span> with respect to the incoming beam is written as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+d W_{r}(\theta, \phi)=J N \frac{d \sigma_{r}}{d \Omega}(\theta, \phi) d \Omega 
+\end{equation*}
+\]</div>
+<p>where we defined <span class="math notranslate nohighlight">\(\frac{d \sigma_{r}}{d \Omega}(\theta, \phi)\)</span> as the differential cross-section for the process. The measurement of the differential cross-section as a function of the scattering angle will provide further information on the physics processes involved in a specific interaction. For example in the Rutherford scattering, it was the angular dependence of the scattered alpha particle that led to the understanding of the atomic structure.</p>
+<p>The total cross-section for a specific process can be obtained by integrating the differential cross-section over all solid angles.</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\sigma_{r}=\int_{0}^{2 \pi} \int_{0}^{\pi} \frac{d \sigma}{d \Omega}(\theta, \phi) \sin (\theta) d \theta d \phi 
+\end{equation*}
+\]</div>
+<p>In most cases there is no dependence on the <span class="math notranslate nohighlight">\(\phi\)</span> angle, so the differential cross-section is measured only as a funciton of the angle <span class="math notranslate nohighlight">\(\theta\)</span> and the formula above written as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\sigma_{r}=2 \pi \int_{0}^{\pi} \frac{d \sigma}{d \Omega}(\theta) \sin (\theta) d \theta 
+\end{equation*}
+\]</div>
+<section id="reminder-spherical-coordinates-in-three-dimensions">
+<span id="sec-spherical"></span><h3><span class="section-number">2.2.1. </span>Reminder: Spherical coordinates in three dimensions<a class="headerlink" href="#reminder-spherical-coordinates-in-three-dimensions" title="Link to this heading">#</a></h3>
+<p>Working with scattering and other particle interactions we use spherical coordinates in three dimensions. The choice is driven by the fact that processes happen in a specific point in space, such as the location of the target and the observation of a physics phenomenon depends on the location of the detectors in terms of angles.</p>
+<p>You have seen a similar set of coordinates being used in other situations where a central potential is considered, for instance in the treatment of the Schödinger equation for a central potential as in the hydrogen atom.</p>
+<p>As a reminder, cartesian coordinates are related to spherical coordinates by the transformations (see also figure <a class="reference internal" href="#sphericalcoord"><span class="std std-numref">Fig. 2.3</span></a>)</p>
+<figure class="align-center" id="sphericalcoord">
+<a class="reference internal image-reference" href="_images/sphericalCoord.png"><img alt="Schematic of cross section" src="_images/sphericalCoord.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Diagram showing the spherical coordinates to be used to change coordinates from cartesian to spherical.</span><a class="headerlink" href="#sphericalcoord" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}x &amp; =r \sin \theta \cos \phi  \\ y &amp; =r \sin \theta \sin \phi \\ z &amp; =r \cos \theta\end{cases}
+\end{split}\]</div>
+<p>The solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> is defined in analogy of an angle in the two-dimensional case. A formal definition of the solid angle, according to Wolfram-Alpha is:</p>
+<p>“The solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> subtended by a surface <span class="math notranslate nohighlight">\(S\)</span> is defined as the surface area <span class="math notranslate nohighlight">\(\Omega\)</span> of a unit sphere covered by the surface’s projection onto the sphere.”</p>
+<p>The solid angle is measured in steradians ( sr ) and a full sphere covers a total of <span class="math notranslate nohighlight">\(4 \pi\)</span> steradians. Referring again to figure 4 we see that the solid angle subtended by a <span class="math notranslate nohighlight">\(d \theta\)</span> and <span class="math notranslate nohighlight">\(d \phi\)</span> element is given by</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+d \Omega=\sin \theta d \theta d \phi 
+\end{equation*}
+\]</div>
+<p>The corresponding surface element at a distance <span class="math notranslate nohighlight">\(r\)</span> from the centre is</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+d S=r^{2} \sin \theta d \theta d \phi 
+\end{equation*}
+\]</div>
+<p>and the corresponding volume element at a distance <span class="math notranslate nohighlight">\(r\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+d V=r^{2} \sin \theta d \theta d \phi d r=r^{2} d(\cos \theta) d \phi d r 
+\end{equation*}
+\]</div>
+<div class="admonition-example-2-2-alpha-particle-capture-cross-section admonition">
+<p class="admonition-title">Example 2.2. Alpha particle capture cross section</p>
+<p>A beam of <span class="math notranslate nohighlight">\(\alpha\)</span> particles with a total current of <span class="math notranslate nohighlight">\(i=10\ \)</span>nA impinges on a thin target of Magnesium-24. The thickness of the target is <span class="math notranslate nohighlight">\(5.75\ \mu \mathrm{m}\)</span>, the density of Magnesium-24 is <span class="math notranslate nohighlight">\(\rho=1.74 \times 10^{3}\ \mathrm{~kg} \mathrm{~m}^{-3}\)</span> and the atomic mass is <span class="math notranslate nohighlight">\(M_{A}=24.3\ \mathrm{~g} \mathrm{~mol}^{-1}\)</span>. A detector subtending a solid angle of <span class="math notranslate nohighlight">\(2 \times 10^{-3}\)</span> sr records 20 protons per second. If the scattering is isotropic, determine the cross section for the reaction</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha+{ }^{24} Mg \rightarrow p+\ldots
+\]</div>
+<p>This example is modelled around exercise 1.14 in [Martin], the goal is to use the concepts presented so far and to introduce some numerical calculations involving cross-sections and interaction rates.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We use equation <a class="reference internal" href="#equation-eq-xsecrate">(2.1)</a> to work out the cross-section from the rate</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\sigma=\frac{W}{J N} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">The rate that we observe is only a fraction of the total interaction rate, as our detector spans only a fraction of the total solid angle. Rather unusually, the scattering is isotropic, e.g. the rate observed does not depend on the polar coordinates of the detector. Hence the rate observed will be the fraction of the total rate corresponding to the fraction of solid angle spanned by the detector. Or, reversing the argument, the total rate is</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+W=20 \mathrm{~s}^{-1} \frac{4 \pi}{2 \times 10^{-3}}=1.26 \times 10^{5} \mathrm{~s}^{-1} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">We indicate with <span class="math notranslate nohighlight">\(S\)</span> the target area illuminated by the beam, in which case we write the flux as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+J=\frac{i}{2 e} \frac{1}{S} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">as the number of particles traveling down the beam per second is equal to the current divided by the charge of each particle, in this case <span class="math notranslate nohighlight">\(2 e\)</span> since <span class="math notranslate nohighlight">\(\alpha\)</span> particles have charge <span class="math notranslate nohighlight">\(+2 e\)</span>. The number of particles illuminated by the beam <span class="math notranslate nohighlight">\(N\)</span> can be calculated
+from the density and thickness of the target and the atomic mass of Magnesium-24</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+N=\frac{\rho t S}{M_{A}} N_{A} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\((\rho t S)\)</span> is the mass of the target illuminated by the beam, <span class="math notranslate nohighlight">\(M_{A}\)</span> is the atomic mass and <span class="math notranslate nohighlight">\(N_{A}\)</span> the Avogadro number. Hence the value of <span class="math notranslate nohighlight">\(S\)</span> is irrelevant once we multiply</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+J N &amp; =\frac{i}{2 e} \frac{\rho t}{M_{A}} N_{A}= \\
+&amp; =\frac{10^{-8} \mathrm{~A}}{2 \times 1.6 \times 10^{-19} \mathrm{C}} \times \frac{1.74 \times 10^{3} \mathrm{~kg} \mathrm{~m}^{-3} \times 5.75 \times 10^{-6} \mathrm{~m}}{24.3 \times 10^{-3} \mathrm{~kg} \mathrm{~mol}^{-1}} \times 6.02 \times 10^{23} \mathrm{~mol}^{-1}= \\
+&amp; =3.13 \times 10^{10} \mathrm{~s}^{-1} \times \frac{10^{-2} \mathrm{~kg} \mathrm{~m}^{-2}}{24.3 \times 10^{-3} \mathrm{~kg} \mathrm{~mol}^{-1}} \times 6.02 \times 10^{23} \mathrm{~mol}^{-1}= \\
+&amp; =7.75 \times 10^{33} \mathrm{~s}^{-1} \mathrm{~m}^{-2}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">finally putting the numbers in equation <a class="reference internal" href="#equation-eq-xsecrate">(2.1)</a> we have</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\sigma=\frac{1.26 \times 10^{5} \mathrm{~s}^{-1}}{7.75 \times 10^{33} \mathrm{~s}^{-1} \mathrm{~m}^{-2}}=0.161 \times 10^{-28} \mathrm{~m}^{2}=161 \mathrm{mb} 
+\end{equation*}
+\]</div>
+</div>
+</details></section>
+</section>
+<section id="scattering-and-matrix-elements">
+<h2><span class="section-number">2.3. </span>Scattering and matrix elements<a class="headerlink" href="#scattering-and-matrix-elements" title="Link to this heading">#</a></h2>
+<p>The goal of the mathematical formalism of the scattering is to decouple the quantities describing the experimental setup <span class="math notranslate nohighlight">\((J, N, \ldots)\)</span> from the fundamental physics that describes the interaction between particles. In this section, we first reorganise the formula for the flux in a more convenient way, we then relate the rate of interaction to the quantum mechanical theory that describe the fundamental interactions.</p>
+<section id="scattering-definitions">
+<h3><span class="section-number">2.3.1. </span>Scattering definitions<a class="headerlink" href="#scattering-definitions" title="Link to this heading">#</a></h3>
+<p>Consider the interaction of a beam of particles <span class="math notranslate nohighlight">\(b\)</span> with a target. Referring again to figure 2 , we indicate with <span class="math notranslate nohighlight">\(n_{b}\)</span> the particle density inside the beam, and with <span class="math notranslate nohighlight">\(v_{i}\)</span> the velocity of the beam particles. The number of beam particles that cross a surface of area <span class="math notranslate nohighlight">\(S\)</span> during a time <span class="math notranslate nohighlight">\(\Delta t\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+N_{b}=n_{b} S v_{i} \Delta t 
+\end{equation*}
+\]</div>
+<p>therefore the flux (e.g. the number of particles per unit surface and unit time) can be rewritten as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+J=\frac{N_{b}}{S \Delta t}=n_{b} v_{i}=\frac{v_{i}}{V} 
+\end{equation*}
+\]</div>
+<p>where we have defined the volume <span class="math notranslate nohighlight">\(V=1 / n_{b}\)</span> as the volume occupied by each of the beam particles. We should not worry about this quantity as it will cancel out in the following.</p>
+<p>For a single particle target, the rate of interaction is given by equation <a class="reference internal" href="#equation-eq-xsecrate">(2.1)</a> as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+W=J \sigma=\frac{v_{i}}{V} \sigma 
+\end{equation*}
+\]</div>
+<p>or in differential terms</p>
+<div class="math notranslate nohighlight" id="equation-eq-diffrate">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-eq-diffrate" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+\frac{d W}{d \Omega}(\theta, \phi)=\frac{v_{i}}{V} \frac{d \sigma}{d \Omega}(\theta, \phi) 
+\end{equation*}
+\]</div>
+</section>
+<section id="fermi-golden-rule-and-matrix-element">
+<h3><span class="section-number">2.3.2. </span>Fermi golden rule and matrix element<a class="headerlink" href="#fermi-golden-rule-and-matrix-element" title="Link to this heading">#</a></h3>
+<p>The formula derived above provides a way to measure experimentally a differential cross section, by observing the rate of interactions at a given angle. To relate the rate to the physics principles governing the reaction, and hence the quantum mechanics phenomena under study, we need to use the Fermi golden rule.</p>
+<p>In quantum mechanics, the value of <span class="math notranslate nohighlight">\(W\)</span> is given by the product of the square of the matrix element <span class="math notranslate nohighlight">\(\mathcal{M}_{f i}\)</span> between the initial (i) and final (f) states and a density of final states factor <span class="math notranslate nohighlight">\(\rho\left(E_{f}\right)\)</span>. The matrix element contains all the dynamical features of the interaction such as its strength, energy dependence and angular distribution.</p>
+<div class="math notranslate nohighlight" id="equation-eq-fermigoldrule">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-eq-fermigoldrule" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+d W=\frac{2 \pi}{\hbar}\left|\mathcal{M}_{f i}\right|^{2} \rho\left(E_{f}\right) 
+\end{equation*}
+\]</div>
+<p>this formula is known as Fermi’s Golden Rule, and is applicable to nuclear reactions, decay processes, atomic transitions, scattering processes, etc. The scattering amplitude (or matrix element) between two quantum mechanical states <span class="math notranslate nohighlight">\(\left|\psi_{i}\right\rangle\)</span> and <span class="math notranslate nohighlight">\(\left| \psi_{f}\right\rangle\)</span> is given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-matelem">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-eq-matelem" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+\mathcal{M}_{f i}=\left\langle\psi_{f}|U| \psi_{i}\right\rangle=\int \psi_{f}^{*}(\vec{x}) U(\vec{x}) \psi_{i}(\vec{x}) d^{3} \mathbf{x} 
+\end{equation*}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(d^{3} \mathbf{x}\)</span> represents a volume element in space, <span class="math notranslate nohighlight">\(\psi_{i}(\vec{x})\)</span> and <span class="math notranslate nohighlight">\(\psi_{f}(\vec{x})\)</span> are the wavefunction of the initial and final state particles and <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> is the potential energy that describe the interaction.</p>
+<p>We use plane wave functions for the incoming and outgoing particles having momenta <span class="math notranslate nohighlight">\(\vec{p}_{i}\)</span> and <span class="math notranslate nohighlight">\(\vec{p}_{f}\)</span>, respectively. Thus the two wave functions are</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\psi_{i}(\vec{x})=\frac{1}{\sqrt{V}} \exp \left(-\frac{i}{\hbar} \vec{p}_{i} \cdot x\right) \quad \psi_{f}(\vec{x})=\frac{1}{\sqrt{V}} \exp \left(-\frac{i}{\hbar} \vec{p}_{f} \cdot x\right) 
+\end{equation*}
+\]</div>
+<p>where we have chosen a normalisation factor of <span class="math notranslate nohighlight">\(1 / \sqrt{V}\)</span>, as we are expecting to observe one particle inside a volume <span class="math notranslate nohighlight">\(V\)</span>. Substituting the plane wavefunctions into the matrix element equation <a class="reference internal" href="#equation-eq-matelem">(2.4)</a> we obtain</p>
+<div class="math notranslate nohighlight" id="equation-eq-mfi">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-eq-mfi" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+\mathcal{M}_{f i}=\frac{1}{V} \int e^{i\left(\vec{p}_{f} \cdot \vec{x}\right) / \hbar} U(\vec{x}) e^{-i\left(\vec{p}_{f} \cdot \vec{x}\right) / \hbar} d^{3} \mathbf{x}=\frac{1}{V} \int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}) d^{3} \mathbf{x} 
+\end{equation*}
+\]</div>
+<p>where we define <span class="math notranslate nohighlight">\(\vec{q}=\vec{p_{f}}-\vec{p_{i}}\)</span> as the momentum transfer in the collision. You can recognise the integral on the right-hand side as the 3-D Fourier transform of the potential energy. We define this Fourier transform as</p>
+<div class="math notranslate nohighlight" id="equation-eq-fq2">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-eq-fq2" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}) d^{3} \mathbf{x} 
+\end{equation*}
+\]</div>
+</section>
+<section id="density-of-states">
+<h3><span class="section-number">2.3.3. </span>Density of states<a class="headerlink" href="#density-of-states" title="Link to this heading">#</a></h3>
+<p>In the Fermi golden rule the term <span class="math notranslate nohighlight">\(\rho\left(E_{f}\right)\)</span> is the density of final states or phase space factor. The rule applies to quantum mechanical systems where the final states allowed belong to a continuum of states. A transition is more likely to occur if the system has more allowed states into which it can move. For instance, a process where the differential cross section is dominated by the density of states factor is the nuclear beta decay, discussed in depth in the nuclear physics course. We give the expression for the density of states without proof as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\rho\left(E_{f}\right)=\frac{V}{(2 \pi \hbar)^{3}} \frac{p_{f}^{2}}{v_{f}} d \Omega 
+\end{equation*}
+\]</div>
+<p>Replacing this formula in the Fermi golden rule equation <a class="reference internal" href="#equation-eq-fermigoldrule">(2.3)</a>, together with the cross section dependence of equation <a class="reference internal" href="#equation-eq-diffrate">(2.2)</a> and the matrix element definition of equations <a class="reference internal" href="#equation-eq-mfi">(2.5)</a> and <a class="reference internal" href="#equation-eq-fq2">(2.6)</a> we end up with a formula for the differential cross section of</p>
+<div class="math notranslate nohighlight" id="equation-eq-xsecformula">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-eq-xsecformula" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+\frac{d \sigma}{d \Omega}(\theta, \phi)=\frac{1}{4 \pi^{2} \hbar^{4}} \frac{p_{f}^{2}}{v_{i} v_{f}}\left|f\left(\mathbf{q}^{2}\right)\right|^{2} 
+\end{equation*}
+\]</div>
+</section>
+</section>
+<section id="elastic-scattering-in-a-coulomb-potential">
+<h2><span class="section-number">2.4. </span>Elastic scattering in a Coulomb potential<a class="headerlink" href="#elastic-scattering-in-a-coulomb-potential" title="Link to this heading">#</a></h2>
+<p>Scattering particles is at the heart of particle physics as we probe smaller structures. In this section we consider the case where the interaction between the beam particle and the target particle is elastic. This means that the particles in the final state are the same as the particles in the initial state. This scattering regime is achieved for probes with energy <span class="math notranslate nohighlight">\(\leq 100\ \mathrm{MeV}\)</span>. As the beam energy increases the target can be excited or broken, and some of the initial energy can be used to produce “new” particles.</p>
+<section id="coulomb-potential">
+<h3><span class="section-number">2.4.1. </span>Coulomb potential<a class="headerlink" href="#coulomb-potential" title="Link to this heading">#</a></h3>
+<p>In the case of an electromagnetic interaction between a point-like nucleus of charge <span class="math notranslate nohighlight">\(Z e\)</span> and a particle of charge <span class="math notranslate nohighlight">\(z e\)</span>, the potential energy is given by</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+U(\vec{r})=\frac{1}{4 \pi \epsilon_{0}} \frac{z Z e^{2}}{r} 
+\end{equation*}
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(\vec{r}\)</span> is the distance between the beam particle and the nucleus. From now on, we use <span class="math notranslate nohighlight">\(r\)</span>, rather than <span class="math notranslate nohighlight">\(x\)</span> to make it explicit that we are using a spherical coordinate system. This expression will be used for the scattering using alpha-particles as probes <span class="math notranslate nohighlight">\((z=2)\)</span> as well as for the scattering of electrons as probes <span class="math notranslate nohighlight">\((z=-1)\)</span>. To evaluate the cross-section we need to evaluate the Fourier transform of the potential as specified in equation <a class="reference internal" href="#equation-eq-xsecformula">(2.7)</a></p>
+<div class="math notranslate nohighlight" id="equation-eq-fouriercoul">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-eq-fouriercoul" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{r}) / \hbar} \frac{1}{4 \pi \epsilon_{0}} \frac{z Z e^{2}}{r} d^{3} \mathbf{r}=\frac{z Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{1}{r} e^{i(\vec{q} \cdot \vec{r}) / \hbar} d^{3} \mathbf{r} 
+\end{equation*}
+\]</div>
+<p>The argument of the integral will not have a “good” behaviour for <span class="math notranslate nohighlight">\(r \rightarrow \infty\)</span>, so we use a regularisation technique (quite common in field theory), by multiplying the argument by <span class="math notranslate nohighlight">\(e^{-\lambda r}\)</span> and we will take the limit <span class="math notranslate nohighlight">\(\lambda \rightarrow 0\)</span> in the final result. From a physics point of view, this assumes that the potential energy will decrease to zero at infinity due to material shielding effects. Hence the integral we need to calculate is</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+f\left(\mathbf{q}^{2}\right)=\frac{z Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{1}{r} e^{i(\vec{q} \cdot \vec{r}) / \hbar} e^{-\lambda r} d^{3} \mathbf{r} 
+\end{equation*}
+\]</div>
+<p>The integral is evaluated using polar coordinates as discussed in <a class="reference internal" href="#sec-spherical"><span class="std std-numref">Section 2.2.1</span></a>, since there is no explicit dependency on <span class="math notranslate nohighlight">\(\phi\)</span>, the integral in <span class="math notranslate nohighlight">\(d \phi\)</span> is trivially <span class="math notranslate nohighlight">\(2 \pi\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+f\left(\mathbf{q}^{2}\right) &amp; =\frac{z Z e^{2}}{4 \pi \epsilon_{0}} \int_{r=0}^{\infty} \int_{\theta=0}^{\pi} \int_{\phi=0}^{2 \pi}\left[\frac{e^{-\lambda r}}{r} e^{i(q r \cos \theta) / \hbar}\right] r^{2} d r\, d(\cos \theta)\, d \phi= \\
+&amp; =\frac{z Z e^{2}}{2 \epsilon_{0}} \int_{r=0}^{\infty} \int_{\theta=0}^{\pi}\left[r e^{-\lambda r} e^{i(q r \cos \theta) / \hbar}\right] d r\, d(\cos \theta) 
+\end{align*}
+\end{split}\]</div>
+<p>the integral in <span class="math notranslate nohighlight">\(d(\cos \theta)\)</span> is a “simple” integration of an exponential</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+f\left(\mathbf{q}^{2}\right) &amp; =\frac{z Z e^{2}}{2 \epsilon_{0}} \int_{r=0}^{\infty} r e^{-\lambda r} \frac{\hbar}{i q r}\left[e^{i(q r \cos \theta) / \hbar}\right]_{-1}^{1} d r= \\
+&amp; =\frac{z Z e^{2}}{2 \epsilon_{0}} \frac{\hbar}{i q} \int_{r=0}^{\infty} e^{-\lambda r}\left[e^{q r / \hbar}-e^{-i q r / \hbar}\right] 
+\end{align*}
+\end{split}\]</div>
+<p>with another exponential function to integrate, this time in <span class="math notranslate nohighlight">\(r\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+f\left(\mathbf{q}^{2}\right) &amp; =\frac{z Z e^{2}}{2 \epsilon_{0}} \frac{\hbar}{i q} \int_{r=0}^{\infty}\left[e^{(-\lambda+q / \hbar) r}-e^{(-\lambda-q / \hbar) r}\right] d r= \\
+&amp; =\frac{z Z e^{2}}{2 \epsilon_{0}} \frac{\hbar}{i q}\left[\frac{e^{(-\lambda+q / \hbar) r}}{-\lambda+i q / \hbar}-\frac{e^{(-\lambda-q / \hbar) r}}{-\lambda-i q / \hbar}\right]_{0}^{\infty}= \\
+&amp; =\frac{z Z e^{2}}{2 \epsilon_{0}} \frac{\hbar}{i q}\left[0-\frac{1}{-\lambda+i q / \hbar}+\frac{1}{-\lambda-i q / \hbar}\right] 
+\end{align*}
+\end{split}\]</div>
+<p>In the limit <span class="math notranslate nohighlight">\(\lambda \rightarrow 0\)</span> the term in the square brackets is much simpler</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+f\left(\mathbf{q}^{2}\right)=\frac{z Z e^{2}}{2 \epsilon_{0}} \frac{\hbar}{i q}\left[-\frac{2 \hbar}{i q}\right]=\frac{z Z e^{2}}{\epsilon_{0}} \frac{\hbar^{2}}{q^{2}}
+\end{equation*}
+\]</div>
+<p>Finally replacing the expression for <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> in equation <a class="reference internal" href="#equation-eq-xsecformula">(2.7)</a> we obtain an expression for the cross-section in the case of elastic scattering in a Coulomb potential</p>
+<div class="math notranslate nohighlight" id="equation-eq-coulombscat">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-eq-coulombscat" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+\frac{d \sigma}{d \Omega}=\frac{1}{4 \pi^{2} \epsilon_{0}^{2}} z^{2} Z^{2} e^{4} \frac{p_{f}^{2}}{v_{i} v_{f}} \frac{1}{q^{4}} 
+\end{equation*}
+\]</div>
+</section>
+<section id="rutherford-scattering">
+<h3><span class="section-number">2.4.2. </span>Rutherford scattering<a class="headerlink" href="#rutherford-scattering" title="Link to this heading">#</a></h3>
+<p>In the case of the “traditional” Rutherford scattering, we use an alpha-particle as a probe. In this case <span class="math notranslate nohighlight">\(z=2\)</span> and we can assume to be in a non-relativistic regime, with <span class="math notranslate nohighlight">\(v_{i}=v_{f} \ll c\)</span>, which means the kinetic energy of the alpha particle is much smaller than its mass <span class="math notranslate nohighlight">\(\left(m_{\alpha} c^{2} \approx 4 \mathrm{GeV}\right)\)</span>. Under this approximation the nuclear target does not move and the magnitude of the momentum and of the velocity of the alphaparticle do not change with the collision and can be expressed as a function of the kinetic energy <span class="math notranslate nohighlight">\(\left(E_{K}\right)\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+p^{2}=p_{i}^{2}=p_{f}^{2}=2 m_{\alpha} E_{K} \quad v_{i}=v_{f}=\sqrt{\frac{2 E_{K}}{m_{\alpha}}} 
+\end{equation*}
+\]</div>
+<p>while the magnitude of the momentum transfer is written as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+|\vec{q}|^{2} &amp; =\left|\vec{p}_{f}-\vec{p}_{i}\right|^{2}=\left|p_{f}\right|^{2}+\left|p_{i}\right|^{2}-2 p_{i} p_{f} \cos \theta=2 p^{2}(1-\cos \theta)=4 p^{2} \sin ^{2} \theta / 2 \\
+q &amp; =2 p \sin \theta / 2 
+\end{align*}
+\end{split}\]</div>
+<p>Replacing this into the general expression for the Coulomb elastic scattering in equation <a class="reference internal" href="#equation-eq-coulombscat">(2.9)</a> we have</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{d \sigma}{d \Omega}=\left(\frac{z Z e^{2}}{16 \pi \epsilon_{0}}\right)^{2} \frac{1}{E_{K}^{2}} \frac{1}{\sin ^{4} \theta / 2} 
+\end{equation*}
+\]</div>
+</section>
+<section id="electron-scattering-on-a-nucleus">
+<h3><span class="section-number">2.4.3. </span>Electron scattering on a nucleus<a class="headerlink" href="#electron-scattering-on-a-nucleus" title="Link to this heading">#</a></h3>
+<p>In the situation when an electron is used as a probe, we can normally assume that the electron will be “ultra-relativistic”, which means <span class="math notranslate nohighlight">\(E \gg m c^{2}\)</span>. This is because the mass of the electron is very small <span class="math notranslate nohighlight">\(\left(m c^{2}=0.511\ \mathrm{MeV}\right)\)</span>, so an electron with an energy of a few tens of MeV will already be in this ultra-relativistic approximation. In this case the momentum of the electron is related to its energy as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+p_{i}=p_{f}=E / c \quad ; \quad  v_{i}=v_{f} \approx c 
+\end{equation*}
+\]</div>
+<p>again replacing this into the general expression for the Coulomb elastic scattering in equation <a class="reference internal" href="#equation-eq-coulombscat">(2.9)</a> we have</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{d \sigma}{d \Omega}=\frac{Z^{2} e^{4}}{\left(4 \pi \epsilon_{0}\right)^{2}} \frac{1}{4 E^{2}} \frac{1}{\sin ^{4} \theta / 2} 
+\end{equation*}
+\]</div>
+<p>The scattering of electrons on nuclei is a technique used to study the properties of nuclei, as we will see in the next section.</p>
+</section>
+<section id="a-bit-of-history">
+<h3><span class="section-number">2.4.4. </span>A bit of history<a class="headerlink" href="#a-bit-of-history" title="Link to this heading">#</a></h3>
+<p>The Geiger Marsden experiment, and the Rutherford scattering are well celebrated and important results, which confirmed the atomic structure, with a central charge (the nucleus) surrounded by a cloud of electrons. This was done in 1908, and as we saw earlier the alpha particles did not have sufficient energy to study the structure of the nucleus. Hence the nucleus is considered as a point-like object. To study the structure of the nucleus, shorter De Broglie wavelengths are needed, e.g. particles with higher energy need to be used as a probe. In the 1950s electron beams in the <span class="math notranslate nohighlight">\(&gt;10 \mathrm{MeV}\)</span> range became available, and the nuclear structure could be probed. We will discuss how electron scattering can be used to study the structure of a nucleus in the next section of this unit.</p>
+<p>With advancing technology the energy of particles being produced kept increasing, and the scattering is no longer elastic, as it led to nuclear excitations and the production of new particles. The 1950s and 1960s saw a lot of new particles being discovered, which we will study and classify based on the quark model towards the end of the course.</p>
+<p>In the 1970s with the use of very high energy electron beams (20 GeV) the structure of the proton could be further studied, showing a substructure for the proton, which is made of quarks. As of today, quarks are still elementary particles, which means that they behave as point-like targets. In the past few decades, particles are collided head on, rather than using a probe to hit a target. The advantage of this approach is that a larger centre-of-mass energy can be achieved, allowing the discovery and the study of the Standard Model particles, such as the W and Z bosons as well as the Higgs boson. We will return on this topic at the end of the course.</p>
+</section>
+</section>
+<section id="nuclear-charge-distribution-and-form-factor">
+<h2><span class="section-number">2.5. </span>Nuclear charge distribution and form factor<a class="headerlink" href="#nuclear-charge-distribution-and-form-factor" title="Link to this heading">#</a></h2>
+<p>In the previous section we considered an interaction with a point-like charge. As we increase the momentum transfer of our collisions, we start observing the structure of a nucleus, so we need to drop the assumption that the nuclear charge is point-like. The situation of an electron interacting with a nucleus is shown in <a class="reference internal" href="#nuclearcharge"><span class="std std-numref">Fig. 2.4</span></a>.</p>
+<figure class="align-center" id="nuclearcharge">
+<a class="reference internal image-reference" href="_images/nuclearCharge.png"><img alt="Nucleus with charge distribution" src="_images/nuclearCharge.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Diagram showing the nuclear charge distribution (grey area). The potential calculated at a point <span class="math notranslate nohighlight">\(\vec{x}\)</span> in space is calculated by integrating over the charge distribution.</span><a class="headerlink" href="#nuclearcharge" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Here we make the assumption that the nuclear charge has a spatial distribution of</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+Z e \rho(\vec{r})
+\end{equation*}
+\]</div>
+<p>Note that we defined <span class="math notranslate nohighlight">\(\rho\)</span> as the charge probability density, which is a different definition from [Martin]. The symbol <span class="math notranslate nohighlight">\(\rho\)</span> is used in many places to indicate “density” quantities. When talking about form factor, we only use <span class="math notranslate nohighlight">\(\rho\)</span> to identify the charge probability density and is a quantity that is normalised to 1, such as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\int \rho(\vec{r}) d^{3} \mathbf{r}=1 
+\end{equation*}
+\]</div>
+<p>The potential at a generic point <span class="math notranslate nohighlight">\(\vec{x}\)</span> in space is indicated as <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> and to calculate it, we need to integrate over the charge distribution indicated in the grey area of <a class="reference internal" href="#nuclearcharge"><span class="std std-numref">Fig. 2.4</span></a>. Therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+U(\vec{x})=-\frac{Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{\rho(\vec{r})}{|\vec{x}-\vec{r}|} d^{3} \mathbf{r}
+\end{equation*}
+\]</div>
+<p>The Fourier transform <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> of equation <a class="reference internal" href="#equation-eq-fq2">(2.6)</a> is calculated by integrating the value of <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> over <span class="math notranslate nohighlight">\(d^{3} \mathbf{x}\)</span> leading to the double integral</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+f\left(\mathbf{q}^{2}\right) &amp; =\int e^{i \vec{q} \cdot \vec{x} / \hbar} U(\vec{x}) d^{3} \mathbf{x} \\
+&amp; =-\frac{Z e^{2}}{4 \pi \epsilon_{0}} \int e^{i \vec{q} \cdot \vec{x} / \hbar} \int \frac{\rho(\vec{r})}{|\vec{x}-\vec{r}|} d^{3} \mathbf{r}\, d^{3} \mathbf{x} 
+\end{align*}
+\end{split}\]</div>
+<p>To separate the two integrals we define <span class="math notranslate nohighlight">\(\vec{R}=\vec{x}-\vec{r}\)</span> and the integral is rewritten as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+f\left(\mathbf{q}^{2}\right)=-\frac{Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{e^{i \vec{q} \cdot \vec{R} / \hbar}}{|\vec{R}|} d^{3} \mathbf{R} \int e^{i \vec{q} \cdot \vec{r} / \hbar} \rho(\vec{r}) d^{3} \mathbf{r} 
+\end{equation*}
+\]</div>
+<p>In the first part of the integral we recognise the definition of <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> for a Coulomb potential as in equation <a class="reference internal" href="#equation-eq-fouriercoul">(2.8)</a> with <span class="math notranslate nohighlight">\(z=-1\)</span>, while the second part of the integral is now the Fourier transform of the charge definition that we define as the form factor <span class="math notranslate nohighlight">\(F\left(\mathbf{q}^{2}\right)\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+F\left(\mathbf{q}^{2}\right)=\int e^{i \vec{q} \cdot \vec{r} / \hbar} \rho(\vec{r}) d^{3} \mathbf{r} 
+\end{equation*}
+\]</div>
+<p>The cross-section of interaction between an electron and a charge with a spatial distribution <span class="math notranslate nohighlight">\(\rho(\vec{x})\)</span> can be obtained by substituting again into equation <a class="reference internal" href="#equation-eq-xsecformula">(2.7)</a> with the form factor modifying the point-like cross-section as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{d \sigma}{d \Omega}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Coulomb }} \times\left|F\left(\mathbf{q}^{2}\right)\right|^{2} 
+\end{equation*}
+\]</div>
+<p>In principle the measurement of the differential cross section can lead to a measurement of the form factor, and the inverse Fourier transform of the form factor can be used to measure the charge distribution. In practice, a functional behaviour of the charge distribution <span class="math notranslate nohighlight">\(\rho(r)\)</span> is assumed, and the parameters of the model are measured by fitting the prediction with experimental data.</p>
+<p>In most case the charge distribution has a spherical symmetry, so the formula for <span class="math notranslate nohighlight">\(F\left(\mathbf{q}^{2}\right)\)</span> can be simplified to eliminate the integrals on the angular coordinates. In this case we write</p>
+<div class="math notranslate nohighlight" id="equation-eq-fq2symm">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-eq-fq2symm" title="Link to this equation">#</a></span>\[
+\begin{equation*}
+F\left(\mathbf{q}^{2}\right)=\frac{4 \pi \hbar}{q} \int_{0}^{\infty} \rho(r) \sin \left(\frac{q r}{\hbar}\right) r d r 
+\end{equation*}
+\]</div>
+<p>It is important to notice that for small momentum transfer <span class="math notranslate nohighlight">\((q \approx 0)\)</span> the nuclear substructure is not visible by the probe, and hence we expect the form factor to be 1 in this limit, so the cross-section is that of a point-like charge.</p>
+<div class="admonition-example-2-3-form-factor-of-a-solid-sphere admonition">
+<p class="admonition-title">Example 2.3. Form factor of a solid sphere</p>
+<p>Assume a nucleus of charge <span class="math notranslate nohighlight">\(Ze\)</span> has the charged distributed inside a solid sphere of radius <span class="math notranslate nohighlight">\(a\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+&amp; \rho(r)=C \text { for } r \leq a \\
+&amp; \rho(r)=0 \text { for } r&gt;a
+\end{aligned}
+\end{split}\]</div>
+<p>Evaluate <span class="math notranslate nohighlight">\(F\left(\mathbf{q}^{2}\right)\)</span></p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First we need to evaluate the constant <span class="math notranslate nohighlight">\(C\)</span> to ensure the distribution is normalised correctly, this is done by setting</p>
+<div class="math notranslate nohighlight">
+\[
+\int \rho(r) d^{3} \mathbf{r}=1
+\]</div>
+<p class="sd-card-text">Since the density is constant inside a sphere of radius <span class="math notranslate nohighlight">\(a\)</span>, the integral will be simply the volume of a sphere of radius <span class="math notranslate nohighlight">\(a\)</span> multiplied by the constant <span class="math notranslate nohighlight">\(C\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+C \frac{4 \pi}{3} a^{3}=1 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">so for <span class="math notranslate nohighlight">\(r&lt;a\)</span> the density is</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\rho(r)=\frac{3}{4 \pi a^{3}} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">As the next step we evaluate the form factor using the formula in equation <a class="reference internal" href="#equation-eq-fq2symm">(2.10)</a></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+F\left(\mathbf{q}^{2}\right)=\frac{4 \pi \hbar}{q} \frac{3}{4 \pi a^{3}} \int_{0}^{a} r \sin \frac{q r}{\hbar} d r 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">where the integral is zero for <span class="math notranslate nohighlight">\(r&gt;a\)</span>. If we change variable to <span class="math notranslate nohighlight">\(z=\frac{q r}{\hbar}\)</span> this gives</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+r=\frac{z \hbar}{q} \quad d r=\frac{\hbar}{q} d z 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">Substituting and defining <span class="math notranslate nohighlight">\(b=\frac{q a}{\hbar}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+F\left(\mathbf{q}^{2}\right)=3 b^{-3} \int_{0}^{b} z \sin z d z 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">which integrating by parts give</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+F\left(\mathbf{q}^{2}\right)=3 b^{-3}(\sin b-b \cos b) 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">The graph for this distribution is shown in <a class="reference internal" href="#solidff"><span class="std std-numref">Fig. 2.5</span></a>. The cross-section is proportional to the square of the form factor and will therefore exhibit a “oscillation” behaviour which is observed in real data (see for instance Fig 2.5 of [Martin]). By measuring this oscillation behaviour and identifying the points where the cross section is at a minimum we can measure the nuclear radius. (More discussion of this next semester in your nuclear physics course).</p>
+<figure class="align-center" id="solidff">
+<a class="reference internal image-reference" href="_images/solidFF.png"><img alt="Form factor of a solid sphere" src="_images/solidFF.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Graph of the form factor for a uniform charge distribution inside a sphere or radius <span class="math notranslate nohighlight">\(a\)</span>.</span><a class="headerlink" href="#solidff" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text">For low momentum transfer interactions, it can be shown that</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\lim _{b \rightarrow 0} 3 b^{-3}(\sin b-b \cos b)=1 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">as expected. To give a physical interpretation we see that <span class="math notranslate nohighlight">\(b \ll 1\)</span> corresponds to</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+a \ll \frac{\hbar}{q}=2 \pi \frac{h}{q}=2 \pi \lambda 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(\lambda\)</span> is the De Broglie wavelength associated to the momentum transfer. That is to say that if the wavelength is larger than the nuclear size, the cross section observed is that of a point-like scatter centre.</p>
+</div>
+</details></section>
+<section id="summary-of-approximations-made">
+<h2><span class="section-number">2.6. </span>Summary of approximations made<a class="headerlink" href="#summary-of-approximations-made" title="Link to this heading">#</a></h2>
+<p>In deriving the form factor and the Coulomb interactions between an electron and a nucleus we made a few approximations, some were explicitly mentioned some were not. Removing each of the approximations will complicate the equations that we wrote. While this is possible, we will not pursue this here as it does not add to the understanding of the physics involved. The approximations are summarised as:</p>
+<ul class="simple">
+<li><p>The scattering is elastic. Which means that the target and probe particle remain the same before and after the collision. This is like a game of snooker, assuming no energy is transferred to the balls in the form of heat (and that the balls do not crack!);</p></li>
+<li><p>We used the “Born approximation”. This assumes that a single scattering occurs, and that the initial and final state electrons can be described by plane waves;</p></li>
+<li><p>We neglected the spin of the particles. In the case of an electron scattering, the electron has spin <span class="math notranslate nohighlight">\(\hbar / 2\)</span> and the Rutherford cross-section needs to be modified to take into account additional final states due to the spins involved. This would lead to the Mott cross section formula, which is what is normally used in nuclear physics;</p></li>
+<li><p>At higher energies, we can no longer neglect the recoil of the nucleus in the interaction. In practice, this can be done by replacing the value of <span class="math notranslate nohighlight">\(q^{2}\)</span> with the square of the four-momentum transfer. Although we will not prove it;</p></li>
+<li><p>At higher energy the interaction with the magnetic moment of the nucleus can no longer be neglected.</p></li>
+</ul>
+</section>
+<section id="further-reading">
+<h2><span class="section-number">2.7. </span>Further reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
+<p>Material for further reading can be found by accessing the textbooks from the “Resource List” in Blackboard. The material for this unit is taken from [Martin].</p>
+<ul class="simple">
+<li><p>The definition and explanation of the concept of cross section can be found on [Perkins] section 2.10 and section 1.6 of [Martin]</p></li>
+<li><p>A review of the Fermi golden rule and of the density of states can be found in Appendix A of [Martin]</p></li>
+<li><p>A summary of the history of particle physics can be found on [Dodd]</p></li>
+<li><p>A discussion on the nuclear shape and form factor is in [Martin] section 2.2 (But note the different definition of <span class="math notranslate nohighlight">\(\rho\)</span> )</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="PHY304_2023_Unit1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Units and Special Relativity</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-sections">2.1. Cross sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-and-differential-cross-sections">2.2. Partial and differential cross sections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-spherical-coordinates-in-three-dimensions">2.2.1. Reminder: Spherical coordinates in three dimensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-and-matrix-elements">2.3. Scattering and matrix elements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-definitions">2.3.1. Scattering definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-golden-rule-and-matrix-element">2.3.2. Fermi golden rule and matrix element</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-states">2.3.3. Density of states</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-in-a-coulomb-potential">2.4. Elastic scattering in a Coulomb potential</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulomb-potential">2.4.1. Coulomb potential</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">2.4.2. Rutherford scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-scattering-on-a-nucleus">2.4.3. Electron scattering on a nucleus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-history">2.4.4. A bit of history</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-charge-distribution-and-form-factor">2.5. Nuclear charge distribution and form factor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-approximations-made">2.6. Summary of approximations made</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">2.7. Further reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Davide Costanzo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
