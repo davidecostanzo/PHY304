@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3 Fermions, bosons and interactions &#8212; PHY304. Particle Physics Lecture notes (2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notready/PHY304_2023_Unit3';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../PHY304_2023_Intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../PHY304_2023_Intro.html">
+                    PHY304: Particle Physics
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../PHY304_2023_Unit1.html">1. Units and Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PHY304_2023_Unit2.html">2. Scattering, cross sections and decays</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotready/PHY304_2023_Unit3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notready/PHY304_2023_Unit3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>3 Fermions, bosons and interactions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning objectives:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermions-and-bosons-statistics">3.1 Fermions and Bosons statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-particles-fermions">3.2 Fundamental particles (fermions)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-particles-bosons">3.3 Fundamental particles (bosons)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-yukawa-potential-and-interaction-range">3.4 The Yukawa potential and interaction range</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactions-and-fields">3.5 Interactions and fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feynman-diagrams">3.6 Feynman diagrams</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">3.7 Further reading</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="fermions-bosons-and-interactions">
+<h1>3 Fermions, bosons and interactions<a class="headerlink" href="#fermions-bosons-and-interactions" title="Link to this heading">#</a></h1>
+<section id="learning-objectives">
+<h2>Learning objectives:<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>understand the difference between fermions and bosons, and how they behave.</p></li>
+<li><p>be familiar with the consequences of boson exchange in the mediation of forces</p></li>
+</ul>
+<p>In this unit we introduce the elementary particles that make up the Standard Model of particle physics. We define their property using quantum mechanics, and how particles interact with each other by exchanging quanta of information (e.g. other particles).</p>
+<section id="fermions-and-bosons-statistics">
+<h3>3.1 Fermions and Bosons statistics<a class="headerlink" href="#fermions-and-bosons-statistics" title="Link to this heading">#</a></h3>
+<p>A multi-particle wave function for non-interacting (e.g. widely separated) particles can be written as the product of single particle functions. For instance, for a system of three particles</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\Psi(1,2,3)=c \Psi_{A}(1) \Psi_{B}(2) \Psi_{C}(3) \tag{96}
+\end{equation*}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(A, B, C\)</span> describe the quantum states and the numbers <span class="math notranslate nohighlight">\(1,2,3\)</span> are labels to identify each of the particles. (c is simply a normalisation constant.) All the observables are related to the square of the wave function <span class="math notranslate nohighlight">\(|\Psi|^{2}\)</span>.</p>
+<p>If we consider a number of identical, indistinguishable particles, then interchanging a pair of particles is unobservable, e.g.</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+|\Psi(1,2,3)|^{2}=|\Psi(2,1,3)|^{2} \tag{97}
+\end{equation*}
+\]</div>
+<p>In other words, if the three particles are identical, we can only state that we have a particle in state <span class="math notranslate nohighlight">\(|A\rangle\)</span>, one in state <span class="math notranslate nohighlight">\(\mid B&gt;\)</span> and one in state <span class="math notranslate nohighlight">\(\mid C&gt;\)</span> but we can not distinguish which one is in which state. In terms of wave function, this has two possible solutions</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; \Psi(1,2,3)=+\Psi(2,1,3)  \tag{98}\\
+&amp; \Psi(1,2,3)=-\Psi(2,1,3) \tag{99}
+\end{align*}
+\end{split}\]</div>
+<p>the total wavefunction can either remain the same or change sign when two identical particles are swapped.</p>
+<p>These two cases have important physical consequences. If two particles are in an identical quantum state <span class="math notranslate nohighlight">\(\mid A&gt;\)</span> then we can have either</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\Psi(1,2)=c \Psi_{A}(1) \Psi_{A}(2)=c \Psi_{A}(2) \Psi_{A}(1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\Psi(1,2)=c \Psi_{A}(1) \Psi_{A}(2)=-c \Psi_{A}(2) \Psi_{A}(1)\)</span></p></li>
+</ol>
+<p>The first case can be satisfied by any value of <span class="math notranslate nohighlight">\(c\)</span>, the second case is only satisfied if <span class="math notranslate nohighlight">\(c=0\)</span>, e.g. if the wavefunction is zero. Particles obeying the two conditions have completely different behaviours, as they can (or cannot) occupy the same quantum states</p>
+<ul class="simple">
+<li><p>Bosons have wavefunctions which are symmetric under the interchange of identical particles. They obey the Bose-Einstein statistics, showing constructive interference of identical single particle wavefunctions. Writing down a wavefunction which is guaranteed to be symmetric under the interchange of 1 and 2 we have</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\Psi=\frac{1}{\sqrt{2}}\left[\Psi_{A}(1) \Psi_{B}(2)+\Psi_{A}(2) \Psi_{B}(1)\right] \tag{100}
+\end{equation*}
+\]</div>
+<p>Bosons have integer spin, i.e. <span class="math notranslate nohighlight">\(0, \hbar, 2 \hbar, \ldots\)</span> And include particles such as the photon <span class="math notranslate nohighlight">\((\gamma)\)</span>, pios <span class="math notranslate nohighlight">\((\pi)\)</span> and other mesons. They include the quanta of fields, i.e. the carriers of forces <span class="math notranslate nohighlight">\(W^{ \pm}, Z\)</span>, gluon. Bosons can be created and destroyed in any number e.g.</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+e^{+}+e^{-} \rightarrow e^{+}+e^{-}+\gamma \tag{101}
+\end{equation*}
+\]</div>
+<p>Bosons can be their own antiparticles e.g. the neutral pion <span class="math notranslate nohighlight">\(\left(\pi^{0}\right)\)</span></p>
+<ul class="simple">
+<li><p>Fermions have wavefunctions which are antisymmetric under the interchange of identical particles. They obey the Fermi-Dirac statistics, showing destructive interference of identical single particle wavefunctions. In particular, no two identical fermions can occupy states with identical quantum numbers. The antisymmetric combination is</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\Psi=\frac{1}{\sqrt{2}}\left[\Psi_{A}(1) \Psi_{B}(2)-\Psi_{A}(2) \Psi_{B}(1)\right] \tag{102}
+\end{equation*}
+\]</div>
+<p>Fermions are particles with “half integer” spin, i.e. <span class="math notranslate nohighlight">\(\hbar / 2,3 \hbar / 2,5 \hbar / 2, \ldots\)</span> They include the constituent particles of matter such as the proton, neutron, electron, neutrino, quarks, among many others. For each particle, there is a distinct antiparticle, e.g.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{rll}
+e^{-} &amp; \longleftrightarrow &amp; e^{+} \\
+\nu_{e} &amp; \longleftrightarrow &amp; \bar{\nu}_{e} \\
+p &amp; \longleftrightarrow &amp; \bar{p} \\
+n &amp; \longleftrightarrow &amp; \bar{n}
+\end{array}
+\end{split}\]</div>
+<p>In particular the neutrino and antineutrino are both neutral, but different. Fermions obey conservation laws - they are only produced as fermion-antifermion pairs.</p>
+</section>
+<section id="fundamental-particles-fermions">
+<h3>3.2 Fundamental particles (fermions)<a class="headerlink" href="#fundamental-particles-fermions" title="Link to this heading">#</a></h3>
+<p>The fundamental fermions are leptons, which are electron-like particles, and the quarks. They all have spin <span class="math notranslate nohighlight">\(1 / 2\)</span> and are grouped in 3 families as shown in left columns in the picture at the front of your handbook.</p>
+<p>Leptons Each lepton family has an associated lepton number which is (as far as we know) absolutely conserved. The lepton number <span class="math notranslate nohighlight">\(L_{e}\)</span> is defined as +1 for particles and -1 for anti-particles for the first lepton family this is</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(L_{e}=1\)</span> for the electron <span class="math notranslate nohighlight">\(e^{-}\)</span>and the electron neutrino <span class="math notranslate nohighlight">\(\nu_{e}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(L_{e}=-1\)</span> for the positron <span class="math notranslate nohighlight">\(e^{+}\)</span>and the electron antineutrino <span class="math notranslate nohighlight">\(\bar{\nu}_{e}\)</span></p></li>
+</ul>
+<p>Each lepton generation has its own distinct lepton number, <span class="math notranslate nohighlight">\(L_{e}, L_{\mu}, L_{\tau}\)</span>. This is what makes the different neutrinos distinct, and forbids decays as <span class="math notranslate nohighlight">\(\mu^{-} \rightarrow e^{-} \gamma\)</span>.</p>
+<p>Charged leptons have increasing mass with the increasing family number: The mass of the electron is <span class="math notranslate nohighlight">\(0.511 \mathrm{MeV} / c^{2}\)</span>, the mass of the muon is <span class="math notranslate nohighlight">\(105.7 \mathrm{MeV} / c^{2}\)</span> and the mass of the tau is <span class="math notranslate nohighlight">\(1777 \mathrm{MeV} / c^{2}\)</span>. The neutral leptons (neutrinos) are known to have a mass, but the mass has not been directly measured yet. The measurement of the neutrino masses and their differences is a major research topic in particle physics.</p>
+<p>Quarks Similarly we have 3 families of quarks with a fractional charge of <span class="math notranslate nohighlight">\(+2 / 3\)</span> for the up, charm and top quarks and <span class="math notranslate nohighlight">\(-1 / 3\)</span> for the down, strange and bottom quarks. Quarks have antiparticles called antiquarks with opposite charge. Quarks do not exist in isolation, but always combine in groups of two or three to form hadrons. There are hundreds of known hadrons and we will learn how to classify them at the end of the semester. For now it is sufficient to know that particles made of a quark-antiquark pair are called a mesons and have integer spin, while particles made of a group of three quarks (or three antiquarks) are called baryons and have half-integer spin. Pions are examples of mesons (with spin 0 ) and the proton and the neutron are examples of baryons (with spin 1/2).</p>
+<p>The interaction of quarks from different families is allowed by the weak interaction, so there is only a global baryon number <span class="math notranslate nohighlight">\(B\)</span>. Quarks have <span class="math notranslate nohighlight">\(B=+1 / 3\)</span>, antiquarks have <span class="math notranslate nohighlight">\(B=-1 / 3\)</span>. For instance</p>
+<ul class="simple">
+<li><p>The proton is made of two <span class="math notranslate nohighlight">\(u\)</span>-quarks and one <span class="math notranslate nohighlight">\(d\)</span>-quark (uud) and has baryon number <span class="math notranslate nohighlight">\(B=1\)</span>. Likewise the neutron is made of <span class="math notranslate nohighlight">\(u d d\)</span> quarks and also has baryon number <span class="math notranslate nohighlight">\(B=1\)</span></p></li>
+<li><p>The antiproton is made of <span class="math notranslate nohighlight">\(\bar{u} \bar{u} \bar{d}\)</span> and has baryon number <span class="math notranslate nohighlight">\(B=-1\)</span>, similarly the antineutron has <span class="math notranslate nohighlight">\(B=-1\)</span></p></li>
+<li><p>The <span class="math notranslate nohighlight">\(\pi^{+}\)</span>is made of <span class="math notranslate nohighlight">\(u \bar{d}\)</span> and has <span class="math notranslate nohighlight">\(B=0\)</span>, similarly the <span class="math notranslate nohighlight">\(\pi^{-}\)</span>and <span class="math notranslate nohighlight">\(\pi^{0}\)</span> and all other mesons have <span class="math notranslate nohighlight">\(B=0\)</span></p></li>
+</ul>
+<p>Quarks have an additional quantum number, which is called “colour”, we will be discussing quarks and their property in a later section.</p>
+<p>Example 3.1. Example of allowed and forbidden decays</p>
+<p>Which of the following decays is allowed (or not) and why:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mu^{-} \rightarrow e^{-} \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu^{-} \rightarrow e^{-} \bar{\nu}_{e} \nu_{\mu}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^{+} \rightarrow \mu^{+} \nu_{\mu}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(p \rightarrow \pi^{+} \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^{+} \rightarrow \gamma \gamma\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^{0} \rightarrow \gamma \gamma\)</span></p></li>
+</ul>
+<p>・ <span class="math notranslate nohighlight">\(\pi^{+} \rightarrow \tau^{+} \nu_{\tau}\)</span></p>
+</section>
+</section>
+<section id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mu^{-} \rightarrow e^{-} \gamma\)</span> is not allowed. The muon and electron lepton numbers are NOT conserved</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu^{-} \rightarrow e^{-} \bar{\nu}_{e} \nu_{\mu}\)</span> is allowed. Muon and electron lepton numbers are conserved</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^{+} \rightarrow \mu^{+} \nu_{\mu}\)</span> is allowed. Muon number is conserved, baryon number of is zero</p></li>
+<li><p><span class="math notranslate nohighlight">\(p \rightarrow \pi^{+} \gamma\)</span> is not allowed. The baryon number is NOT conserved</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^{+} \rightarrow \gamma \gamma\)</span> is not allowed. Charge is NOT conserved</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^{0} \rightarrow \gamma \gamma\)</span> is allowed. There are no leptons and the baryon number is zero</p></li>
+<li><p><span class="math notranslate nohighlight">\(\pi^{+} \rightarrow \tau^{+} \nu_{\tau}\)</span> is not allowed. Energy is NOT conserved as the tau is heavier than the pion</p></li>
+</ul>
+<section id="fundamental-particles-bosons">
+<h3>3.3 Fundamental particles (bosons)<a class="headerlink" href="#fundamental-particles-bosons" title="Link to this heading">#</a></h3>
+<p>To complete the picture of the fundamental particles shown in the front page of the booklet, we should mention the gauge bosons as fundamental particles. Gauge bosons are carriers of fundamental forces and mediate interaction between other particles (and themselves in some cases). In particular</p>
+<ul class="simple">
+<li><p>The electromagnetic force is mediated by the photon, which is indicated with the symbol <span class="math notranslate nohighlight">\(\gamma\)</span> and has zero mass;</p></li>
+<li><p>The strong force is mediated by the gluon, indicated by <span class="math notranslate nohighlight">\(g\)</span>, also with zero mass. There are 8 different types of gluons characterised by different colour pairs;</p></li>
+<li><p>The electroweak force is mediated by the <span class="math notranslate nohighlight">\(Z^{0}\)</span> and <span class="math notranslate nohighlight">\(W^{ \pm}\)</span>bosons. These have a large mass and are charged (the <span class="math notranslate nohighlight">\(W\)</span> ) or neutral <span class="math notranslate nohighlight">\((Z)\)</span>.</p></li>
+</ul>
+<p>Finally, the Higgs boson plays a particular role in particle physics to provide mass to all the other particles.</p>
+<p>All the particles described in this section, and illustrated in the front page of the booklet, are the fundamental particles of the Standard Model of Particle Physics. Their role in shaping the world around us will be the main topic of this course!</p>
+</section>
+<section id="the-yukawa-potential-and-interaction-range">
+<h3>3.4 The Yukawa potential and interaction range<a class="headerlink" href="#the-yukawa-potential-and-interaction-range" title="Link to this heading">#</a></h3>
+<p>Interactions in physics are mediated by bosons, the familiar example is that of electromagnetic interactions that are mediated by the photon. Before we move on to classify the different interaction mechanisms in particle physics, we discuss how interactions potentials depend on the mass of the mediator.</p>
+<p>In Unit 2, we have considered interactions of particles with an electrostatic potential. This interaction is mediated by a massless photon. Here we derive the potential for interactions mediated by a massive particle, such as the <span class="math notranslate nohighlight">\(W\)</span> and <span class="math notranslate nohighlight">\(Z\)</span> boson that mediate the weak interactions, and we will show how different physics behaviour is expected. For a particle with mass, the relativistic equation <span class="math notranslate nohighlight">\(E^{2}=p^{2} c^{2}+m^{2} c^{4}\)</span> can be converted into a wave equation by the substitutions</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+E \rightarrow i \hbar \frac{\partial}{\partial t} ; \quad p_{x} \rightarrow-\frac{\partial}{\partial x} ; \quad p_{y} \rightarrow-\frac{\partial}{\partial y} ; \quad p_{z} \rightarrow-\frac{\partial}{\partial z} \tag{103}
+\end{equation*}
+\]</div>
+<p>Hence</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+-\hbar^{2} \frac{\partial^{2} \Psi}{\partial t^{2}}(\vec{x}, t)=\left(m^{2} c^{4}-\hbar^{2} c^{2} \nabla^{2}\right) \Psi(\vec{x}, t) \tag{104}
+\end{equation*}
+\]</div>
+<p>In the static, time independent case, this leads to</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\left(\nabla^{2}-\frac{m^{2} c^{2}}{\hbar^{2}}\right) \Psi(\vec{x}, t)=0 \tag{105}
+\end{equation*}
+\]</div>
+<p>(which in the case <span class="math notranslate nohighlight">\(m=0\)</span> leads to the differential equation for a static electromagnetic potential, as expected)</p>
+<p>The expression for the <span class="math notranslate nohighlight">\(\nabla^{2}\)</span> operator in spherical coordinates can be found in literature, as well as on the ancillary material of your exam papers. In the case of point source with spherical symmetry, with no dependency on the polar angles <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> the differential operator can be written as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\nabla^{2} \Psi(r)=\frac{1}{r} \frac{d^{2}}{d r^{2}}(r \Psi) \tag{106}
+\end{equation*}
+\]</div>
+<p>so the equation turns into</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{d^{2}}{d r^{2}}(r \Psi)=\frac{m^{2} c^{2}}{\hbar^{2}}(r \Psi) \tag{107}
+\end{equation*}
+\]</div>
+<p>with solution</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\Psi(r)=\frac{g^{2} e^{-r / R}}{r} \tag{108}
+\end{equation*}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(g\)</span> is a constant called the coupling strength and <span class="math notranslate nohighlight">\(R=\hbar / m c\)</span> is the range of the force. This is known as the Yukawa form of the potential and was originally introduced to describe the nuclear interaction between protons and neutrons due to pion exchange.</p>
+<p>Using this form of potential and the Born approximation in equation (64), after some manipulation (see Exercise A2), to a matrix element (for <span class="math notranslate nohighlight">\(V=1\)</span> ) given by</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\mathcal{M}_{f i}=\frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}} \tag{109}
+\end{equation*}
+\]</div>
+<p>It can be noted that for a massless propagator with <span class="math notranslate nohighlight">\(m=0\)</span>, we return to the situation for electromagnetism, where the range of the force <span class="math notranslate nohighlight">\(R \rightarrow \infty\)</span> and a crosssection proportional to <span class="math notranslate nohighlight">\(1 / q^{4}\)</span></p>
+<p>Example 3.2. Weak interactions range</p>
+<p>Calculate the range of the Weak force mediated by an exchange of a <span class="math notranslate nohighlight">\(W\)</span> boson of mass <span class="math notranslate nohighlight">\(80 \mathrm{GeV} / \mathrm{c}^{2}\)</span>.</p>
+</section>
+</section>
+<section id="id1">
+<h2>Solution<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>The range is given by the expression above:</p>
+<div class="math notranslate nohighlight">
+\[
+R=\frac{\hbar}{M c}=\frac{\hbar c}{M c^{2}}=\frac{0.2 \mathrm{GeV} \mathrm{fm}}{80 \mathrm{GeV}}=0.0025 \mathrm{fm}=2.5 \times 10^{-18} \mathrm{~m}
+\]</div>
+<p>Which is much shorter than a typical nuclear radius, which means that the weak force is “weak” at the distance scale of nuclear physics <span class="math notranslate nohighlight">\(\left(10^{-15} \mathrm{~m}\right)\)</span>.</p>
+<section id="interactions-and-fields">
+<h3>3.5 Interactions and fields<a class="headerlink" href="#interactions-and-fields" title="Link to this heading">#</a></h3>
+<p>Quantum field theory describes interactions at very small distances. The quantum nature of the interaction makes it necessary to abandon the continuous potential model, and we must regard the interaction as being propagated by individual quanta (bosons) which are specific to the type of interaction. (This is known as second quantisation).</p>
+<p>In modern field theories, we have the fundamental forces transmitted by the exchange of bosons (particles of spin <span class="math notranslate nohighlight">\(0,1,2, \ldots\)</span> ). Two basic types of fundamental
+field can occur - ones in which the fermions act as sources of the field and the bosons act simply as propagators, and ones in which both the fermions and the bosons themselves act as sources. An example of the former is electromagnetism, where electric charge (on an electron for example) is a source and the boson is the photon, which is neutral.</p>
+<p>The four fundamental forces are electromagnetism, the weak force responsible for nuclear beta decay, the strong (nuclear) force and gravity. Their properties are given in the table below.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Interaction</p></th>
+<th class="head text-center"><p>Source</p></th>
+<th class="head text-center"><p>Particle.</p></th>
+<th class="head text-center"><p>Spin</p></th>
+<th class="head text-center"><p>Mass <span class="math notranslate nohighlight">\((\mathrm{GeV})\)</span></p></th>
+<th class="head text-center"><p>Strength</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Strong</p></td>
+<td class="text-center"><p>“colour”</p></td>
+<td class="text-center"><p>Gluon <span class="math notranslate nohighlight">\((g)\)</span></p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(&lt;1\)</span> at <span class="math notranslate nohighlight">\(R&gt;10^{-15} \mathrm{~m}\)</span> <br> <span class="math notranslate nohighlight">\(\approx 1\)</span> at <span class="math notranslate nohighlight">\(R&lt;10^{-15} \mathrm{~m}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>E.M.</p></td>
+<td class="text-center"><p>Charge</p></td>
+<td class="text-center"><p>Photon <span class="math notranslate nohighlight">\((\gamma)\)</span></p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\approx 10^{-2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Weak</p></td>
+<td class="text-center"><p>Leptons <br> Quarks</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(W^{ \pm}\)</span>and <span class="math notranslate nohighlight">\(Z^{0}\)</span></p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(80-90\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\approx 10^{-13}\)</span> at <span class="math notranslate nohighlight">\(R=10^{-15} \mathrm{~m}\)</span> <br> <span class="math notranslate nohighlight">\(\approx 10^{-13}\)</span> at <span class="math notranslate nohighlight">\(R=10^{-18} \mathrm{~m}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Gravity</p></td>
+<td class="text-center"><p>Mass</p></td>
+<td class="text-center"><p>Graviton <span class="math notranslate nohighlight">\((G)\)</span></p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\approx 10^{-38}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Gravity is of great importance between macroscopic bodies (like us and the Earth) is too weak to play an important role between fundamental particles. We will only make one remark: that the spin of the graviton (2) is related to the fact that there is only positive mass, so dipole radiation is not a possibility.</p>
+<p>Weak has a short range of interaction, as we discussed when deriving the Yukawa potential. The interaction is only “weak” at a distance above <span class="math notranslate nohighlight">\(10^{-18} \mathrm{~m}\)</span> due to the mass of the force mediators, and at the nuclear scale this interactions is weaker than the strong interaction that keeps the hadrons together. The weak interaction is responsible for nuclear decays, however at very short distances, it is no weaker than electromagnetism. Note that all fermions (including neutrinos) experience the weak interaction.</p>
+<p>Electromagnetism is the everyday force responsible for chemistry, solid state physics, friction and the stability of atomic matter in general.</p>
+<p>Strong interaction was originally postulated to bind protons (and neutrons) together in nuclei against the large electromagnetic repulsion. We now know that this is a second-order effect similar to the Van der Waal’s (electromagnetic) force which binds neutral covalent molecules in solids. The strong interaction is responsible to bind the quarks together in hadrons due a “colour charge” which we will study later in the course. The colour has nothing to do with the normal colour of an object! And protons and neutrons are “colourless” quark combinations.</p>
+<p>In this course, we will examine three of the forces (excluding gravity) in some detail. However, we will first look at the general properties of interactions mediated by the exchange of bosons, before returning to each type of interaction in turn.</p>
+</section>
+<section id="feynman-diagrams">
+<h3>3.6 Feynman diagrams<a class="headerlink" href="#feynman-diagrams" title="Link to this heading">#</a></h3>
+<p>To represent the interaction of particles in quantum field theory we use Feynman diagrams. The theoretical foundation behind Feynman diagrams is beyond the scope of this course. These are simply seen as a graphical representation of the matrix elements, which can be calculated using mathematical rules. Feynman diagrams are drawn in a space-time cartesian graph, and arrows are drawn on fermion lines with particles propagating “forward” in time and anti-particles propagating “backwards” in time. We will use many Feynman diagrams in this course as they give a simple graphical representation of what would be a very complex mathematical description.</p>
+<p>As an example, fermion-fermion scattering can then be represented diagrammatically as shown in figure 7 (left). These diagrams have special space-time prop-</p>
+<p>Figure 7: Feynman diagrams representing the interaction between two fermions. The diagram on the left represents the scattering between two particles, while the diagram on the right represent the annihilation of a particle with its corresponding antiparticle.</p>
+<p>erties. If twisted or rotated they reveal intimately related processes, as shown in figure 7 (right). In this case, we must interpret a “fermion going backwards in time” as a normal antifermion. This diagram therefore shows a fermion-antifermion pair annihilating to produce a (virtual) boson, which then materialises as a new fermion-antifermion pair.</p>
+<p>You may notice that energy is not conserved at each of the vertexes represented in the diagram. The interaction happen over a short period of time, and the uncertainty on the energy exchanged in this time period obeys the Heisenberg principle <span class="math notranslate nohighlight">\(\Delta E \Delta t \approx \hbar\)</span>. However, it is important to point out that energy is conserved between the initial and final state.</p>
+<p>We will represent all the interactions between particles with the aid of Feynman diagrams, and introduce lines for each particle in the Standard Model. Each Feynman diagram is the graphical representation of a matrix element <span class="math notranslate nohighlight">\(\mathcal{M}_{f i}\)</span>, and the mathematical expression can be calculated using rules derived in quantum field theory. The matrix elements from diagrams corresponding to the same final state need to be added and then squared to calculate a cross section or a transition between initial and final states. We will not go into the mathematical details for the Feynman rules, and we will limit ourselves to understand the relative order of magnitude
+of each diagram. The exact calculation of Feynman diagram is the topic of a more advanced course in particle physics.</p>
+</section>
+<section id="further-reading">
+<h3>3.7 Further reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Interactions, Feynman diagrams and the Yukawa potential can be found in Sections 1.4 and 1.5 of [Martin]</p></li>
+<li><p>Fermions and bosons are discussed in [Perkins] Section 1.3</p></li>
+<li><p>Lepton and baryon numbers are discussed in [Perkins] Sections 1.7 and 1.8 and in [Martin] sections 3.1 and 3.2</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notready"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning objectives:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermions-and-bosons-statistics">3.1 Fermions and Bosons statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-particles-fermions">3.2 Fundamental particles (fermions)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamental-particles-bosons">3.3 Fundamental particles (bosons)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-yukawa-potential-and-interaction-range">3.4 The Yukawa potential and interaction range</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactions-and-fields">3.5 Interactions and fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feynman-diagrams">3.6 Feynman diagrams</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">3.7 Further reading</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Davide Costanzo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

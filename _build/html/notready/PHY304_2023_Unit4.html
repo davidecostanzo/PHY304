@@ -1,0 +1,659 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4 Quantum Electrodynamics &#8212; PHY304. Particle Physics Lecture notes (2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notready/PHY304_2023_Unit4';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../PHY304_2023_Intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="PHY304. Particle Physics Lecture notes (2024) - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../PHY304_2023_Intro.html">
+                    PHY304: Particle Physics
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../PHY304_2023_Unit1.html">1. Units and Special Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PHY304_2023_Unit2.html">2. Scattering, cross sections and decays</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotready/PHY304_2023_Unit4.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notready/PHY304_2023_Unit4.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>4 Quantum Electrodynamics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electromagnetic-interactions">4.1 Electromagnetic interactions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charged-particles-precession-in-a-magnetic-field-classical-treatment">4.2 Charged particles precession in a magnetic field - Classical treatment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-field-treatment-of-a-particle-with-spin">4.3 Quantum field treatment of a particle with spin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-measurement-of-g-2">4.4 Experimental measurement of g-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-material">4.5 Further material</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quantum-electrodynamics">
+<h1>4 Quantum Electrodynamics<a class="headerlink" href="#quantum-electrodynamics" title="Link to this heading">#</a></h1>
+<p>Learning objectives: Know the characteristics of the electromagnetic, strong and weak interactions.</p>
+<section id="electromagnetic-interactions">
+<h2>4.1 Electromagnetic interactions<a class="headerlink" href="#electromagnetic-interactions" title="Link to this heading">#</a></h2>
+<p>The electromagnetic interactions follow the rules of Quantum ElectroDynamics or QED. In the model of interactions we have proposed, charged particles interact by emitting and absorbing virtual photons. We now examine the possibility of observing consequences of this which are not predicted by standard quantum mechanics. Our model of an electron interacting with an external electromagnetic field involves the electron absorbing a virtual photon, and thus changing its momentum. However, other interactions can occur, which can only be explained in the realm of quantum field theory. For example, an electron of momentum <span class="math notranslate nohighlight">\(p\)</span>, may emit a virtual photon of momentum <span class="math notranslate nohighlight">\(k\)</span>, and hence continue with a reduced momentum <span class="math notranslate nohighlight">\(p-k\)</span> until it reabsorbs the virtual photon. Similarly a photon of momentum <span class="math notranslate nohighlight">\(k\)</span> may convert into a virtual electron-positron pair, with the electron and positron sharing the original momentum, until the virtual pair recombine and produce the photon again. Indeed, more complicated cases may occur, involving combinations of emission of virtual photons and virtual pair productions. The word virtual is used to indicate that the phenomena are non measurable due to the Heisenberg principle.</p>
+<p>In quantum field theory, each vertex of a Feynman diagram is associated with a coupling strength, which is a non-dimensional quantity. In the case of QED, each coupling of a photon to a fermion line, known as a vertex, involves a factor <span class="math notranslate nohighlight">\(\sqrt{\alpha}\)</span> in the matrix element <span class="math notranslate nohighlight">\(\mathcal{M}_{f i}\)</span>, where <span class="math notranslate nohighlight">\(\alpha\)</span> is the fine structure constant defined as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\alpha=\frac{e^{2}}{4 \pi \epsilon_{0} \hbar c} \approx \frac{1}{137} \tag{110}
+\end{equation*}
+\]</div>
+<p>To show the types of electromagnetic interactions we refer to Fig. 2.1 of [Perkins], which is reproduced here in figure 8 for your convenience. The diagram in (a) represent the basic QED interaction vertex and has a <span class="math notranslate nohighlight">\(\mathcal{M}_{f i}\)</span> which is proportional to <span class="math notranslate nohighlight">\(\sqrt{\alpha}\)</span>. This interaction cannot proceed on its own as it is not allowed by energy conservation (in the electron rest frame a photon would be emitted and the electron retained!).</p>
+<p>A combination of more than one of these vertexes is needed to describe a physical process. Diagram (b) shows the QED interaction between two electrons via the exchange of a “virtual” photon. The matrix element for each of the vertexes is proportional to <span class="math notranslate nohighlight">\(\sqrt{\alpha}\)</span>, hence the matrix element <span class="math notranslate nohighlight">\(\mathcal{M}_{f i}\)</span> is proportional to <span class="math notranslate nohighlight">\(\alpha\)</span>. The virtual photon introduces a propagator factor (discussed in the previous section) proportional to <span class="math notranslate nohighlight">\(1 / q^{2}\)</span> ( <span class="math notranslate nohighlight">\(q\)</span> is the momentum transferred in the process, e.g. the momentum
+of the photon). So the matrix element is proportional to</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\mathcal{M}_{f i} \propto \frac{\alpha}{q^{2}} \tag{111}
+\end{equation*}
+\]</div>
+<p>And the cross section is then proportional to</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\sigma \propto\left|\mathcal{M}_{f i}\right|^{2} \propto \frac{\alpha^{2}}{q^{4}} \tag{112}
+\end{equation*}
+\]</div>
+<p>Which leads to the formula for the Rutherford scattering with a charge to the power of 4 at the numerator and the fourth power of the momentum transfer at the denominator. In the figure 8 , the factor <span class="math notranslate nohighlight">\(\alpha\)</span> associated to each vertex, refers to the square of the matrix element term, e.g. the factor that we get in the cross section formula.</p>
+<p>Diagram (c ) shows the diagrams for the interaction of an electron and a positron. Two different diagram, with a different time orientation, are needed to describe this process with (slightly) different calculations needed.</p>
+<p>Diagram (d) describes the phenomenon of Bremsstrahlung, which is the emission of a photon from an electron in interaction with a nuclear field. While diagram (e) shows how the process <span class="math notranslate nohighlight">\(\gamma \rightarrow e^{+} e^{-}\)</span>that can take place in presence of a nuclear field. Note that neither process (d) or (e) are allowed in vacuum, and can only take place in the presence of an external nuclear field. As you can see in the diagram the external electric field of the nucleus interacts via the exchange of a photon.</p>
+<p>Diagrams under (f) represent self-interaction terms. These are characteristic of a quantum field theory and require a bit more discussion, which we will cover in the next section.</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-3.jpg?height=192&amp;width=346&amp;top_left_y=452&amp;top_left_x=501" /></p>
+<p>(a)
+<img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-3.jpg?height=238&amp;width=1009&amp;top_left_y=846&amp;top_left_x=501" /></p>
+<p>(c)
+<img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-3.jpg?height=367&amp;width=1109&amp;top_left_y=1276&amp;top_left_x=498" /></p>
+<p>(d)</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-3.jpg?height=386&amp;width=529&amp;top_left_y=1823&amp;top_left_x=501" /></p>
+<p>(e)</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-3.jpg?height=227&amp;width=364&amp;top_left_y=452&amp;top_left_x=1120" /></p>
+<p>(b)</p>
+<p><span class="math notranslate nohighlight">\(+\)</span></p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-3.jpg?height=332&amp;width=346&amp;top_left_y=1847&amp;top_left_x=1112" /></p>
+<p>(f)</p>
+<p>Figure 8: Example Feynman diagrams for the QED interactions.</p>
+</section>
+<section id="charged-particles-precession-in-a-magnetic-field-classical-treatment">
+<h2>4.2 Charged particles precession in a magnetic field - Classical treatment<a class="headerlink" href="#charged-particles-precession-in-a-magnetic-field-classical-treatment" title="Link to this heading">#</a></h2>
+<p>There are several properties which exhibit the quantum nature of the electromagnetic interaction. One of these is the magnetic moment of charged leptons, in particular the muon. We will see how QED can predict the magnetic momentum of a muon with a precision of about one part per million.</p>
+<p>Before we study the quantum phenomenon, let’s look at a spinning charged particle in a magnetic field and show how a precession is observed in classical electromagnetism. We consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> and charge <span class="math notranslate nohighlight">\(Q\)</span>, as shown in figure 9 . This particle spins around the <span class="math notranslate nohighlight">\(x\)</span>-axis and, as a consequence, will carry an angular momentum <span class="math notranslate nohighlight">\(\vec{L}\)</span>. Since the particle is charged, we have a charge distribution moving, and as a consequence a magnetic moment <span class="math notranslate nohighlight">\(\vec{\mu}\)</span>. Under the assumption that mass and charge are uniformly distributed, we can say that <span class="math notranslate nohighlight">\(\vec{\mu}\)</span> and <span class="math notranslate nohighlight">\(\vec{L}\)</span> are parallel and in the <span class="math notranslate nohighlight">\(x\)</span>-direction</p>
+<p>Figure 9: Spinning particle of mass <span class="math notranslate nohighlight">\(m\)</span> and charge <span class="math notranslate nohighlight">\(Q\)</span> in a magnetic field <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>In electromagnetism the ratio between the magnetic moment and the angular momentum is called the gyromagnetic ratio and it can be shown that</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\gamma_{\mathrm{gm}}=\frac{\mu}{L}=\frac{Q}{2 m} \tag{113}
+\end{equation*}
+\]</div>
+<p>We should stress that this result is valid in the non-quantum mechanical situation. The magnetic moment interacts with the magnetic field <span class="math notranslate nohighlight">\(\vec{B}\)</span> resulting in a torque given by</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\vec{\tau}=\vec{\mu} \times \vec{B} \tag{114}
+\end{equation*}
+\]</div>
+<p>in the configuration of figure 9 the torque points in the <span class="math notranslate nohighlight">\(y\)</span>-direction and is perpendicular to the angular momentum <span class="math notranslate nohighlight">\(\vec{L}\)</span>. Since the torque is equal to the derivative of the angular momentum, the angular momentum magnitude does not change, while its direction rotates. This results in a gyroscopic motion of the charge, similar to what is experienced in a mechanical gyroscope. The precession frequency of the gyroscope is given by</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\omega_{P}=\gamma_{\mathrm{gm}} B \tag{115}
+\end{equation*}
+\]</div>
+</section>
+<section id="quantum-field-treatment-of-a-particle-with-spin">
+<h2>4.3 Quantum field treatment of a particle with spin<a class="headerlink" href="#quantum-field-treatment-of-a-particle-with-spin" title="Link to this heading">#</a></h2>
+<p>In the quantum case, the equivalent of a particle rotating around its axis is the spin of the particle itself. The calculation of the gyromagnetic ratio needs to be done using the rules of QED and leads to</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\gamma_{\mathrm{gm}}=g \frac{\mu_{B}}{\hbar} \tag{116}
+\end{equation*}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mu_{B}=e \hbar / 2 m\)</span> is the Bohr magneton defined in your atomic physics course, and <span class="math notranslate nohighlight">\(g\)</span> is a constant that depends on the particle considered. You should note that for <span class="math notranslate nohighlight">\(g=1\)</span> we find the classical value calculated in the previous section.</p>
+<p>In the case of the charged leptons, the calculation of <span class="math notranslate nohighlight">\(g\)</span> is performed using QED rules. In the following we consider a <span class="math notranslate nohighlight">\(\mu^{+}\)</span>particle for simplicity, and we will show how the value calculated from theory compares with the experimental value. You may have seen in the news that is a measurement that is performed with ever increasing precision and is a field of current research.</p>
+<p>From a QED point of view, the muon interacts with the magnetic field through the exchange of a “quantum” of the field, a photon as in the diagram of figure 10 (a). The calculation of this diagram leads to <span class="math notranslate nohighlight">\(g=2\)</span> for electrons and muons. This leads to the precession frequency</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\omega_{P}=\gamma_{\mathrm{gm}} B=g \frac{e \hbar}{2 m} B=\frac{g}{2} \frac{e}{m} B \tag{117}
+\end{equation*}
+\]</div>
+<p>An experiment can be conducted putting in a magnetic field muons with a velocity <span class="math notranslate nohighlight">\(v\)</span>, polarised in a direction perpendicular to the field itself. The muons will travel along a circular trajectory in this magnetic field due to the Lorentz force with a rotation frequency of</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\omega_{R}=\frac{e}{m} B \tag{118}
+\end{equation*}
+\]</div>
+<p>In the case <span class="math notranslate nohighlight">\(g=2\)</span>, the two frequencies are the same, which means that the angle between the polarisation and the direction of travel of the muon remains constant. However the situation in QED is more complicated as other Feynman diagrams need to be calculated to take into account diagrams with more vertexes that the</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-6.jpg?height=432&amp;width=575&amp;top_left_y=429&amp;top_left_x=455" /></p>
+<p>(a)</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_214b32a8dadd50235b00g-6.jpg?height=447&amp;width=577&amp;top_left_y=419&amp;top_left_x=1182" /></p>
+<p>(b)</p>
+<p>Figure 10: Feynman diagrams for the interaction of a muon in a magnetic field. The diagram (a) corresponds to the leading order contribution, while (b) is a higher order contribution.</p>
+<p>original one. An example of such diagram is shown in 10 (b) with a closed loop on the bottom part of the diagram. Since this diagram has more vertexes, its contribution to the matrix element will be proportional to a higher power of the fine structure constant <span class="math notranslate nohighlight">\(\alpha\)</span> and will lead to a slight modification of the value of <span class="math notranslate nohighlight">\(g\)</span>, which is measured to be about <span class="math notranslate nohighlight">\(0.1 \%\)</span> larger than 2. A full QED calculation, involving thousands of diagrams gives a theoretical value of <span class="math notranslate nohighlight">\(g\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+g_{\mu}=2.0023318418(13) \tag{119}
+\end{equation*}
+\]</div>
+<p>With an uncertainty of one part per billion. A pretty precise number! And a great challenge for both experimental and theoretical physicists to achieve this level of precision in their measurement and calculations.</p>
+</section>
+<section id="experimental-measurement-of-g-2">
+<h2>4.4 Experimental measurement of g-2<a class="headerlink" href="#experimental-measurement-of-g-2" title="Link to this heading">#</a></h2>
+<p>A pioneering experiment to measure <span class="math notranslate nohighlight">\(\mathrm{g}-2\)</span> for the muon was performed by a team including the late Prof. Combley of this department <span class="math notranslate nohighlight">\({ }^{1}\)</span>. A polarised beam of muons was circulated in a circular orbit in a uniform magnetic field. The quantity measured is the deviation from 2 defined as</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+a=\frac{g-2}{2} \tag{120}
+\end{equation*}
+\]</div>
+<p>The actual polarisation of the muons was measured through their parity nonconserving weak decays, <span class="math notranslate nohighlight">\(\mu^{+} \rightarrow e^{+} \bar{\nu}_{\mu} \nu_{e}\)</span>. This process is mediated by a <span class="math notranslate nohighlight">\(W\)</span> boson (as will be discussed in the section of the course on weak interactions), and it can</p>
+<p><a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>0<span class="fn-bracket">]</span></a>easily be shown, by considering the helicities of the neutrino and antineutrino, that, in the rest frame of the <span class="math notranslate nohighlight">\(\mu^{+}\)</span>, the direction of decay of the <span class="math notranslate nohighlight">\(e^{+}\)</span>preferentially follows the direction of the muon’s spin. In the laboratory frame, the highest energy electrons have their decay momentum parallel to the muon’s momentum, and this information can be used to measure the spin of the muons before they decay. Exploiting these facts, the precession rate, and so the value of <span class="math notranslate nohighlight">\(a\)</span>, were measured.</p>
+<p>The results from the original 1981 experiment at CERN show an agreement of the experimental and theoretical value of <span class="math notranslate nohighlight">\(a\)</span> to a few part per million:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\text { Experimentally: } &amp; a=(1165924 \pm 9) \times 10^{-9} \\
+\text { QEDcalculation } &amp; a=(1165921 \pm 8) \times 10^{-9}
+\end{aligned}
+\end{split}\]</div>
+<p>In 2001, a similar experiment at Brookhaven compared more precise experimental results with better theoretical calculations - incorporating higher order Feynman diagrams - and tantalisingly found a 3 standard deviation discrepancy. This could be due to the existence of undiscovered particles beyond the standard model of particle physics. A third-generation experiment at Fermilab is ongoing in an attempt to elucidate the situation, having achieved a precision of 0.43 ppm . The size of the discrepancy got larger, however that called into question the validity of the theoretical calculations with different approaches from different groups obtaining different results. The investigation is still ongoing and is a current question if new physics is hiding behind a measurement with a precision better than a part per million.</p>
+</section>
+<section id="further-material">
+<h2>4.5 Further material<a class="headerlink" href="#further-material" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Interactions, Feynman diagrams and the Yukawa potential can be found in Sections 1.4 and 1.5 of [Martin];</p></li>
+<li><p>The whole QED topic is covered in sections 2.1, 2.2, 2.3, 2.4 and 2.5 of [Perkins]</p></li>
+<li><p>The g-2 measurement is discussed in [Perkins] Section 2.5</p></li>
+<li><p>A simplified explanation of the <span class="math notranslate nohighlight">\(g-2\)</span> experiment at Fermilab and its statistical implications can be found at the Fermilab web page <a class="reference external" href="https://muon-g2.fnal.gov/">https://muon-g2.fnal.gov/</a>. The seven minutes video linked in the webpage is particularly useful.</p></li>
+<li><p>A vintage (fun?) video from the 1960s at CERN explaining the first <span class="math notranslate nohighlight">\(g-2\)</span> experiment: <a class="reference external" href="https://www.youtube.com/watch?v=0bPV4HJrvlc">https://www.youtube.com/watch?v=0bPV4HJrvlc</a></p></li>
+</ul>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">0</a><span class="fn-bracket">]</span></span>
+<p><span class="math notranslate nohighlight">\({ }^{1}\)</span> The original paper is Phys. Rep. 68 (1981) 93-119.</p>
+<p>Available at <a class="reference external" href="http://cds.cern.ch/record/134110">http://cds.cern.ch/record/134110</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notready"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electromagnetic-interactions">4.1 Electromagnetic interactions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charged-particles-precession-in-a-magnetic-field-classical-treatment">4.2 Charged particles precession in a magnetic field - Classical treatment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-field-treatment-of-a-particle-with-spin">4.3 Quantum field treatment of a particle with spin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-measurement-of-g-2">4.4 Experimental measurement of g-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-material">4.5 Further material</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Davide Costanzo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
