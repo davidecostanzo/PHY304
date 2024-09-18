@@ -3,7 +3,7 @@
 Lecture notes for the adademic year 2024/25 <br>
 by Davide Costanzo<br>Department of Physics, University of Sheffield
 
-V1.0: 28 June 2024, Sheffield, UK
+V1.1: 28 June 2024, Sheffield, UK
 
 ```{image} SMtable.png
 :alt: The table of Standard Model particles
