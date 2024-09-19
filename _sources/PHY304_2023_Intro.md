@@ -70,20 +70,17 @@ A list of recommended books is also available on Blackboard via the "Resources L
 ## Assessment
 
 The final grade is made of two components:
-- 3 homeworks ( $5 \%$ each for a total of $15 \%$ )
+- 2 homeworks ( $7.5 \%$ each for a total of $15 \%$ )
 - One end-of-semester examination. (85\%)
 
 ### Homeworks
 
-The purpose of the the coursework exercises is to help with revision of the lecture material and to practice your problem solving skills. Three homeworks will be marked and returned, with comments following the timetable below. The total homework mark counts 15overall module mark.
-
-Three further exercises will be provided and will not be assessed, although they still form an important part of the course and should be attempted seriously. Solutions to these will be handed out two weeks after they are set.
+The purpose of the the coursework exercises is to help with revision of the lecture material and to practice your problem solving skills. Two homeworks will be marked and returned, with comments following the timetable below. The total homework mark counts 15 overall module mark.
 
 | Homework | Handed out | Submission deadline | Returned with feedback |
 | :---: | :---: | :---: | :---: |
 | HW1 | 7 October | 21 October | 4 November |
 | HW2 | 28 October | 11 November | 25 November |
-| HW3 | 2 December | 16 December | 22 December |
 
 **Late work**: Note that late work receives a penalty of $5 \%$ per working day, unless an extenuating circumstance form is submitted with the office. Late work is only accepted for a maximum of 5 working days after the deadline.
 
