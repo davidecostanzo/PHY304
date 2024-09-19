@@ -70,8 +70,8 @@ A list of recommended books is also available on Blackboard via the "Resources L
 ## Assessment
 
 The final grade is made of two components:
-- 2 homeworks ( $7.5 \%$ each for a total of $15 \%$ )
-- One end-of-semester examination. (85\%)
+- 2 homeworks ( 7.5 \% each for a total of 15 \% )
+- One end-of-semester examination. (85 \%)
 
 ### Homeworks
 
@@ -79,8 +79,8 @@ The purpose of the the coursework exercises is to help with revision of the lect
 
 | Homework | Handed out | Submission deadline | Returned with feedback |
 | :---: | :---: | :---: | :---: |
-| HW1 | 7 October | 21 October | 4 November |
-| HW2 | 28 October | 11 November | 25 November |
+| HW1 (Unit 1) | 7 October | 21 October | 4 November |
+| HW2 (Units 2, 3, 4) | 28 October | 11 November | 25 November |
 
 **Late work**: Note that late work receives a penalty of $5 \%$ per working day, unless an extenuating circumstance form is submitted with the office. Late work is only accepted for a maximum of 5 working days after the deadline.
 
@@ -90,9 +90,9 @@ There will also be 3 unassessed exercises, with solutions provided 2 weeks later
 
 | Exercise | Handed out | Solutions provided |
 | :---: | :---: | :---: |
-| Exercise A | 14 October | 28 October |
-| Exercise B | 17 November | 2 December |
-| Exercise C | 8 December | 8 December |
+| Exercise A (Unit 2) | 14 October | 28 October |
+| Exercise B (Units 2, 5)| 17 November | 2 December |
+| Exercise C (mock paper) | 8 December | 22 December |
 
 ## Table of contents
 
