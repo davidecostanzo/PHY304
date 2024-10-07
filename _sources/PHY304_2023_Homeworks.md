@@ -10,13 +10,13 @@ In this unit we introduce the elementary particles of the Standard Model, we int
 ## Homework 1. Due on 21 October
 This homework will assess Unit 1 and is made of two questions on relativistic kinematics. 
 
-### Question 1. Two body decay (5 marks)
+### Question 1. Two body decay (4 marks)
 Consider the decay $\pi^+ \rightarrow \mu^+ \nu_\mu$ in the pion rest frame. Evaluate the energy of the muon in the pion rest frame.
 
 \[Mass of the pion ($\pi^+$) is 139.6 MeV/$^2$, mass of the muon ($\mu^+$) is 105.7 MeV/c$^2$, and the neutrino ($\nu_\mu$) is masseless \]
 
 
-### Question 2. Production of a a new particle (5 marks)
+### Question 2. Production of a a new particle (6 marks)
 Electrons of energy 4.00 GeV are incident upon stationary target protons and a search is made for neutral particles $Q^0$ produced in the reaction
 
 $$e^- + p \rightarrow e^- + p + Q^0$$
