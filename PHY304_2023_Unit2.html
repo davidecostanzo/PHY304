@@ -188,7 +188,8 @@
 <li class="toctree-l1"><a class="reference internal" href="PHY304_2023_Unit4.html">4. Quantum Electrodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PHY304_2023_Unit5.html">5. Quantum Chromodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PHY304_2023_Unit6.html">6. Weak interactions and invariance principles</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="PHY304_2023_Unit7.html">7. Quark bound states.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PHY304_2023_Homeworks.html">8. Homeworks and formative assessments</a></li>
 </ul>
 
     </div>
@@ -384,26 +385,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-sections">2.1. Cross sections</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-spherical-coordinates-in-three-dimensions">2.1.1. Reminder: Spherical coordinates in three dimensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-sections">2.1. Cross sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-and-differential-cross-sections">2.2. Partial and differential cross sections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-spherical-coordinates-in-three-dimensions">2.2.1. Reminder: Spherical coordinates in three dimensions</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-and-matrix-elements">2.2. Scattering and matrix elements</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-definitions">2.2.1. Scattering definitions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-golden-rule-and-matrix-element">2.2.2. Fermi golden rule and matrix element</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-states">2.2.3. Density of states</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-and-matrix-elements">2.3. Scattering and matrix elements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-definitions">2.3.1. Scattering definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-golden-rule-and-matrix-element">2.3.2. Fermi golden rule and matrix element</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-states">2.3.3. Density of states</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-in-a-coulomb-potential">2.3. Elastic scattering in a Coulomb potential</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulomb-potential">2.3.1. Coulomb potential</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">2.3.2. Rutherford scattering</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-scattering-on-a-nucleus">2.3.3. Electron scattering on a nucleus</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-history">2.3.4. A bit of history</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-in-a-coulomb-potential">2.4. Elastic scattering in a Coulomb potential</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulomb-potential">2.4.1. Coulomb potential</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">2.4.2. Rutherford scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-scattering-on-a-nucleus">2.4.3. Electron scattering on a nucleus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-history">2.4.4. A bit of history</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-charge-distribution-and-form-factor">2.4. Nuclear charge distribution and form factor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-approximations-made">2.5. Summary of approximations made</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">2.6. Further reading</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-charge-distribution-and-form-factor">2.5. Nuclear charge distribution and form factor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-approximations-made">2.6. Summary of approximations made</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">2.7. Further reading</a></li>
 </ul>
             </nav>
         </div>
@@ -440,28 +442,28 @@ W_{r}=J N \sigma_{r}
 <p class="admonition-title">Example 2.1. Alpha particle cross sections on gold.</p>
 <p>A gold atom has a nuclear radius of 7 fm . Calculate its geometrical cross section. Compare with the measured cross sections for alpha particles of kinetic energy of 6 MeV scattering above <span class="math notranslate nohighlight">\(30^{\circ}\)</span>, which is 157.3 b .</p>
 </div>
-<p>The geometrical cross section is simply <span class="math notranslate nohighlight">\(\pi R^{2}=154 \times 10^{-30} \mathrm{~m}^{2}=1.54 \mathrm{~b}\)</span></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-##  Partial and differential cross sections
-
-In most cases there are several possible reactions between the incident and target particles, and the cross-section for each will be different. These individual crosssections are known as partial cross-sections, and their overall sum is the total crosssection. If $r$ indicates a specific interaction process, then the total cross section is written as
-
-$$
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The geometrical cross section is simply <span class="math notranslate nohighlight">\(\pi R^{2}=154 \times 10^{-30} \mathrm{~m}^{2}=1.54 \mathrm{~b}\)</span></p>
+</div>
+</details></section>
+<section id="partial-and-differential-cross-sections">
+<h2><span class="section-number">2.2. </span>Partial and differential cross sections<a class="headerlink" href="#partial-and-differential-cross-sections" title="Link to this heading">#</a></h2>
+<p>In most cases there are several possible reactions between the incident and target particles, and the cross-section for each will be different. These individual crosssections are known as partial cross-sections, and their overall sum is the total crosssection. If <span class="math notranslate nohighlight">\(r\)</span> indicates a specific interaction process, then the total cross section is written as</p>
+<div class="math notranslate nohighlight">
+\[
 \begin{equation}
 \sigma=\sum_{r} \sigma_{r} 
 \end{equation}
-$$
-
-After a reaction or scattering has occurred the outgoing particles often have an anisotropic distribution, with different rates observed in different angular directions as sketched in figure {numref}`diffXsec`. 
-
-```{figure} diffXsec.png
-:alt: Schematic of cross section
-:name: diffXsec
-:width: 800px
-:align: center
-Diagram showing the dependence of the cross-section as a function of the angle $\theta$ and $\phi$ in polar coordinated.
-</pre></div>
-</div>
+\]</div>
+<p>After a reaction or scattering has occurred the outgoing particles often have an anisotropic distribution, with different rates observed in different angular directions as sketched in figure <a class="reference internal" href="#diffxsec"><span class="std std-numref">Fig. 2.2</span></a>.</p>
+<figure class="align-center" id="diffxsec">
+<a class="reference internal image-reference" href="_images/diffXsec.png"><img alt="Schematic of cross section" src="_images/diffXsec.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Diagram showing the dependence of the cross-section as a function of the angle <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> in polar coordinated.</span><a class="headerlink" href="#diffxsec" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The observation of the interaction rate as a function of the scattering angles <span class="math notranslate nohighlight">\((\theta, \phi)\)</span> is used to measure a differential cross section. Then the number of particles scattered per second into the solid angle <span class="math notranslate nohighlight">\(d \Omega\)</span> at coordinates <span class="math notranslate nohighlight">\((\theta, \phi)\)</span> with respect to the incoming beam is written as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -485,14 +487,14 @@ d W_{r}(\theta, \phi)=J N \frac{d \sigma_{r}}{d \Omega}(\theta, \phi) d \Omega
 \end{equation*}
 \]</div>
 <section id="reminder-spherical-coordinates-in-three-dimensions">
-<span id="sec-spherical"></span><h3><span class="section-number">2.1.1. </span>Reminder: Spherical coordinates in three dimensions<a class="headerlink" href="#reminder-spherical-coordinates-in-three-dimensions" title="Link to this heading">#</a></h3>
+<span id="sec-spherical"></span><h3><span class="section-number">2.2.1. </span>Reminder: Spherical coordinates in three dimensions<a class="headerlink" href="#reminder-spherical-coordinates-in-three-dimensions" title="Link to this heading">#</a></h3>
 <p>Working with scattering and other particle interactions we use spherical coordinates in three dimensions. The choice is driven by the fact that processes happen in a specific point in space, such as the location of the target and the observation of a physics phenomenon depends on the location of the detectors in terms of angles.</p>
 <p>You have seen a similar set of coordinates being used in other situations where a central potential is considered, for instance in the treatment of the Schödinger equation for a central potential as in the hydrogen atom.</p>
-<p>As a reminder, cartesian coordinates are related to spherical coordinates by the transformations (see also figure <a class="reference internal" href="#sphericalcoord"><span class="std std-numref">Fig. 2.2</span></a>)</p>
+<p>As a reminder, cartesian coordinates are related to spherical coordinates by the transformations (see also figure <a class="reference internal" href="#sphericalcoord"><span class="std std-numref">Fig. 2.3</span></a>)</p>
 <figure class="align-center" id="sphericalcoord">
 <a class="reference internal image-reference" href="_images/sphericalCoord.png"><img alt="Schematic of cross section" src="_images/sphericalCoord.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Diagram showing the spherical coordinates to be used to change coordinates from cartesian to spherical.</span><a class="headerlink" href="#sphericalcoord" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Diagram showing the spherical coordinates to be used to change coordinates from cartesian to spherical.</span><a class="headerlink" href="#sphericalcoord" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight">
@@ -584,10 +586,10 @@ J N &amp; =\frac{i}{2 e} \frac{\rho t}{M_{A}} N_{A}= \\
 </details></section>
 </section>
 <section id="scattering-and-matrix-elements">
-<h2><span class="section-number">2.2. </span>Scattering and matrix elements<a class="headerlink" href="#scattering-and-matrix-elements" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.3. </span>Scattering and matrix elements<a class="headerlink" href="#scattering-and-matrix-elements" title="Link to this heading">#</a></h2>
 <p>The goal of the mathematical formalism of the scattering is to decouple the quantities describing the experimental setup <span class="math notranslate nohighlight">\((J, N, \ldots)\)</span> from the fundamental physics that describes the interaction between particles. In this section, we first reorganise the formula for the flux in a more convenient way, we then relate the rate of interaction to the quantum mechanical theory that describe the fundamental interactions.</p>
 <section id="scattering-definitions">
-<h3><span class="section-number">2.2.1. </span>Scattering definitions<a class="headerlink" href="#scattering-definitions" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.3.1. </span>Scattering definitions<a class="headerlink" href="#scattering-definitions" title="Link to this heading">#</a></h3>
 <p>Consider the interaction of a beam of particles <span class="math notranslate nohighlight">\(b\)</span> with a target. Referring again to figure 2 , we indicate with <span class="math notranslate nohighlight">\(n_{b}\)</span> the particle density inside the beam, and with <span class="math notranslate nohighlight">\(v_{i}\)</span> the velocity of the beam particles. The number of beam particles that cross a surface of area <span class="math notranslate nohighlight">\(S\)</span> during a time <span class="math notranslate nohighlight">\(\Delta t\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -619,7 +621,7 @@ W=J \sigma=\frac{v_{i}}{V} \sigma
 \]</div>
 </section>
 <section id="fermi-golden-rule-and-matrix-element">
-<h3><span class="section-number">2.2.2. </span>Fermi golden rule and matrix element<a class="headerlink" href="#fermi-golden-rule-and-matrix-element" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.3.2. </span>Fermi golden rule and matrix element<a class="headerlink" href="#fermi-golden-rule-and-matrix-element" title="Link to this heading">#</a></h3>
 <p>The formula derived above provides a way to measure experimentally a differential cross section, by observing the rate of interactions at a given angle. To relate the rate to the physics principles governing the reaction, and hence the quantum mechanics phenomena under study, we need to use the Fermi golden rule.</p>
 <p>In quantum mechanics, the value of <span class="math notranslate nohighlight">\(W\)</span> is given by the product of the square of the matrix element <span class="math notranslate nohighlight">\(\mathcal{M}_{f i}\)</span> between the initial (i) and final (f) states and a density of final states factor <span class="math notranslate nohighlight">\(\rho\left(E_{f}\right)\)</span>. The matrix element contains all the dynamical features of the interaction such as its strength, energy dependence and angular distribution.</p>
 <div class="math notranslate nohighlight" id="equation-eq-fermigoldrule">
@@ -659,7 +661,7 @@ f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}
 \]</div>
 </section>
 <section id="density-of-states">
-<h3><span class="section-number">2.2.3. </span>Density of states<a class="headerlink" href="#density-of-states" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.3.3. </span>Density of states<a class="headerlink" href="#density-of-states" title="Link to this heading">#</a></h3>
 <p>In the Fermi golden rule the term <span class="math notranslate nohighlight">\(\rho\left(E_{f}\right)\)</span> is the density of final states or phase space factor. The rule applies to quantum mechanical systems where the final states allowed belong to a continuum of states. A transition is more likely to occur if the system has more allowed states into which it can move. For instance, a process where the differential cross section is dominated by the density of states factor is the nuclear beta decay, discussed in depth in the nuclear physics course. We give the expression for the density of states without proof as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -677,10 +679,10 @@ f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}
 </section>
 </section>
 <section id="elastic-scattering-in-a-coulomb-potential">
-<h2><span class="section-number">2.3. </span>Elastic scattering in a Coulomb potential<a class="headerlink" href="#elastic-scattering-in-a-coulomb-potential" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.4. </span>Elastic scattering in a Coulomb potential<a class="headerlink" href="#elastic-scattering-in-a-coulomb-potential" title="Link to this heading">#</a></h2>
 <p>Scattering particles is at the heart of particle physics as we probe smaller structures. In this section we consider the case where the interaction between the beam particle and the target particle is elastic. This means that the particles in the final state are the same as the particles in the initial state. This scattering regime is achieved for probes with energy <span class="math notranslate nohighlight">\(\leq 100\ \mathrm{MeV}\)</span>. As the beam energy increases the target can be excited or broken, and some of the initial energy can be used to produce “new” particles.</p>
 <section id="coulomb-potential">
-<h3><span class="section-number">2.3.1. </span>Coulomb potential<a class="headerlink" href="#coulomb-potential" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.4.1. </span>Coulomb potential<a class="headerlink" href="#coulomb-potential" title="Link to this heading">#</a></h3>
 <p>In the case of an electromagnetic interaction between a point-like nucleus of charge <span class="math notranslate nohighlight">\(Z e\)</span> and a particle of charge <span class="math notranslate nohighlight">\(z e\)</span>, the potential energy is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -702,7 +704,7 @@ f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{r}) / \hbar} \frac{1}{
 f\left(\mathbf{q}^{2}\right)=\frac{z Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{1}{r} e^{i(\vec{q} \cdot \vec{r}) / \hbar} e^{-\lambda r} d^{3} \mathbf{r} 
 \end{equation*}
 \]</div>
-<p>The integral is evaluated using polar coordinates as discussed in <a class="reference internal" href="#sec-spherical"><span class="std std-numref">Section 2.1.1</span></a>, since there is no explicit dependency on <span class="math notranslate nohighlight">\(\phi\)</span>, the integral in <span class="math notranslate nohighlight">\(d \phi\)</span> is trivially <span class="math notranslate nohighlight">\(2 \pi\)</span></p>
+<p>The integral is evaluated using polar coordinates as discussed in <a class="reference internal" href="#sec-spherical"><span class="std std-numref">Section 2.2.1</span></a>, since there is no explicit dependency on <span class="math notranslate nohighlight">\(\phi\)</span>, the integral in <span class="math notranslate nohighlight">\(d \phi\)</span> is trivially <span class="math notranslate nohighlight">\(2 \pi\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -743,7 +745,7 @@ f\left(\mathbf{q}^{2}\right)=\frac{z Z e^{2}}{2 \epsilon_{0}} \frac{\hbar}{i q}\
 \]</div>
 </section>
 <section id="rutherford-scattering">
-<h3><span class="section-number">2.3.2. </span>Rutherford scattering<a class="headerlink" href="#rutherford-scattering" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.4.2. </span>Rutherford scattering<a class="headerlink" href="#rutherford-scattering" title="Link to this heading">#</a></h3>
 <p>In the case of the “traditional” Rutherford scattering, we use an alpha-particle as a probe. In this case <span class="math notranslate nohighlight">\(z=2\)</span> and we can assume to be in a non-relativistic regime, with <span class="math notranslate nohighlight">\(v_{i}=v_{f} \ll c\)</span>, which means the kinetic energy of the alpha particle is much smaller than its mass <span class="math notranslate nohighlight">\(\left(m_{\alpha} c^{2} \approx 4 \mathrm{GeV}\right)\)</span>. Under this approximation the nuclear target does not move and the magnitude of the momentum and of the velocity of the alphaparticle do not change with the collision and can be expressed as a function of the kinetic energy <span class="math notranslate nohighlight">\(\left(E_{K}\right)\)</span></p>
 <div class="math notranslate nohighlight">
 \[
@@ -768,7 +770,7 @@ q &amp; =2 p \sin \theta / 2
 \]</div>
 </section>
 <section id="electron-scattering-on-a-nucleus">
-<h3><span class="section-number">2.3.3. </span>Electron scattering on a nucleus<a class="headerlink" href="#electron-scattering-on-a-nucleus" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.4.3. </span>Electron scattering on a nucleus<a class="headerlink" href="#electron-scattering-on-a-nucleus" title="Link to this heading">#</a></h3>
 <p>In the situation when an electron is used as a probe, we can normally assume that the electron will be “ultra-relativistic”, which means <span class="math notranslate nohighlight">\(E \gg m c^{2}\)</span>. This is because the mass of the electron is very small <span class="math notranslate nohighlight">\(\left(m c^{2}=0.511\ \mathrm{MeV}\right)\)</span>, so an electron with an energy of a few tens of MeV will already be in this ultra-relativistic approximation. In this case the momentum of the electron is related to its energy as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -786,19 +788,19 @@ p_{i}=p_{f}=E / c \quad ; \quad  v_{i}=v_{f} \approx c
 <p>The scattering of electrons on nuclei is a technique used to study the properties of nuclei, as we will see in the next section.</p>
 </section>
 <section id="a-bit-of-history">
-<h3><span class="section-number">2.3.4. </span>A bit of history<a class="headerlink" href="#a-bit-of-history" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">2.4.4. </span>A bit of history<a class="headerlink" href="#a-bit-of-history" title="Link to this heading">#</a></h3>
 <p>The Geiger Marsden experiment, and the Rutherford scattering are well celebrated and important results, which confirmed the atomic structure, with a central charge (the nucleus) surrounded by a cloud of electrons. This was done in 1908, and as we saw earlier the alpha particles did not have sufficient energy to study the structure of the nucleus. Hence the nucleus is considered as a point-like object. To study the structure of the nucleus, shorter De Broglie wavelengths are needed, e.g. particles with higher energy need to be used as a probe. In the 1950s electron beams in the <span class="math notranslate nohighlight">\(&gt;10 \mathrm{MeV}\)</span> range became available, and the nuclear structure could be probed. We will discuss how electron scattering can be used to study the structure of a nucleus in the next section of this unit.</p>
 <p>With advancing technology the energy of particles being produced kept increasing, and the scattering is no longer elastic, as it led to nuclear excitations and the production of new particles. The 1950s and 1960s saw a lot of new particles being discovered, which we will study and classify based on the quark model towards the end of the course.</p>
 <p>In the 1970s with the use of very high energy electron beams (20 GeV) the structure of the proton could be further studied, showing a substructure for the proton, which is made of quarks. As of today, quarks are still elementary particles, which means that they behave as point-like targets. In the past few decades, particles are collided head on, rather than using a probe to hit a target. The advantage of this approach is that a larger centre-of-mass energy can be achieved, allowing the discovery and the study of the Standard Model particles, such as the W and Z bosons as well as the Higgs boson. We will return on this topic at the end of the course.</p>
 </section>
 </section>
 <section id="nuclear-charge-distribution-and-form-factor">
-<h2><span class="section-number">2.4. </span>Nuclear charge distribution and form factor<a class="headerlink" href="#nuclear-charge-distribution-and-form-factor" title="Link to this heading">#</a></h2>
-<p>In the previous section we considered an interaction with a point-like charge. As we increase the momentum transfer of our collisions, we start observing the structure of a nucleus, so we need to drop the assumption that the nuclear charge is point-like. The situation of an electron interacting with a nucleus is shown in <a class="reference internal" href="#nuclearcharge"><span class="std std-numref">Fig. 2.3</span></a>.</p>
+<h2><span class="section-number">2.5. </span>Nuclear charge distribution and form factor<a class="headerlink" href="#nuclear-charge-distribution-and-form-factor" title="Link to this heading">#</a></h2>
+<p>In the previous section we considered an interaction with a point-like charge. As we increase the momentum transfer of our collisions, we start observing the structure of a nucleus, so we need to drop the assumption that the nuclear charge is point-like. The situation of an electron interacting with a nucleus is shown in <a class="reference internal" href="#nuclearcharge"><span class="std std-numref">Fig. 2.4</span></a>.</p>
 <figure class="align-center" id="nuclearcharge">
 <a class="reference internal image-reference" href="_images/nuclearCharge.png"><img alt="Nucleus with charge distribution" src="_images/nuclearCharge.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Diagram showing the nuclear charge distribution (grey area). The potential calculated at a point <span class="math notranslate nohighlight">\(\vec{x}\)</span> in space is calculated by integrating over the charge distribution.</span><a class="headerlink" href="#nuclearcharge" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Diagram showing the nuclear charge distribution (grey area). The potential calculated at a point <span class="math notranslate nohighlight">\(\vec{x}\)</span> in space is calculated by integrating over the charge distribution.</span><a class="headerlink" href="#nuclearcharge" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Here we make the assumption that the nuclear charge has a spatial distribution of</p>
@@ -815,7 +817,7 @@ Z e \rho(\vec{r})
 \int \rho(\vec{r}) d^{3} \mathbf{r}=1 
 \end{equation*}
 \]</div>
-<p>The potential at a generic point <span class="math notranslate nohighlight">\(\vec{x}\)</span> in space is indicated as <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> and to calculate it, we need to integrate over the charge distribution indicated in the grey area of <a class="reference internal" href="#nuclearcharge"><span class="std std-numref">Fig. 2.3</span></a>. Therefore</p>
+<p>The potential at a generic point <span class="math notranslate nohighlight">\(\vec{x}\)</span> in space is indicated as <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> and to calculate it, we need to integrate over the charge distribution indicated in the grey area of <a class="reference internal" href="#nuclearcharge"><span class="std std-numref">Fig. 2.4</span></a>. Therefore</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
@@ -922,11 +924,11 @@ F\left(\mathbf{q}^{2}\right)=3 b^{-3} \int_{0}^{b} z \sin z d z
 F\left(\mathbf{q}^{2}\right)=3 b^{-3}(\sin b-b \cos b) 
 \end{equation*}
 \]</div>
-<p class="sd-card-text">The graph for this distribution is shown in <a class="reference internal" href="#solidff"><span class="std std-numref">Fig. 2.4</span></a>. The cross-section is proportional to the square of the form factor and will therefore exhibit a “oscillation” behaviour which is observed in real data (see for instance Fig 2.5 of [Martin]). By measuring this oscillation behaviour and identifying the points where the cross section is at a minimum we can measure the nuclear radius. (More discussion of this next semester in your nuclear physics course).</p>
+<p class="sd-card-text">The graph for this distribution is shown in <a class="reference internal" href="#solidff"><span class="std std-numref">Fig. 2.5</span></a>. The cross-section is proportional to the square of the form factor and will therefore exhibit a “oscillation” behaviour which is observed in real data (see for instance Fig 2.5 of [Martin]). By measuring this oscillation behaviour and identifying the points where the cross section is at a minimum we can measure the nuclear radius. (More discussion of this next semester in your nuclear physics course).</p>
 <figure class="align-center" id="solidff">
 <a class="reference internal image-reference" href="_images/solidFF.png"><img alt="Form factor of a solid sphere" src="_images/solidFF.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Graph of the form factor for a uniform charge distribution inside a sphere or radius <span class="math notranslate nohighlight">\(a\)</span>.</span><a class="headerlink" href="#solidff" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Graph of the form factor for a uniform charge distribution inside a sphere or radius <span class="math notranslate nohighlight">\(a\)</span>.</span><a class="headerlink" href="#solidff" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p class="sd-card-text">For low momentum transfer interactions, it can be shown that</p>
@@ -947,7 +949,7 @@ a \ll \frac{\hbar}{q}=2 \pi \frac{h}{q}=2 \pi \lambda
 </div>
 </details></section>
 <section id="summary-of-approximations-made">
-<h2><span class="section-number">2.5. </span>Summary of approximations made<a class="headerlink" href="#summary-of-approximations-made" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.6. </span>Summary of approximations made<a class="headerlink" href="#summary-of-approximations-made" title="Link to this heading">#</a></h2>
 <p>In deriving the form factor and the Coulomb interactions between an electron and a nucleus we made a few approximations, some were explicitly mentioned some were not. Removing each of the approximations will complicate the equations that we wrote. While this is possible, we will not pursue this here as it does not add to the understanding of the physics involved. The approximations are summarised as:</p>
 <ul class="simple">
 <li><p>The scattering is elastic. Which means that the target and probe particle remain the same before and after the collision. This is like a game of snooker, assuming no energy is transferred to the balls in the form of heat (and that the balls do not crack!);</p></li>
@@ -958,7 +960,7 @@ a \ll \frac{\hbar}{q}=2 \pi \frac{h}{q}=2 \pi \lambda
 </ul>
 </section>
 <section id="further-reading">
-<h2><span class="section-number">2.6. </span>Further reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.7. </span>Further reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
 <p>Material for further reading can be found by accessing the textbooks from the “Resource List” in Blackboard. The material for this unit is taken from [Martin].</p>
 <ul class="simple">
 <li><p>The definition and explanation of the concept of cross section can be found on [Perkins] section 2.10 and section 1.6 of [Martin]</p></li>
@@ -1033,26 +1035,27 @@ a \ll \frac{\hbar}{q}=2 \pi \frac{h}{q}=2 \pi \lambda
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-sections">2.1. Cross sections</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-spherical-coordinates-in-three-dimensions">2.1.1. Reminder: Spherical coordinates in three dimensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-sections">2.1. Cross sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-and-differential-cross-sections">2.2. Partial and differential cross sections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-spherical-coordinates-in-three-dimensions">2.2.1. Reminder: Spherical coordinates in three dimensions</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-and-matrix-elements">2.2. Scattering and matrix elements</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-definitions">2.2.1. Scattering definitions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-golden-rule-and-matrix-element">2.2.2. Fermi golden rule and matrix element</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-states">2.2.3. Density of states</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-and-matrix-elements">2.3. Scattering and matrix elements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-definitions">2.3.1. Scattering definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-golden-rule-and-matrix-element">2.3.2. Fermi golden rule and matrix element</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-states">2.3.3. Density of states</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-in-a-coulomb-potential">2.3. Elastic scattering in a Coulomb potential</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulomb-potential">2.3.1. Coulomb potential</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">2.3.2. Rutherford scattering</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-scattering-on-a-nucleus">2.3.3. Electron scattering on a nucleus</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-history">2.3.4. A bit of history</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-in-a-coulomb-potential">2.4. Elastic scattering in a Coulomb potential</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulomb-potential">2.4.1. Coulomb potential</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">2.4.2. Rutherford scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-scattering-on-a-nucleus">2.4.3. Electron scattering on a nucleus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-history">2.4.4. A bit of history</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-charge-distribution-and-form-factor">2.4. Nuclear charge distribution and form factor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-approximations-made">2.5. Summary of approximations made</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">2.6. Further reading</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-charge-distribution-and-form-factor">2.5. Nuclear charge distribution and form factor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-approximations-made">2.6. Summary of approximations made</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">2.7. Further reading</a></li>
 </ul>
   </nav></div>
 
