@@ -418,7 +418,69 @@ Two of the exercises are assessed homeworks, which must be handed in the followi
 <h3><span class="section-number">8.1.1. </span>Question 1. Two body decay (4 marks)<a class="headerlink" href="#question-1-two-body-decay-4-marks" title="Link to this heading">#</a></h3>
 <p>Consider the decay <span class="math notranslate nohighlight">\(\pi^+ \rightarrow \mu^+ \nu_\mu\)</span> in the pion rest frame. Evaluate the energy of the muon in the pion rest frame.</p>
 <p>[Mass of the pion (<span class="math notranslate nohighlight">\(\pi^+\)</span>) is 139.6 MeV/<span class="math notranslate nohighlight">\(^2\)</span>, mass of the muon (<span class="math notranslate nohighlight">\(\mu^+\)</span>) is 105.7 MeV/c<span class="math notranslate nohighlight">\(^2\)</span>, and the neutrino (<span class="math notranslate nohighlight">\(\nu_\mu\)</span>) is masseless ]</p>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solutions and feedback</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The homework is marked out of 10, which will be rescaled to count as 7.5% of your total mark.</p>
+<p class="sd-card-text">A general positive comment is about the clarity and the presentation of the homework! You all did very well on that front.</p>
+<p class="sd-card-text"><strong>Solution:</strong></p>
+<p class="sd-card-text">Write energy conservation</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\pi}=E_{\mu}+p
+\]</div>
+<p class="sd-card-text">Use</p>
+<div class="math notranslate nohighlight">
+\[
+p=\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+\]</div>
+<p class="sd-card-text">Gives:</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\pi}=E_{\mu}+\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+\]</div>
+<p class="sd-card-text">We can isolate the square root and have</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\pi}-E_{\mu}=\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+\]</div>
+<p class="sd-card-text">And square</p>
+<div class="math notranslate nohighlight">
+\[
+m_{\pi}^{2}+E_{\mu}^{2}-2 m_{\pi} E_{\mu}=E_{\mu}^{2}-m_{\mu}^{2}
+\]</div>
+<p class="sd-card-text">And eventually</p>
+<div class="math notranslate nohighlight">
+\[
+E_{\mu}=\frac{m_{\pi}^{2}+m_{\mu}^{2}}{2 m_{\pi}}=109.8 \mathrm{MeV}
+\]</div>
+<p class="sd-card-text"><strong>Feedback:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Many of you solved the equations to calculate the momentum of the pion and then derived the energy from there. This is correct, and was awarded full marks. However since the momentum was not required, it is faster to solve for E directly</p></li>
+<li><p class="sd-card-text">If you do calculate the momentum <span class="math notranslate nohighlight">\(p\)</span>, then the easier way to get to the energy is to use the energy conservation equation written at the beginning. So</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+E_{\mu}=m_{\pi}-p
+\]</div>
+<p class="sd-card-text">Of course you can also use the kinematic formula below, but it’s just more difficult</p>
+<div class="math notranslate nohighlight">
+\[
+E_{\mu}=\sqrt{p^{2}+m_{\mu}^{2}}
+\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">A few people got confused with the square root. Remember that the fact that</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+E^{2}=p^{2}+m^{2}
+\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">Does NOT mean that E=p+m (!!)</p></li>
+<li><p class="sd-card-text">As a consequence the kinetic energy of a particle with mass is NOT equal to <span class="math notranslate nohighlight">\(p\)</span> (!!)</p></li>
+</ul>
+</div>
+</details></section>
 <section id="question-2-production-of-a-a-new-particle-6-marks">
 <h3><span class="section-number">8.1.2. </span>Question 2. Production of a a new particle (6 marks)<a class="headerlink" href="#question-2-production-of-a-a-new-particle-6-marks" title="Link to this heading">#</a></h3>
 <p>Electrons of energy 4.00 GeV are incident upon stationary target protons and a search is made for neutral particles <span class="math notranslate nohighlight">\(Q^0\)</span> produced in the reaction</p>
@@ -427,7 +489,51 @@ Two of the exercises are assessed homeworks, which must be handed in the followi
 <p>What is the maximum mass of <span class="math notranslate nohighlight">\(Q^0\)</span> which can be produced?  Use any reasonable approximations, but justify your arguments. Make clear which statements you make are generally valid, and which are specific to the case of maximum <span class="math notranslate nohighlight">\(Q^0\)</span> mass.</p>
 <p><strong>Hint</strong> Consider how the three particles will appear in the centre-of-mass frame in the special case of <span class="math notranslate nohighlight">\(Q^0\)</span> being at its maximum mass. And remember that <span class="math notranslate nohighlight">\(E^2 – p^2\)</span> (whether for an individual particle or a system of particles) is a Lorentz invariant, so it has the same value in all frames of reference. Use this to relate the initial state in the laboratory frame to the final state in the centre of mass frame.</p>
 <p>[Mass of electron is 0.511 MeV/c<span class="math notranslate nohighlight">\(^2\)</span>;  that of proton is 938.3 MeV/c<span class="math notranslate nohighlight">\(^2\)</span>.]</p>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solutions and feedback</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">**Solution: **</p>
+<p class="sd-card-text">A drawing of the physics process in the lab and centre-of-mass frames is:</p>
+<figure class="align-center" id="fighw1b">
+<a class="reference internal image-reference" href="_images/HW1b_figure.png"><img alt="Schematics of the $e^- + p \rightarrow e^- + p + Q^0$ process" src="_images/HW1b_figure.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8.1 </span><span class="caption-text">Schematics of the <span class="math notranslate nohighlight">\(e^- + p \rightarrow e^- + p + Q^0\)</span> process.</span><a class="headerlink" href="#fighw1b" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text">For the maximum <span class="math notranslate nohighlight">\(Q^{0}\)</span> mass, we must have minimum kinetic energy consistent with the conservation of momentum.
+In the centre-of-mass frame zero kinetic energy is possible, i.e. the three particles are all at rest in this frame. This means that the Lorentz invariant</p>
+<div class="math notranslate nohighlight">
+\[
+\left(\sum E\right)^{2}-\left(\sum p\right)^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2}
+\]</div>
+<p class="sd-card-text">This is calculated in the rest frame, however being an invariant, it will have the same value in any other reference frame, including the Lab frame</p>
+<p class="sd-card-text">NOTE: The fact that the invariant is equal to the sum of the three masses squared is true only because we assume that the three particles are at rest in the centre-of-mass frame (!!) This is not true in general, e.g. if the particles are moving</p>
+<p class="sd-card-text">Evaluating the Lorentz invariant in the Lab frame before the collision and equating it to the same quantity calculated after the collision</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+\left(E_{e}+m_{p}\right)^{2}-p_{e}^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2} \\
+E_{e}^{2}-p_{e}^{2}+2 E_{e} m_{p}+m_{p}^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2}
+\end{gathered}
+\end{split}\]</div>
+<p class="sd-card-text">And so</p>
+<div class="math notranslate nohighlight">
+\[
+m_{e}+m_{p}+m_{Q}=\sqrt{m_{p}^{2}+m_{e}^{2}+2 E_{e} m_{p}}
+\]</div>
+<p class="sd-card-text">Which gives <span class="math notranslate nohighlight">\(m_{Q}=1.958 \mathrm{GeV} / \mathrm{c}^{2}\)</span>
+The mass of the electron could be neglected in the equation above as it is much smaller than all the other masses</p>
+<p class="sd-card-text"><strong>Feedback:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">You did not need to expand the expression <span class="math notranslate nohighlight">\(\left(m_{p}+m_{e}+m_{Q}\right)^{2}\)</span>. It’s perfectly OK to do it, but in the end you get a value for <span class="math notranslate nohighlight">\(m_{p}+m_{e}+m_{Q}\)</span> to which you can subtract the known masses of the proton and the electron</p></li>
+<li><p class="sd-card-text">The mass of the electron can be neglected, as it is smaller than all the other quantities. It makes the algebra a bit simpler, but perhaps not that much simpler to have to explain that.</p></li>
+<li><p class="sd-card-text">Some of you confused the fact that the Lorentz invariant quantity is independent of the reference frame, and instead assumed that the total energy is invariant. The expression for the total energy <span class="math notranslate nohighlight">\(E^{*}=m_{q}+m_{e}+m_{Q}\)</span> is only valid in the centre of mass frame. In the lab frame the energy will have a different value <span class="math notranslate nohighlight">\(E=E_{e}+m_{p}\)</span></p></li>
+<li><p class="sd-card-text">It is NOT correct to assume that <span class="math notranslate nohighlight">\(E^{*}=E\)</span>, in fact they are different</p></li>
+<li><p class="sd-card-text">The quantity that is independent of the reference frame is <span class="math notranslate nohighlight">\(E^{2}-p^{2}\)</span> and that is calculated in the centre of mass frame as <span class="math notranslate nohighlight">\(\left(m_{p}+m_{e}+m_{Q}\right)^{2}\)</span>.</p></li>
+<li><p class="sd-card-text">If you do that, you’d get that the maximum mass of the Q particle is 4 GeV . This means that all the energy of the electron goes to the mass of <span class="math notranslate nohighlight">\(Q\)</span>. However it is not possible to do that, as it would violate momentum conservation</p></li>
+</ul>
+</div>
+</details></section>
 </section>
 <section id="exercise-a-fermions-bosons-not-assessed">
 <h2><span class="section-number">8.2. </span>Exercise A. Fermions &amp; Bosons (not assessed)<a class="headerlink" href="#exercise-a-fermions-bosons-not-assessed" title="Link to this heading">#</a></h2>
@@ -444,7 +550,81 @@ F(q)=\int \rho(\boldsymbol{r}) e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar}
 <li><p>Show that <span class="math notranslate nohighlight">\(F(q)=\frac{1}{1+\frac{q^{2} R^{2}}{\hbar^{2}}}\)</span>.</p></li>
 <li><p>Give an interpretation of the constant <span class="math notranslate nohighlight">\(R\)</span></p></li>
 </ol>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Part 1: normalisation</strong></p>
+<p class="sd-card-text">The normalisation factor <span class="math notranslate nohighlight">\(C\)</span> should be such that the integral over all space of the charge distribution should be equal to 1.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\int \rho(r) d^3 r &amp;= 1 \\
+\int C \frac{e^{-r / R}}{r} d^3 r &amp;=1
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">The integral should be done in spherical coordinates replacing</p>
+<div class="math notranslate nohighlight">
+\[
+d^3 r = \sin \theta r^2\, d\theta\, d\phi\, dr 
+\]</div>
+<p class="sd-card-text">Since there is no dependency on the polar coordinates <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> the integral on the polar variables gives us a <span class="math notranslate nohighlight">\(4\pi\)</span> factor hence</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+1 &amp;= \int_0^\infty C \frac{e^{-r / R}}{r} 4\pi r^2 dr  \\
+\frac{1}{4\pi C} &amp;= \int_0^\infty r e^{-r / R} dr 
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Integrating by parts we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\frac{1}{4\pi C} &amp;= \left[-R e^{-r/R} r \right]_0^\infty -\int_0^\infty -R e^{-r/R} dr  \\
+\frac{1}{4\pi C} &amp;= 0 + \left[-R^2 e^{-r/R} \right]_0^\infty    \\
+\frac{1}{4\pi C} &amp;= R^2  \\
+C &amp;= \frac{1}{4\pi R^2}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text"><strong>Part 2: Form factor</strong>
+We repeat the integration similarly to what was done in Example 2.3. We integrated in polar coordinates in <span class="math notranslate nohighlight">\(\phi\)</span>, <span class="math notranslate nohighlight">\(\cos \theta\)</span> and finally on <span class="math notranslate nohighlight">\(r\)</span>. The details are</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+F(q) &amp;= \int_0^\infty \int_{-1}^{+1} \int_0^{2\pi} C \frac{e^{-r / R}}{r} e^{iqr \cos \theta / \hbar} r^2 dr\, d\cos \theta\, d\phi \\
+&amp;= 2 \pi C \int_0^\infty r e^{-r/R} \left[ \frac{\hbar}{iqr} e^{iqr \cos\theta / \hbar} \right]_{-1}^{+1} dr \\
+&amp;= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{-r/R} \left(e^{iqr/\hbar} -  e^{-iqr/\hbar} \right) dr \\
+&amp;= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{\left({-\frac{1}{R} +  \frac{iq}{\hbar}}\right)r} - e^{\left( {-\frac{1}{R} -  \frac{iq}{\hbar}}\right)r} dr \\
+&amp;= \frac{2 \pi C \hbar}{iq}  \left[ \frac{e^{\left(-\frac{1}{R} +  \frac{iq}{\hbar}\right)r}}{-\frac{1}{R} +  \frac{iq}{\hbar}} - \frac{e^{\left(-\frac{1}{R} -  \frac{iq}{\hbar} \right)r}}{-\frac{1}{R} -  \frac{iq}{\hbar}} \right]_0^\infty 
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">The exponential terms <span class="math notranslate nohighlight">\(e^{-r/R}\)</span> will give us 0 for <span class="math notranslate nohighlight">\(r\rightarrow \infty\)</span> and <span class="math notranslate nohighlight">\(1\)</span> for <span class="math notranslate nohighlight">\(r=0\)</span>, so we can simplify as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+F(q) &amp;= \frac{2 \pi C \hbar}{iq} \left( \frac{-1}{-\frac{1}{R} + \frac{iq}{\hbar} } - \frac{-1}{-\frac{1}{R} - \frac{iq}{\hbar} } \right) \\
+&amp;= \frac{2 \pi C \hbar}{iq} \left( \frac{1}{\frac{1}{R} - \frac{iq}{\hbar} } - \frac{1}{\frac{1}{R} + \frac{iq}{\hbar} } \right) \\
+&amp;= \frac{2 \pi C \hbar}{iq} \frac{\left(\frac{1}{R} + \frac{iq}{\hbar} \right) - \left(\frac{1}{R} - \frac{iq}{\hbar} \right) }{\frac{1}{R^2}+ \frac{q^2}{\hbar^2}} \\
+&amp;= \frac{2 \pi C \hbar}{iq} \frac{2 \frac{iq}{\hbar}}{ \frac{1}{R^2} +\frac{q^2}{\hbar^2}} \\
+&amp;= \frac{4 \pi C}{\frac{1}{R^2} +\frac{q^2}{\hbar^2}}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">And finally replacing the value obtained for <span class="math notranslate nohighlight">\(C\)</span> in part 1 we get</p>
+<div class="math notranslate nohighlight">
+\[
+F(q) = \frac{1}{1+\frac{q^2R^2}{\hbar^2}}
+\]</div>
+<p class="sd-card-text">We should note that for <span class="math notranslate nohighlight">\(q=0\)</span> we get <span class="math notranslate nohighlight">\(F(q)=1\)</span> as expected.</p>
+<p class="sd-card-text"><strong>Part 3: Interpretation</strong>
+If we plot the function for <span class="math notranslate nohighlight">\(r e^{-r/R}\)</span> we can examine the functional dependence of <span class="math notranslate nohighlight">\(\rho(r)\)</span>.  The charge distribution will have a maximum at <span class="math notranslate nohighlight">\(r=R\)</span> as in the figure below, and will extend to larger values of <span class="math notranslate nohighlight">\(R\)</span>. Hence <span class="math notranslate nohighlight">\(R\)</span> would correspond to the radius where the nuclear density is at a maximum.</p>
+<p class="sd-card-text">We can exclude this distribution as, experimentally, we expect the cross section and <span class="math notranslate nohighlight">\(F(q^2)\)</span> to have dips as a function of <span class="math notranslate nohighlight">\(q\)</span> (see example 2.5), while for this particular charge distribution the form factor is a continuos function.</p>
+<figure class="align-center" id="fighwa3">
+<a class="reference internal image-reference" href="_images/ExA3.png"><img alt="charge distribution for exercise A1" src="_images/ExA3.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8.2 </span><span class="caption-text"><span class="math notranslate nohighlight">\(r e^{-r/R}\)</span> distribution, plotted to study the behaviour of the function <span class="math notranslate nohighlight">\(\rho(r)\)</span>. The x-axis would represent the value of <span class="math notranslate nohighlight">\(r/R\)</span>, and we can see a maximum for <span class="math notranslate nohighlight">\(r=R\)</span>.</span><a class="headerlink" href="#fighwa3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details></section>
 <section id="question-a2-yukawa-potential">
 <h3><span class="section-number">8.2.2. </span>Question A2. Yukawa Potential<a class="headerlink" href="#question-a2-yukawa-potential" title="Link to this heading">#</a></h3>
 <p>Earlier in the course, we used the Born approximation to show that in the case of scattering with a momentum transfer <span class="math notranslate nohighlight">\(q\)</span> from a spherically symmetric potential <span class="math notranslate nohighlight">\(V(r)\)</span>, the matrix element is given by</p>

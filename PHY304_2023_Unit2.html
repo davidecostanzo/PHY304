@@ -654,7 +654,7 @@ d W=\frac{2 \pi}{\hbar}\left|\mathcal{M}_{f i}\right|^{2} \rho\left(E_{f}\right)
 \]</div>
 <p>where we define <span class="math notranslate nohighlight">\(\vec{q}=\vec{p_{f}}-\vec{p_{i}}\)</span> as the momentum transfer in the collision. You can recognise the integral on the right-hand side as the 3-D Fourier transform of the potential energy. We define this Fourier transform as</p>
 <div class="math notranslate nohighlight" id="equation-eq-fq2">
-<span class="eqno">(2.6)<a class="headerlink" href="#equation-eq-fq2" title="Link to this equation">#</a></span>\[
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-eq-fq2" title="Link to this equation">#</a></span>\[
 \begin{equation*}
 f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}) d^{3} \mathbf{x} 
 \end{equation*}
@@ -669,7 +669,7 @@ f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}
 \rho\left(E_{f}\right)=\frac{V}{(2 \pi \hbar)^{3}} \frac{p_{f}^{2}}{v_{f}} d \Omega 
 \end{equation*}
 \]</div>
-<p>Replacing this formula in the Fermi golden rule equation <a class="reference internal" href="#equation-eq-fermigoldrule">(2.3)</a>, together with the cross section dependence of equation <a class="reference internal" href="#equation-eq-diffrate">(2.2)</a> and the matrix element definition of equations <a class="reference internal" href="#equation-eq-mfi">(2.5)</a> and <a class="reference internal" href="#equation-eq-fq2">(2.6)</a> we end up with a formula for the differential cross section of</p>
+<p>Replacing this formula in the Fermi golden rule equation <a class="reference internal" href="#equation-eq-fermigoldrule">(2.3)</a>, together with the cross section dependence of equation <a class="reference internal" href="#equation-eq-diffrate">(2.2)</a> and the matrix element definition of equations <a class="reference internal" href="#equation-eq-mfi">(2.5)</a> and <a class="reference internal" href="#equation-eq-fq2">(2.10)</a> we end up with a formula for the differential cross section of</p>
 <div class="math notranslate nohighlight" id="equation-eq-xsecformula">
 <span class="eqno">(2.7)<a class="headerlink" href="#equation-eq-xsecformula" title="Link to this equation">#</a></span>\[
 \begin{equation*}
@@ -824,7 +824,7 @@ Z e \rho(\vec{r})
 U(\vec{x})=-\frac{Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{\rho(\vec{r})}{|\vec{x}-\vec{r}|} d^{3} \mathbf{r}
 \end{equation*}
 \]</div>
-<p>The Fourier transform <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> of equation <a class="reference internal" href="#equation-eq-fq2">(2.6)</a> is calculated by integrating the value of <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> over <span class="math notranslate nohighlight">\(d^{3} \mathbf{x}\)</span> leading to the double integral</p>
+<p>The Fourier transform <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> of equation <a class="reference internal" href="#equation-eq-fq2">(2.10)</a> is calculated by integrating the value of <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> over <span class="math notranslate nohighlight">\(d^{3} \mathbf{x}\)</span> leading to the double integral</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -840,8 +840,8 @@ f\left(\mathbf{q}^{2}\right)=-\frac{Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{e^{i
 \end{equation*}
 \]</div>
 <p>In the first part of the integral we recognise the definition of <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> for a Coulomb potential as in equation <a class="reference internal" href="#equation-eq-fouriercoul">(2.8)</a> with <span class="math notranslate nohighlight">\(z=-1\)</span>, while the second part of the integral is now the Fourier transform of the charge definition that we define as the form factor <span class="math notranslate nohighlight">\(F\left(\mathbf{q}^{2}\right)\)</span></p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-fq2">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-eq-fq2" title="Link to this equation">#</a></span>\[
 \begin{equation*}
 F\left(\mathbf{q}^{2}\right)=\int e^{i \vec{q} \cdot \vec{r} / \hbar} \rho(\vec{r}) d^{3} \mathbf{r} 
 \end{equation*}
@@ -856,12 +856,40 @@ F\left(\mathbf{q}^{2}\right)=\int e^{i \vec{q} \cdot \vec{r} / \hbar} \rho(\vec{
 <p>In principle the measurement of the differential cross section can lead to a measurement of the form factor, and the inverse Fourier transform of the form factor can be used to measure the charge distribution. In practice, a functional behaviour of the charge distribution <span class="math notranslate nohighlight">\(\rho(r)\)</span> is assumed, and the parameters of the model are measured by fitting the prediction with experimental data.</p>
 <p>In most case the charge distribution has a spherical symmetry, so the formula for <span class="math notranslate nohighlight">\(F\left(\mathbf{q}^{2}\right)\)</span> can be simplified to eliminate the integrals on the angular coordinates. In this case we write</p>
 <div class="math notranslate nohighlight" id="equation-eq-fq2symm">
-<span class="eqno">(2.10)<a class="headerlink" href="#equation-eq-fq2symm" title="Link to this equation">#</a></span>\[
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-eq-fq2symm" title="Link to this equation">#</a></span>\[
 \begin{equation*}
 F\left(\mathbf{q}^{2}\right)=\frac{4 \pi \hbar}{q} \int_{0}^{\infty} \rho(r) \sin \left(\frac{q r}{\hbar}\right) r d r 
 \end{equation*}
 \]</div>
-<p>It is important to notice that for small momentum transfer <span class="math notranslate nohighlight">\((q \approx 0)\)</span> the nuclear substructure is not visible by the probe, and hence we expect the form factor to be 1 in this limit, so the cross-section is that of a point-like charge.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Derivation</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We start from equation <a class="reference internal" href="#equation-eq-fq2">(2.10)</a></p>
+<div class="math notranslate nohighlight">
+\[
+F\left(\mathbf{q}^{2}\right)=\int e^{i \vec{q} \cdot \vec{r} / \hbar} \rho(\vec{r}) d^{3} \mathbf{r} 
+\]</div>
+<p class="sd-card-text">And rewrite the integral in spherical coordinates as</p>
+<div class="math notranslate nohighlight">
+\[
+F\left(\mathbf{q}^{2}\right)=\int_0^{2\pi} \int_0^\pi \int_0^\infty  e^{i qr \cos \theta / \hbar} \rho(r) r^2\, \sin \theta dr\, d\phi\, d\theta 
+\]</div>
+<p class="sd-card-text">The integral in <span class="math notranslate nohighlight">\(d \phi\)</span> is simply <span class="math notranslate nohighlight">\(2\pi\)</span> as there is no dependency on the azimuthal angle <span class="math notranslate nohighlight">\(\phi\)</span>. While the integral in <span class="math notranslate nohighlight">\(\theta\)</span> can be done by changing variable to <span class="math notranslate nohighlight">\(cos \theta\)</span> and integrating in <span class="math notranslate nohighlight">\(d \cos \theta\)</span> between <span class="math notranslate nohighlight">\(-1\)</span> and <span class="math notranslate nohighlight">\(1\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+F\left(\mathbf{q}^{2}\right)=2\pi \int_{-1}^{+1} \int_0^\infty e^{i qr \cos \theta / \hbar} \rho(r) r^2\, \sin \theta dr\, d\cos \theta 
+\]</div>
+<p class="sd-card-text">Integrating in <span class="math notranslate nohighlight">\(d \cos \theta\)</span> we get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+F\left(\mathbf{q}^{2}\right)&amp;= 2\pi \frac{\hbar}{iq} \int_0^\infty \left[ e^{i qr \cos \theta / \hbar} \right]_{-1}^{+1} \rho(r) r dr = \\
+&amp;=  \frac{4 \pi \hbar}{q}  \int_0^\infty \frac{e^{i qr/\hbar} - e^{-i qr/\hbar} }{2i} \rho(r) r dr = \\
+&amp;= \frac{4 \pi \hbar}{q}  \int_0^\infty \rho(r) r \sin \frac{qr}{\hbar} dr
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details><p>It is important to notice that for small momentum transfer <span class="math notranslate nohighlight">\((q \approx 0)\)</span> the nuclear substructure is not visible by the probe, and hence we expect the form factor to be 1 in this limit, so the cross-section is that of a point-like charge.</p>
 <div class="admonition-example-2-3-form-factor-of-a-solid-sphere admonition">
 <p class="admonition-title">Example 2.3. Form factor of a solid sphere</p>
 <p>Assume a nucleus of charge <span class="math notranslate nohighlight">\(Ze\)</span> has the charged distributed inside a solid sphere of radius <span class="math notranslate nohighlight">\(a\)</span></p>
@@ -896,7 +924,7 @@ C \frac{4 \pi}{3} a^{3}=1
 \rho(r)=\frac{3}{4 \pi a^{3}} 
 \end{equation*}
 \]</div>
-<p class="sd-card-text">As the next step we evaluate the form factor using the formula in equation <a class="reference internal" href="#equation-eq-fq2symm">(2.10)</a></p>
+<p class="sd-card-text">As the next step we evaluate the form factor using the formula in equation <a class="reference internal" href="#equation-eq-fq2symm">(2.11)</a></p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
@@ -946,6 +974,42 @@ a \ll \frac{\hbar}{q}=2 \pi \frac{h}{q}=2 \pi \lambda
 \end{equation*}
 \]</div>
 <p class="sd-card-text">where <span class="math notranslate nohighlight">\(\lambda\)</span> is the De Broglie wavelength associated to the momentum transfer. That is to say that if the wavelength is larger than the nuclear size, the cross section observed is that of a point-like scatter centre.</p>
+</div>
+</details><div class="admonition-example-2-4-point-like-approximation-for-interaction-with-a-48-ca-nucleus admonition">
+<p class="admonition-title">Example 2.4. Point-like approximation for interaction with a <span class="math notranslate nohighlight">\(^{48}Ca\)</span> nucleus</p>
+<p>A nucleus of <span class="math notranslate nohighlight">\(^{48}Ca\)</span> has a radius of approximately 4.4 fm and is treated as a solid sphere as in the example above.  A beam of electrons of momentum <span class="math notranslate nohighlight">\(p\)</span> is scattered through the nucleus, estimate the maximum value of <span class="math notranslate nohighlight">\(pc\)</span> for which we can consider the interaction as point-like.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The interaction cross section corresponds to the point-like cross section if <span class="math notranslate nohighlight">\(F(q^2)=1\)</span>, and we know that this is the case in the limit <span class="math notranslate nohighlight">\(q\rightarrow 0\)</span>.</p>
+<p class="sd-card-text">In the example above, we saw that this is the case for <span class="math notranslate nohighlight">\(b\ll 1\)</span>. Looking at the graph, we can say that the approximation <span class="math notranslate nohighlight">\(F(q^2)=1\)</span> is valid to within a few percent for <span class="math notranslate nohighlight">\(b&lt;0.1\)</span>, so we take <span class="math notranslate nohighlight">\(b=0.1\)</span> as the maximum value for which the interaction can be treated as point-like.</p>
+<p class="sd-card-text">Using the defintion of <span class="math notranslate nohighlight">\(b\)</span> we write</p>
+<div class="math notranslate nohighlight">
+\[
+b=\frac{qR}{\hbar} &lt; 0.1
+\]</div>
+<p class="sd-card-text">where we indicated the nuclear radius with <span class="math notranslate nohighlight">\(R\)</span>. Hence</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{aligned}
+q &lt; 0.1 \frac{\hbar}{R} = 0.1 \frac{\hbar c}{R c} 
+qc &lt; 0.1 \frac{hbarc}{R} = 4.5 \mbox{MeV}
+\end{aligned}
+\]</div>
+<p class="sd-card-text">(Remember you can use <span class="math notranslate nohighlight">\(\hbar c = 197\)</span>MeV fm).</p>
+<p class="sd-card-text">Earlier we saw that <span class="math notranslate nohighlight">\(q\)</span> depends on the beam momentum and on the scattering angle as</p>
+<div class="math notranslate nohighlight">
+\[
+q=2p \sin \theta/2
+\]</div>
+<p class="sd-card-text">But since sine is always smaller than 1 we get</p>
+<div class="math notranslate nohighlight">
+\[
+pc &lt; 2.25 \mbox{MeV}
+\]</div>
+<p class="sd-card-text">Which means that for electrons of momentum (and energy) above a few MeV we start observing a deviation from the point-like cross section formula and we are sensitive to the nuclear charge distribution.</p>
+<p class="sd-card-text">In the next example we will see how the form factor distribution can be used to measure the nuclear radius.</p>
 </div>
 </details></section>
 <section id="summary-of-approximations-made">

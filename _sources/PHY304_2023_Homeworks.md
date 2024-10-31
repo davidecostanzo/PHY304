@@ -15,6 +15,73 @@ Consider the decay $\pi^+ \rightarrow \mu^+ \nu_\mu$ in the pion rest frame. Eva
 
 \[Mass of the pion ($\pi^+$) is 139.6 MeV/$^2$, mass of the muon ($\mu^+$) is 105.7 MeV/c$^2$, and the neutrino ($\nu_\mu$) is masseless \]
 
+```{dropdown} Solutions and feedback
+The homework is marked out of 10, which will be rescaled to count as 7.5\% of your total mark.
+
+A general positive comment is about the clarity and the presentation of the homework! You all did very well on that front.
+
+**Solution:** 
+
+Write energy conservation
+
+$$
+m_{\pi}=E_{\mu}+p
+$$
+
+Use
+
+$$
+p=\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+$$
+
+Gives:
+
+$$
+m_{\pi}=E_{\mu}+\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+$$
+
+We can isolate the square root and have
+
+$$
+m_{\pi}-E_{\mu}=\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+$$
+
+And square
+
+$$
+m_{\pi}^{2}+E_{\mu}^{2}-2 m_{\pi} E_{\mu}=E_{\mu}^{2}-m_{\mu}^{2}
+$$
+
+And eventually
+
+$$
+E_{\mu}=\frac{m_{\pi}^{2}+m_{\mu}^{2}}{2 m_{\pi}}=109.8 \mathrm{MeV}
+$$
+
+**Feedback:**
+
+- Many of you solved the equations to calculate the momentum of the pion and then derived the energy from there. This is correct, and was awarded full marks. However since the momentum was not required, it is faster to solve for E directly
+- If you do calculate the momentum $p$, then the easier way to get to the energy is to use the energy conservation equation written at the beginning. So
+
+$$
+E_{\mu}=m_{\pi}-p
+$$
+
+Of course you can also use the kinematic formula below, but it's just more difficult
+
+$$
+E_{\mu}=\sqrt{p^{2}+m_{\mu}^{2}}
+$$
+
+- A few people got confused with the square root. Remember that the fact that
+
+$$
+E^{2}=p^{2}+m^{2}
+$$
+
+- Does NOT mean that E=p+m (!!)
+- As a consequence the kinetic energy of a particle with mass is NOT equal to $p$ (!!)
+```
 
 ### Question 2. Production of a a new particle (6 marks)
 Electrons of energy 4.00 GeV are incident upon stationary target protons and a search is made for neutral particles $Q^0$ produced in the reaction
@@ -27,7 +94,59 @@ What is the maximum mass of $Q^0$ which can be produced?  Use any reasonable app
 
 \[Mass of electron is 0.511 MeV/c$^2$;  that of proton is 938.3 MeV/c$^2$.\]
 
+````{dropdown} Solutions and feedback
+**Solution: ** 
 
+A drawing of the physics process in the lab and centre-of-mass frames is:
+
+```{figure} HW1b_figure.png
+:alt: Schematics of the $e^- + p \rightarrow e^- + p + Q^0$ process
+:name: FigHW1b
+:width: 600px
+:align: center
+Schematics of the $e^- + p \rightarrow e^- + p + Q^0$ process.
+```
+
+For the maximum $Q^{0}$ mass, we must have minimum kinetic energy consistent with the conservation of momentum.
+In the centre-of-mass frame zero kinetic energy is possible, i.e. the three particles are all at rest in this frame. This means that the Lorentz invariant
+
+$$
+\left(\sum E\right)^{2}-\left(\sum p\right)^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2}
+$$
+
+This is calculated in the rest frame, however being an invariant, it will have the same value in any other reference frame, including the Lab frame
+
+NOTE: The fact that the invariant is equal to the sum of the three masses squared is true only because we assume that the three particles are at rest in the centre-of-mass frame (!!) This is not true in general, e.g. if the particles are moving
+
+Evaluating the Lorentz invariant in the Lab frame before the collision and equating it to the same quantity calculated after the collision
+
+$$
+\begin{gathered}
+\left(E_{e}+m_{p}\right)^{2}-p_{e}^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2} \\
+E_{e}^{2}-p_{e}^{2}+2 E_{e} m_{p}+m_{p}^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2}
+\end{gathered}
+$$
+
+And so
+
+$$
+m_{e}+m_{p}+m_{Q}=\sqrt{m_{p}^{2}+m_{e}^{2}+2 E_{e} m_{p}}
+$$
+
+Which gives $m_{Q}=1.958 \mathrm{GeV} / \mathrm{c}^{2}$
+The mass of the electron could be neglected in the equation above as it is much smaller than all the other masses
+
+**Feedback:**
+
+- You did not need to expand the expression $\left(m_{p}+m_{e}+m_{Q}\right)^{2}$. It's perfectly OK to do it, but in the end you get a value for $m_{p}+m_{e}+m_{Q}$ to which you can subtract the known masses of the proton and the electron
+- The mass of the electron can be neglected, as it is smaller than all the other quantities. It makes the algebra a bit simpler, but perhaps not that much simpler to have to explain that.
+- Some of you confused the fact that the Lorentz invariant quantity is independent of the reference frame, and instead assumed that the total energy is invariant. The expression for the total energy $E^{*}=m_{q}+m_{e}+m_{Q}$ is only valid in the centre of mass frame. In the lab frame the energy will have a different value $E=E_{e}+m_{p}$
+- It is NOT correct to assume that $E^{*}=E$, in fact they are different
+- The quantity that is independent of the reference frame is $E^{2}-p^{2}$ and that is calculated in the centre of mass frame as $\left(m_{p}+m_{e}+m_{Q}\right)^{2}$.
+- If you do that, you'd get that the maximum mass of the Q particle is 4 GeV . This means that all the energy of the electron goes to the mass of $Q$. However it is not possible to do that, as it would violate momentum conservation
+
+
+````
 
 ## Exercise A. Fermions \& Bosons (not assessed)
 
@@ -42,6 +161,97 @@ For a simplified model of a proton's charge distribution, $\rho(r)=C \frac{e^{-r
 1. Find the constant of proportionality $C$ required to normalise $\rho$ correctly.
 2.  Show that $F(q)=\frac{1}{1+\frac{q^{2} R^{2}}{\hbar^{2}}}$.
 3.  Give an interpretation of the constant $R$
+
+````{dropdown} Solution
+**Part 1: normalisation**
+
+The normalisation factor $C$ should be such that the integral over all space of the charge distribution should be equal to 1.
+
+$$
+\begin{aligned}
+\int \rho(r) d^3 r &= 1 \\
+\int C \frac{e^{-r / R}}{r} d^3 r &=1
+\end{aligned}
+$$
+
+The integral should be done in spherical coordinates replacing 
+
+$$
+d^3 r = \sin \theta r^2\, d\theta\, d\phi\, dr 
+$$
+
+Since there is no dependency on the polar coordinates $\theta$ and $\phi$ the integral on the polar variables gives us a $4\pi$ factor hence
+
+$$
+\begin{aligned}
+1 &= \int_0^\infty C \frac{e^{-r / R}}{r} 4\pi r^2 dr  \\
+\frac{1}{4\pi C} &= \int_0^\infty r e^{-r / R} dr 
+\end{aligned}
+$$
+
+Integrating by parts we have
+
+$$
+\begin{aligned}
+\frac{1}{4\pi C} &= \left[-R e^{-r/R} r \right]_0^\infty -\int_0^\infty -R e^{-r/R} dr  \\
+\frac{1}{4\pi C} &= 0 + \left[-R^2 e^{-r/R} \right]_0^\infty    \\
+\frac{1}{4\pi C} &= R^2  \\
+C &= \frac{1}{4\pi R^2}
+\end{aligned}
+$$
+
+**Part 2: Form factor**
+We repeat the integration similarly to what was done in Example 2.3. We integrated in polar coordinates in $\phi$, $\cos \theta$ and finally on $r$. The details are
+
+$$
+\begin{aligned}
+F(q) &= \int_0^\infty \int_{-1}^{+1} \int_0^{2\pi} C \frac{e^{-r / R}}{r} e^{iqr \cos \theta / \hbar} r^2 dr\, d\cos \theta\, d\phi \\
+&= 2 \pi C \int_0^\infty r e^{-r/R} \left[ \frac{\hbar}{iqr} e^{iqr \cos\theta / \hbar} \right]_{-1}^{+1} dr \\
+&= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{-r/R} \left(e^{iqr/\hbar} -  e^{-iqr/\hbar} \right) dr \\
+&= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{\left({-\frac{1}{R} +  \frac{iq}{\hbar}}\right)r} - e^{\left( {-\frac{1}{R} -  \frac{iq}{\hbar}}\right)r} dr \\
+&= \frac{2 \pi C \hbar}{iq}  \left[ \frac{e^{\left(-\frac{1}{R} +  \frac{iq}{\hbar}\right)r}}{-\frac{1}{R} +  \frac{iq}{\hbar}} - \frac{e^{\left(-\frac{1}{R} -  \frac{iq}{\hbar} \right)r}}{-\frac{1}{R} -  \frac{iq}{\hbar}} \right]_0^\infty 
+\end{aligned}
+$$
+
+The exponential terms $e^{-r/R}$ will give us 0 for $r\rightarrow \infty$ and $1$ for $r=0$, so we can simplify as
+
+$$
+\begin{aligned}
+F(q) &= \frac{2 \pi C \hbar}{iq} \left( \frac{-1}{-\frac{1}{R} + \frac{iq}{\hbar} } - \frac{-1}{-\frac{1}{R} - \frac{iq}{\hbar} } \right) \\
+&= \frac{2 \pi C \hbar}{iq} \left( \frac{1}{\frac{1}{R} - \frac{iq}{\hbar} } - \frac{1}{\frac{1}{R} + \frac{iq}{\hbar} } \right) \\
+&= \frac{2 \pi C \hbar}{iq} \frac{\left(\frac{1}{R} + \frac{iq}{\hbar} \right) - \left(\frac{1}{R} - \frac{iq}{\hbar} \right) }{\frac{1}{R^2}+ \frac{q^2}{\hbar^2}} \\
+&= \frac{2 \pi C \hbar}{iq} \frac{2 \frac{iq}{\hbar}}{ \frac{1}{R^2} +\frac{q^2}{\hbar^2}} \\
+&= \frac{4 \pi C}{\frac{1}{R^2} +\frac{q^2}{\hbar^2}}
+\end{aligned}
+$$
+
+And finally replacing the value obtained for $C$ in part 1 we get
+
+$$
+F(q) = \frac{1}{1+\frac{q^2R^2}{\hbar^2}}
+$$
+
+We should note that for $q=0$ we get $F(q)=1$ as expected. 
+
+**Part 3: Interpretation**
+If we plot the function for $r e^{-r/R}$ we can examine the functional dependence of $\rho(r)$.  The charge distribution will have a maximum at $r=R$ as in the figure below, and will extend to larger values of $R$. Hence $R$ would correspond to the radius where the nuclear density is at a maximum. 
+
+We can exclude this distribution as, experimentally, we expect the cross section and $F(q^2)$ to have dips as a function of $q$ (see example 2.5), while for this particular charge distribution the form factor is a continuos function. 
+
+```{figure} ExA3.png
+:alt: charge distribution for exercise A1
+:name: FigHWA3
+:width: 600px
+:align: center
+$r e^{-r/R}$ distribution, plotted to study the behaviour of the function $\rho(r)$. The x-axis would represent the value of $r/R$, and we can see a maximum for $r=R$. 
+```
+
+
+````
+
+
+
+
 
 ### Question A2. Yukawa Potential
 
