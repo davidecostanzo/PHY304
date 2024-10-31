@@ -647,7 +647,52 @@ U(r)=\frac{g^{2}}{r} e^{-r / R}
 \[
 \frac{d \sigma}{d \Omega} \propto \frac{1}{\sin ^{4} \theta / 2}
 \]</div>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Part 1: Calculations</strong></p>
+<p class="sd-card-text">To calculate the integral</p>
+<div class="math notranslate nohighlight">
+\[
+f(q^2) = \int \frac{g^{2}}{r} e^{-r / R} e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d \boldsymbol{r}
+\]</div>
+<p class="sd-card-text">we reuse the derivation from <a class="reference internal" href="PHY304_2023_Unit2.html#sec-coulomb"><span class="std std-numref">Section 2.4.1</span></a> where we introduced a factor <span class="math notranslate nohighlight">\(\lambda\)</span> and then set <span class="math notranslate nohighlight">\(\lambda=0\)</span>. The integral is the same provided we replace:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{1}{R} \ \ \ \ g^2=\frac{zZe^2}{4\pi\epsilon_0}
+\]</div>
+<p class="sd-card-text">and we no longer assume that <span class="math notranslate nohighlight">\(\lambda=0\)</span>. If we take the result obtained before setting <span class="math notranslate nohighlight">\(\lambda=0\)</span> the result of the integral becomes</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align}
+f(q^2) &amp;= \frac{2 \pi g^2 \hbar}{iq} \left[\frac{1}{\lambda - \frac{iq}{\hbar}} - \frac{1}{\lambda + \frac{iq}{\hbar}} \right ]
+&amp;= 4 \pi g^2 \hbar^2 \frac{1}{\lambda^2 \hbar^2 +q^2} 
+\end{align}
+\]</div>
+<p class="sd-card-text">Using the definition of <span class="math notranslate nohighlight">\(\lambda\)</span> and <span class="math notranslate nohighlight">\(R\)</span> we get</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda^2 \hbar^2 = \frac{\hbar^2}{R^2} = m^2 c^2
+\]</div>
+<p class="sd-card-text">Yielding the final result</p>
+<div class="math notranslate nohighlight">
+\[
+f(q^2) = \frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+\]</div>
+<p class="sd-card-text"><strong>Part 2: Coulomb approximations</strong></p>
+<p class="sd-card-text">If the propagator is a photon the formula for <span class="math notranslate nohighlight">\(f(q^2)\)</span> reduces to the formula we derived earlier and in particular since <span class="math notranslate nohighlight">\(m=0\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+f(q^2) \propto \frac{1}{q^2}
+\]</div>
+<p class="sd-card-text">In <a class="reference internal" href="PHY304_2023_Unit2.html#sec-rutherford"><span class="std std-numref">Section 2.4.2</span></a> we evaluated <span class="math notranslate nohighlight">\(q=2p \sin \theta/2\)</span> and the cross section is proportional to the square of <span class="math notranslate nohighlight">\(f(q^2)\)</span>, e.g.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega} \propto \frac{1}{q^4} \propto \frac{1}{\sin^4 \theta/2}
+\]</div>
+<p class="sd-card-text">so in the case of a scattering off a point-like nucleus which is mediated by a photon we recover the formula for the Rutherford scattering as expected.</p>
+</div>
+</details></section>
 </section>
 </section>
 

@@ -278,3 +278,57 @@ When an electron scatters electromagnetically off a nucleus, the exchanged boson
 $$
 \frac{d \sigma}{d \Omega} \propto \frac{1}{\sin ^{4} \theta / 2}
 $$
+
+```{dropdown} Solution 
+
+**Part 1: Calculations** 
+
+To calculate the integral
+
+$$
+f(q^2) = \int \frac{g^{2}}{r} e^{-r / R} e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d \boldsymbol{r}
+$$
+
+we reuse the derivation from {numref}`Sec:Coulomb` where we introduced a factor $\lambda$ and then set $\lambda=0$. The integral is the same provided we replace:
+
+$$
+\lambda = \frac{1}{R} \ \ \ \ g^2=\frac{zZe^2}{4\pi\epsilon_0}
+$$
+
+and we no longer assume that $\lambda=0$. If we take the result obtained before setting $\lambda=0$ the result of the integral becomes
+
+$$
+\begin{align}
+f(q^2) &= \frac{2 \pi g^2 \hbar}{iq} \left[\frac{1}{\lambda - \frac{iq}{\hbar}} - \frac{1}{\lambda + \frac{iq}{\hbar}} \right ]
+&= 4 \pi g^2 \hbar^2 \frac{1}{\lambda^2 \hbar^2 +q^2} 
+\end{align}
+$$
+
+Using the definition of $\lambda$ and $R$ we get
+
+$$
+\lambda^2 \hbar^2 = \frac{\hbar^2}{R^2} = m^2 c^2
+$$
+
+Yielding the final result
+
+$$
+f(q^2) = \frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+$$
+
+**Part 2: Coulomb approximations**
+
+If the propagator is a photon the formula for $f(q^2)$ reduces to the formula we derived earlier and in particular since $m=0$ we have
+
+$$
+f(q^2) \propto \frac{1}{q^2}
+$$
+
+In {numref}`Sec:Rutherford` we evaluated $q=2p \sin \theta/2$ and the cross section is proportional to the square of $f(q^2)$, e.g.
+
+$$
+\frac{d\sigma}{d\Omega} \propto \frac{1}{q^4} \propto \frac{1}{\sin^4 \theta/2}
+$$
+
+so in the case of a scattering off a point-like nucleus which is mediated by a photon we recover the formula for the Rutherford scattering as expected. 
+```
