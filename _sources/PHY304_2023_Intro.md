@@ -80,7 +80,7 @@ The purpose of the the coursework exercises is to help with revision of the lect
 | Homework | Handed out | Submission deadline | Returned with feedback |
 | :---: | :---: | :---: | :---: |
 | HW1 (Unit 1) | 7 October | 21 October | 4 November |
-| HW2 (Units 2, 3, 4) | 28 October | 11 November | 25 November |
+| HW2 (Units 2, 3, 4) | 28 October | 25 November | 9 December |
 
 **Late work**: Note that late work receives a penalty of $5 \%$ per working day, unless an extenuating circumstance form is submitted with the office. Late work is only accepted for a maximum of 5 working days after the deadline.
 
