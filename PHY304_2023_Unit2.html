@@ -697,7 +697,7 @@ U(\vec{r})=\frac{1}{4 \pi \epsilon_{0}} \frac{z Z e^{2}}{r}
 f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{r}) / \hbar} \frac{1}{4 \pi \epsilon_{0}} \frac{z Z e^{2}}{r} d^{3} \mathbf{r}=\frac{z Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{1}{r} e^{i(\vec{q} \cdot \vec{r}) / \hbar} d^{3} \mathbf{r} 
 \end{equation*}
 \]</div>
-<p>The argument of the integral will not have a “good” behaviour for <span class="math notranslate nohighlight">\(r \rightarrow \infty\)</span>, so we use a regularisation technique (quite common in field theory), by multiplying the argument by <span class="math notranslate nohighlight">\(e^{-\lambda r}\)</span> and we will take the limit <span class="math notranslate nohighlight">\(\lambda \rightarrow 0\)</span> in the final result. From a physics point of view, this assumes that the potential energy will decrease to zero at infinity due to material shielding effects. Hence the integral we need to calculate is</p>
+<p>The argument of the integral will not have a “good” behaviour for <span class="math notranslate nohighlight">\(r \rightarrow \infty\)</span>, so we use a regularisation technique (quite common in field theory), by multiplying the argument by <span class="math notranslate nohighlight">\(e^{-\lambda r}\)</span>, where <span class="math notranslate nohighlight">\(\lambda\)</span> is a small positive number. We will then take the limit <span class="math notranslate nohighlight">\(\lambda \rightarrow 0\)</span> in the final result. From a physics point of view, this assumes that the potential energy will decrease to zero at infinity due to material shielding effects. Hence the integral we need to calculate is</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
@@ -847,8 +847,8 @@ F\left(\mathbf{q}^{2}\right)=\int e^{i \vec{q} \cdot \vec{r} / \hbar} \rho(\vec{
 \end{equation*}
 \]</div>
 <p>The cross-section of interaction between an electron and a charge with a spatial distribution <span class="math notranslate nohighlight">\(\rho(\vec{x})\)</span> can be obtained by substituting again into equation <a class="reference internal" href="#equation-eq-xsecformula">(2.7)</a> with the form factor modifying the point-like cross-section as</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-xsecff">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-eq-xsecff" title="Link to this equation">#</a></span>\[
 \begin{equation*}
 \frac{d \sigma}{d \Omega}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Coulomb }} \times\left|F\left(\mathbf{q}^{2}\right)\right|^{2} 
 \end{equation*}
@@ -856,7 +856,7 @@ F\left(\mathbf{q}^{2}\right)=\int e^{i \vec{q} \cdot \vec{r} / \hbar} \rho(\vec{
 <p>In principle the measurement of the differential cross section can lead to a measurement of the form factor, and the inverse Fourier transform of the form factor can be used to measure the charge distribution. In practice, a functional behaviour of the charge distribution <span class="math notranslate nohighlight">\(\rho(r)\)</span> is assumed, and the parameters of the model are measured by fitting the prediction with experimental data.</p>
 <p>In most case the charge distribution has a spherical symmetry, so the formula for <span class="math notranslate nohighlight">\(F\left(\mathbf{q}^{2}\right)\)</span> can be simplified to eliminate the integrals on the angular coordinates. In this case we write</p>
 <div class="math notranslate nohighlight" id="equation-eq-fq2symm">
-<span class="eqno">(2.11)<a class="headerlink" href="#equation-eq-fq2symm" title="Link to this equation">#</a></span>\[
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-eq-fq2symm" title="Link to this equation">#</a></span>\[
 \begin{equation*}
 F\left(\mathbf{q}^{2}\right)=\frac{4 \pi \hbar}{q} \int_{0}^{\infty} \rho(r) \sin \left(\frac{q r}{\hbar}\right) r d r 
 \end{equation*}
@@ -924,7 +924,7 @@ C \frac{4 \pi}{3} a^{3}=1
 \rho(r)=\frac{3}{4 \pi a^{3}} 
 \end{equation*}
 \]</div>
-<p class="sd-card-text">As the next step we evaluate the form factor using the formula in equation <a class="reference internal" href="#equation-eq-fq2symm">(2.11)</a></p>
+<p class="sd-card-text">As the next step we evaluate the form factor using the formula in equation <a class="reference internal" href="#equation-eq-fq2symm">(2.12)</a></p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
@@ -1010,6 +1010,64 @@ pc &lt; 2.25 \mbox{MeV}
 \]</div>
 <p class="sd-card-text">Which means that for electrons of momentum (and energy) above a few MeV we start observing a deviation from the point-like cross section formula and we are sensitive to the nuclear charge distribution.</p>
 <p class="sd-card-text">In the next example we will see how the form factor distribution can be used to measure the nuclear radius.</p>
+</div>
+</details><div class="admonition-example-2-5-measurement-of-the-radius-of-the-48-ca-nucleus admonition">
+<p class="admonition-title">Example 2.5. Measurement of the radius of the <span class="math notranslate nohighlight">\(^{48}Ca\)</span> nucleus</p>
+<p>A beam of electrons of energy E=758 MeV is scattered through a nucleus of <span class="math notranslate nohighlight">\(^{48}Ca\)</span>. The measurement of the differential cross section shows dips at the values <span class="math notranslate nohighlight">\(\theta_1 = 17^\circ\)</span>, <span class="math notranslate nohighlight">\(\theta_2 = 30^\circ\)</span>, and <span class="math notranslate nohighlight">\(\theta^3 = 45^\circ\)</span>. Assuming that the <span class="math notranslate nohighlight">\(^{48}Ca\)</span> nucleus is spherical with a uniform charge distrubution, use the position of the dips to measure the nuclear radius.</p>
+<p>(Note, the values of <span class="math notranslate nohighlight">\(\theta_1\)</span>, <span class="math notranslate nohighlight">\(\theta_2\)</span> and <span class="math notranslate nohighlight">\(\theta_3\)</span> are taken from a figure on the textbook by Martin. )</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The differential cross section is affected by the shape and size of the nucleus and the point-like cross section is modified as in equation <a class="reference internal" href="#equation-eq-xsecff">(2.11)</a></p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{d \sigma}{d \Omega}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Coulomb }} \times\left|F\left(\mathbf{q}^{2}\right)\right|^{2} 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">From example 2.3 we know that</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+F\left(\mathbf{q}^{2}\right)=3 b^{-3}(\sin b-b \cos b) 
+\end{equation*}
+\]</div>
+<p class="sd-card-text">With</p>
+<div class="math notranslate nohighlight">
+\[
+b=\frac{qr}{\hbar}
+\]</div>
+<p class="sd-card-text">Hence we can evaluate</p>
+<div class="math notranslate nohighlight">
+\[
+R= \frac{b \hbar}{2p \sin \theta/2} = \frac{b \hbar c }{2pc \sin \theta/2} = \frac{b \hbar c }{2E \sin \theta/2}
+\]</div>
+<p class="sd-card-text">We make the assumption that the dips in cross section correspond to the zeros of the <span class="math notranslate nohighlight">\(F(q^2)\)</span> form factor, which can be evaluated numerically to be at <span class="math notranslate nohighlight">\(b_1=4.49\)</span>, <span class="math notranslate nohighlight">\(b_2=7.72\)</span>, <span class="math notranslate nohighlight">\(b_3=10.90\)</span>. from which we can calculate the value of <span class="math notranslate nohighlight">\(R\)</span> for the three zeros.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(b\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\sin \theta/2\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text">R (fm)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text">4.49</p></td>
+<td class="text-center"><p class="sd-card-text">0.148</p></td>
+<td class="text-center"><p class="sd-card-text">3.94</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text">7.72</p></td>
+<td class="text-center"><p class="sd-card-text">0.259</p></td>
+<td class="text-center"><p class="sd-card-text">3.88</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text">10.90</p></td>
+<td class="text-center"><p class="sd-card-text">0.383</p></td>
+<td class="text-center"><p class="sd-card-text">3.70</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="sd-card-text">Which is consistent with the measured radius of 4.4 fm, considering the approximation breaks down at the surface of the nucleus with a skin measured to be slightly smaller than 1 fm.</p>
 </div>
 </details></section>
 <section id="summary-of-approximations-made">
