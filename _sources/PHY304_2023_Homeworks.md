@@ -255,7 +255,7 @@ $r e^{-r/R}$ distribution, plotted to study the behaviour of the function $\rho(
 
 ### Question A2. Yukawa Potential
 
-Earlier in the course, we used the Born approximation to show that in the case of scattering with a momentum transfer $q$ from a spherically symmetric potential $V(r)$, the matrix element is given by
+Earlier in the course, we used the Born approximation to show that in the case of scattering with a momentum transfer $q$ from a spherically symmetric potential $U(r)$, the matrix element is proportional to 
 
 $$
 f(\boldsymbol{q})=\int U(\boldsymbol{r}) e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d \boldsymbol{r}
