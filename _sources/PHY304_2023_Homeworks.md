@@ -148,6 +148,42 @@ The mass of the electron could be neglected in the equation above as it is much 
 
 ````
 
+## Homework 2. Due on 25 November
+
+### Question 1: $\rho$ meson decays in flight
+The neutral rho meson often decays into two charged pions, $\rho^{0} \rightarrow \pi^{+} \pi^{-}$. In a monoenergetic beam of these mesons, some decays are observed where one pion is at rest. What is the energy of the particles in the beam?
+
+### Question 2: Allowed and forbidden decays
+Which of the following reactions are allowed by lepton number conservation, and which are forbidden? Explain.
+1.  $\tau^{+} \rightarrow \mu^{+} v_{\mu} \bar{v}_{\tau}$
+2.  $\pi^{+} \rightarrow \mu^{+} \gamma$
+3.  $\pi^{+} \rightarrow \mu^{+} v_{\mu}$
+4.  $\pi^{0} \rightarrow e^{+} e^{-} \gamma$
+5.  $\tau^{+} \rightarrow e^{+} \gamma$
+6.  $\tau^{-} \rightarrow \pi^{-} v_{\tau}$
+
+### Question 3: Photon-proton capture
+A high energy photon can excite the quarks in a proton, producing a short-lived state which rapidly forms a nucleon and pion. Calculate the minimum photon energy required for the following reaction to occur when the target is a stationary proton
+
+$$
+\begin{equation*}
+\gamma p \rightarrow n \pi^{+}
+\end{equation*}
+$$
+
+Hint: consider the final state in the centre of mass frame.
+
+
+### Question 4: Yukawa potential
+In Exercise A, we saw that the Yukawa potential leads to an expression for the matrix element of
+
+$$
+\frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+$$
+
+In the scattering of high energy neutrinos off electrons, it is observed that (after correcting for changing phase space or density-of-states effects) the differential cross-section falls by $10 \%$ as the momentum transfer $q$ increases from small values to $20 \mathrm{GeV} / c$. Use this information to estimate the mass of the exchanged boson.
+
+
 ## Exercise A. Fermions \& Bosons (not assessed)
 
 ### Question A1. Proton form factor 
@@ -332,38 +368,231 @@ $$
 
 so in the case of a scattering off a point-like nucleus which is mediated by a photon we recover the formula for the Rutherford scattering as expected. 
 ```
-## Homework 2. Due on 25 November
 
-### Question 1: $\rho$ meson decays in flight
-The neutral rho meson often decays into two charged pions, $\rho^{0} \rightarrow \pi^{+} \pi^{-}$. In a monoenergetic beam of these mesons, some decays are observed where one pion is at rest. What is the energy of the particles in the beam?
 
-### Question 2: Allowed and forbidden decays
-Which of the following reactions are allowed by lepton number conservation, and which are forbidden? Explain.
-1.  $\tau^{+} \rightarrow \mu^{+} v_{\mu} \bar{v}_{\tau}$
-2.  $\pi^{+} \rightarrow \mu^{+} \gamma$
-3.  $\pi^{+} \rightarrow \mu^{+} v_{\mu}$
-4.  $\pi^{0} \rightarrow e^{+} e^{-} \gamma$
-5.  $\tau^{+} \rightarrow e^{+} \gamma$
-6.  $\tau^{-} \rightarrow \pi^{-} v_{\tau}$
 
-### Question 3: Photon-proton capture
-A high energy photon can excite the quarks in a proton, producing a short-lived state which rapidly forms a nucleon and pion. Calculate the minimum photon energy required for the following reaction to occur when the target is a stationary proton
+
+## Exercise B. Elastic and inelastic scattering  (not assessed)
+
+These exercises revisit the topic of scattering. In the first one you calculate the form factor for a proton described as a solid sphere with uniform charge. In the second one, you calculate the value of the two variables defined in the deep inelastic scattering in the laboratory frame
+
+### Question B1. Proton form factor
+Use the fact that the form factor, $F(q)$, is the Fourier transform of the normalised charge distribution $\rho(r)$, which in the spherically symmetric case gives
 
 $$
-\begin{equation*}
-\gamma p \rightarrow n \pi^{+}
-\end{equation*}
+F(q)=\int \frac{4 \pi \hbar r}{q} \rho(r) \sin \frac{q r}{\hbar} d r
 $$
 
-Hint: consider the final state in the centre of mass frame.
+to find an expression for $F(q)$ for a simple model of the proton considered as a uniform spherical charge distribution of radius $R$.
 
-
-### Question 4: Yukawa potential
-In Exercise A, we saw that the Yukawa potential leads to an expression for the matrix element of
+Show that the requirement that the wavelength associated with $q$ be much greater than the proton size is equivalent to the condition
 
 $$
-\frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+\frac{q R}{\hbar} \ll 1
 $$
 
-In the scattering of high energy neutrinos off electrons, it is observed that (after correcting for changing phase space or density-of-states effects) the differential cross-section falls by $10 \%$ as the momentum transfer $q$ increases from small values to $20 \mathrm{GeV} / c$. Use this information to estimate the mass of the exchanged boson.
+(Ignore factors like $2 \pi$.) Using your calculated expression for $F(q)$, demonstrate that in this limit the form factor reduces to 1.
+Explain why is this condition satisfied by any form factor.
 
+```{dropdown}  Solution
+In this exercise we describe the scattering of an electron off a solid sphere target (the proton). In the form factor formula, we use  $q$ as the magnitude of the momentum transferred in the collision $q=\left|\boldsymbol{p}-\boldsymbol{p}^{\prime}\right|$. We also assume that the charge distribution $\rho(r)$ is normalised to 1. 
+
+We define the radius of the proton as $R$ and we solve the problem in four parts:
+
+**Part 1: Evaluate the form factor**
+
+We can write an expression for $\rho(r)$ as:
+
+$$
+\begin{array}{ll}
+\rho(r)=\frac{3}{4 \pi R^{3}} & \text { for } r<R \\
+\rho(r)=0 & \text { for } r \geq R
+\end{array}
+$$
+
+We use the formula for the form factor for a charge distribution with spherical symmetry.
+
+$$
+F(q)=\int \frac{4 \pi \hbar r}{q} \rho(r) \sin \frac{q r}{\hbar} d r=\frac{3}{4 \pi R^{3}} \int_{0}^{R} \frac{4 \pi \hbar r}{q} \sin \frac{q r}{\hbar} d r
+$$
+
+And, as seen in the lectures, we define a new variable $z=\frac{q r}{\hbar}$. Which implies
+
+$$
+r=\frac{z \hbar}{q} \quad d r=\frac{\hbar}{q}
+$$
+
+Changing variables gives
+
+$$
+F(q)=\frac{3}{4 \pi R^{3}} \int_{0}^{\frac{q R}{\hbar}} \frac{4 \pi \hbar}{q} \frac{z \hbar}{q} \sin z \frac{\hbar}{q} d z=3\left(\frac{\hbar}{q R}\right)^{3} \int_{0}^{\frac{q R}{\hbar}} z \sin z d z
+$$
+
+for simplicity we define $b=\frac{q R}{\hbar}$ and get the integral in a nice form
+
+$$
+F(q)=3 b^{-3} \int_{0}^{b} z \sin z d z
+$$
+
+The integral can be solved by parts to obtain
+
+$$
+F(q(b))=3 b^{-3}(\sin b-b \cos b)
+$$
+
+Note, that this result can be found on the textbook by Martin.
+
+**Part 2: proton radius much smaller than the wavelength**
+The wavelength associated with the momentum transfer $q$ is given by the De Broglie expression
+
+$$
+\lambda=\frac{h}{q}
+$$
+
+The fact that the proton is much smaller than the wavelength associated with the electron is expressed by
+
+$$
+R \ll \lambda=\frac{h}{q}
+$$
+
+which means that
+
+$$
+\frac{R q}{h} \ll 1 \quad \text { or similarly } \quad b=\frac{R q}{\hbar} \ll 1
+$$
+
+**Part 3: Limit of $F(q)$ for $b \ll 1$ **
+
+We need to calculate
+
+$$
+\lim _{b \rightarrow 0} F(q)=\lim _{b \rightarrow 0} 3 \frac{\sin b-b \cos b}{b^{3}}=1
+$$
+
+and use the de l'Hopital rule (three times) to show that this limit is equal to 1. (Or alternatively a Taylor expansion up to the power of $b^{3}$.
+
+**Part 4: Form factor in the limit $R \ll \lambda$ **
+
+There is a physics explanation of the reason why the form factor is 1 when the size of the charge distribution is smaller than the wavelength. In the lectures we saw that the cross section of an elastic scattering process is written as
+
+$$
+\left.\frac{d \sigma}{d \Omega}=|F(q)|^{2} \frac{d \sigma}{d \Omega}\right)_{\text {point-like }}
+$$
+
+in other words the form factor modifies the cross section expected for a point like object to account for an extended charge distribution. If the wavelength of the particle used to probe the distribution is much bigger than the charge distribution itself, the charge distribution is observed as a point-like distribution. Hence the form factor has to be 1 in this limit.
+
+
+```
+
+### Question B2. Deep inelastic scattering variables
+We defined the deep inelastic scattering as the process
+
+$$
+e+p \rightarrow e+X \text { (hadrons) }
+$$
+
+And defined the variables as:
+
+- $E_{i}, \boldsymbol{p}_{\boldsymbol{i}}$ as the energy and momentum of the incoming electron
+- $E_{f}, \boldsymbol{p}_{f}$ as the energy and momentum of the outgoing electron
+- $M$ as the mass of the proton
+- $W$ as the invariant mass of the hadron system, and $E_{W}, \boldsymbol{p}_{W}$ the total energy and momentum of the system
+- $Q^{2}=-\left[\left(E_{i}-E_{f}\right)^{2}-\left(\boldsymbol{p}_{\boldsymbol{i}}-\boldsymbol{p}_{f}\right)^{2}\right]$
+- The variable $\nu$ defined as $2 M \nu=W^{2}+Q^{2}-M^{2}$
+
+Show that in the laboratory frame, where the proton is at rest, the two variables can be written
+
+- $Q^{2}=2 E_{i} E_{f}(1-\cos \theta)$
+- $\nu=E_{i}-E_{f}$
+
+Show that in case of an elastic scattering the ratio x is equal to 1, where
+
+$$
+x=\frac{Q^{2}}{2 M v}
+$$
+
+[Note the mass of the electron should be neglected]
+
+```{dropdown}  Solution
+
+The question asks to neglect the mass of the electron, which means that
+
+$$
+E=p \quad \text { and } \quad E^{\prime}=p^{\prime}
+$$
+
+(using, as usual $\mathrm{c=1}$ )
+
+**Part 1: Calculate $Q^{2}$ in the centre-of-mass frame**
+
+Using this approximation we can write
+
+$$
+Q^{2}=-\left[E_i^2+E_f^2-2 E_i E_f-E_i^2-E_f^2+2 E_i E_f \cos \theta\right]=2 E_i E_f(1-\cos \theta)
+$$
+
+where we used the fact that $\left|\boldsymbol{p_i}-\boldsymbol{p_f}\right|^{2}=p_i^{2}+p_f^{2}-2 \boldsymbol{p_i} \cdot \boldsymbol{p_f}=E_i^{2}+E_f^{2}-2 E_i E_f \cos \theta$, with $\theta$ being the angle between the incoming and outgoing momenta.
+
+**Part 2: Calculate $\nu$ in the centre-of-mass frame**
+
+We start by writing the equations for conservation of energy and momentum
+
+$$
+\begin{aligned}
+& E_i+M=E_f+E_{W} \\
+& \boldsymbol{p_i}=\boldsymbol{p_f}+\boldsymbol{p}_{\boldsymbol{W}}
+\end{aligned}
+$$
+
+Rearranging
+
+$$
+\begin{aligned}
+E_i-E_f&=E_{W}-M \\
+\boldsymbol{p_i}-\boldsymbol{p_f}&=\boldsymbol{p}_{\boldsymbol{W}}
+\end{aligned}
+$$
+
+Squaring the two and subtracting (as we usually do)
+
+$$
+\left(E_i-E_f\right)^{2}-\left(p_i-p_f \right)^{2}=E_{W}^{2}-p_{W}^{2}+M^{2}-2 E_{W} M
+$$
+
+The right-hand side of the equation can be recognised as $-Q^{2}$, while $E_{W}^{2}-p_{W}^{2}=W^{2}$, e.g. the invariant mass of the hadronic system. Hence
+
+$$
+-Q^{2}=W^{2}+M^{2}-2 E_{W} M
+$$
+
+From the energy conservation
+
+$$
+E_{W}=E_i-E_f+M
+$$
+
+which gives
+
+$$
+2 M\left(E_i-E_f \right)=W^{2}+Q^{2}-M^{2}
+$$
+
+Implying that
+
+$$
+\nu=E-E
+$$
+
+**Part 3: Elastic scattering limit**
+
+If the scattering is elastic, then $\nu$ and $Q^{2}$ are no longer independent. In particular the hadronic component of the final state is the proton alone, which means that the invariant mass of the final system, which we indicate with $W$, is the mass of the proton. Or $W=M$. This means that for elastic scattering
+
+$$
+2 M v=Q^{2}
+$$
+
+leading to the ratio $x=1$
+
+
+
+```
