@@ -153,6 +153,53 @@ The mass of the electron could be neglected in the equation above as it is much 
 ### Question 1: $\rho$ meson decays in flight
 The neutral rho meson often decays into two charged pions, $\rho^{0} \rightarrow \pi^{+} \pi^{-}$. In a monoenergetic beam of these mesons, some decays are observed where one pion is at rest. What is the energy of the particles in the beam?
 
+```{dropdown} Solution and feedback
+Conservation of energy implies that the energy before the collision is equal to the energy after the collision:
+
+$$
+E_{\rho}=m_{\pi}+E_{\pi}
+$$
+
+Since one of the pions will be at rest, its total energy is equal to its mass
+Momentum conservation implies that the momentum of the $\rho$ is transferred to the momentum of the pion in movement. We indicate this momentum with $p$.
+
+Energy conservation is then written as
+
+$$
+E_{\rho}=m_{\pi}+\sqrt{p^{2}+m_{\pi}^{2}}
+$$
+
+We isolate the square root and square:
+
+$$
+\begin{gathered}
+\left(E_{\rho}-m_{\pi}\right)^{2}=p^{2}+m_{\pi}^{2} \\
+E_{\rho}^{2}-2 E_{\rho} m_{\pi}+m_{\pi}^{2}=p^{2}+m_{\pi}^{2}
+\end{gathered}
+$$
+
+Remember that $E_{\rho}^{2}-p^{2}=m_{\rho}^{2}$
+
+$$
+E_{\rho}=\frac{m_{\rho}^{2}}{2 m_{\pi}}=2120 \mathrm{MeV}
+$$
+
+**Comments:**
+
+- Most of you got to the correct result. Well done.
+- Some of you took a longer route to calculate the momentum of the rho and then the energy from it. Other students calculated the energy of the moving pion and then that of the rho. This is correct and gets full marks. However it just takes a few extra steps. Practicing the faster method may save you some time in the exam.
+- You should remember that for a particle of mass m:
+
+$$
+E^{2}=p^{2}+m^{2}
+$$
+
+We use this equation pretty much all the times there is a relativistic kinematic problem
+
+
+```
+
+
 ### Question 2: Allowed and forbidden decays
 Which of the following reactions are allowed by lepton number conservation, and which are forbidden? Explain.
 1.  $\tau^{+} \rightarrow \mu^{+} v_{\mu} \bar{v}_{\tau}$
@@ -161,6 +208,19 @@ Which of the following reactions are allowed by lepton number conservation, and 
 4.  $\pi^{0} \rightarrow e^{+} e^{-} \gamma$
 5.  $\tau^{+} \rightarrow e^{+} \gamma$
 6.  $\tau^{-} \rightarrow \pi^{-} v_{\tau}$
+
+```{dropdown} Solution and feedback
+
+(1), (3), (4) and (6) are allowed. Most of you did this correctly.
+
+**Comments:**
+
+- Different leptons have different lepton numbers that are individually conserved. Hence ( $v$ ) is NOT allowed since the electron and tau lepton numbers are not conserved
+- The question was not asking about baryon number conservation explicitly. However the baryon number of the pions is always zero.
+- The question ends with the word "Explain". This means you need to explain why a reaction is allowed/forbidden. A short explanation is sufficient, mentioning lepton number conservation, and not just the equation.
+
+```
+
 
 ### Question 3: Photon-proton capture
 A high energy photon can excite the quarks in a proton, producing a short-lived state which rapidly forms a nucleon and pion. Calculate the minimum photon energy required for the following reaction to occur when the target is a stationary proton
@@ -173,6 +233,34 @@ $$
 
 Hint: consider the final state in the centre of mass frame.
 
+```{dropdown} Solution and feedback
+This question is similar to the one you saw in your previous homework. The minimum energy corresponds to the configuration when the pion and the neutron are at rest in the centre of mass frame. Hence the Lorentz invariant quantity is:
+
+$$
+E^{2}-p^{2}=\left(m_{n}+m_{\pi}\right)^{2}
+$$
+
+This quantity will be conserved as both energy and momentum are conserved in the interaction. Moreover the quantity will be the same in all reference frames. We calculate the Lorentz invariant quantity in the lab frame before the collision
+
+$$
+\left(E_{\gamma}+m_{p}\right)^{2}-p_{\gamma}^{2}=\left(m_{n}+m_{\pi}\right)^{2}
+$$
+
+For a photon of zero mass we have $p_{\gamma}=E_{\gamma}$
+
+$$
+\begin{gathered}
+2 m_{p} E_{\gamma}+m_{p}^{2}=\left(m_{n}+m_{\pi}\right)^{2} \\
+E_{\gamma}=\frac{\left(m_{n}+m_{\pi}\right)^{2}-m_{p}^{2}}{2 m_{p}}=151.5 \mathrm{MeV}
+\end{gathered}
+$$
+
+**Comments:**
+
+- A few of you got confused with the reference frames. It is important to realise that in the centre of mass frame the proton is NOT at rest, so its energy will NOT be equal to its rest mass.
+- The fact that the quantity $E^{2}-p^{2}$ is Lorentz invariant is key to solve this exercise. It is important that you justify this assumption in your solution.
+
+```
 
 ### Question 4: Yukawa potential
 In Exercise A, we saw that the Yukawa potential leads to an expression for the matrix element of
@@ -183,6 +271,34 @@ $$
 
 In the scattering of high energy neutrinos off electrons, it is observed that (after correcting for changing phase space or density-of-states effects) the differential cross-section falls by $10 \%$ as the momentum transfer $q$ increases from small values to $20 \mathrm{GeV} / c$. Use this information to estimate the mass of the exchanged boson.
 
+```{dropdown} Solution and feedback
+
+The cross section is proportional to the square of the matrix element given in the question. So we can write
+
+$$
+\sigma(q) \propto\left(\frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}\right)^{2}
+$$
+
+Small values of $q$ means $q \ll m c$, hence the mass can be neglected. This means that
+
+$$
+\begin{gather*}
+\frac{\sigma(q=20 \mathrm{GeV} / \mathrm{c})}{\sigma(q=0 \mathrm{GeV} / \mathrm{c})}=0.9 \\
+\frac{m^{4} c^{4}}{\left(q^{2}+m^{2} c^{2}\right)^{2}}=0.9  \tag{Eq.1}\\
+\frac{m^{2} c^{4}}{q^{2} c^{2}+m^{2} c^{4}}=\sqrt{0.9}
+\end{gather*}
+$$
+
+(Where we added an extra $\mathrm{c}^{2}$ at the numerator and denominator to make sure everything is in GeV . Alternatively we can take $\mathrm{c=1}$ )
+
+$$
+m c^{2}=20 \sqrt{\frac{\sqrt{0.9}}{1-\sqrt{0.9}}} \mathrm{GeV}=86 \mathrm{GeV}
+$$
+
+**Comments:**
+
+- A few people squared the terms in Eq 1 and had to calculate the roots of a quadratic equation. This is correct, but it takes longer, as a square root makes this much faster to calculate
+```
 
 ## Exercise A. Fermions \& Bosons (not assessed)
 
