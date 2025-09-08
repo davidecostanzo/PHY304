@@ -1,6 +1,6 @@
 # MPS328: Particle Physics
 
-Lecture notes for the adademic year 2024/25 <br>
+Lecture notes for the adademic year 2025/26 <br>
 by Davide Costanzo<br>Department of Physics, University of Sheffield
 
 V2.0: 8 September 2025, Sheffield, UK
