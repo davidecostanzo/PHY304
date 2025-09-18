@@ -9,19 +9,27 @@ In this unit we introduce the elementary particles of the Standard Model, we int
 
 ## Homework 1. Due on 21 October
 This homework will assess Unit 1 and is made of two questions on relativistic kinematics. 
+
 To be released on 7 October. 
 
 ## Homework 2. Due on 25 November
 This homework will assess Units 2, 3 and 4.
+
 To be released on 28 October
 
 
-## Exercise A. Fermions \& Bosons (not assessed)
+## Exercise A. Fermions \& Bosons 
+**(not assessed)**
+
 To be released on 14 October
 
-## Exercise B. Elastic and inelastic scattering  (not assessed)
+## Exercise B. Elastic and inelastic scattering 
+**(not assessed)**
+
 To be released on 17 November
 
-## Exercise C. Mock paper with solutions (not assessed)
+## Exercise C. Mock paper with solutions 
+**(not assessed)**
+
 To be released on 8 December
 
