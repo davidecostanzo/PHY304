@@ -94,6 +94,9 @@ There will also be 3 unassessed exercises, with solutions provided 2 weeks later
 | Exercise B (Units 2, 5)| 17 November | 2 December |
 | Exercise C (mock paper) | 8 December | 22 December |
 
+
+### Course timetable
+
 ## Table of contents
 
 ```{tableofcontents}

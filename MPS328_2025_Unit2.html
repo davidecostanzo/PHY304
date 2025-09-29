@@ -653,8 +653,8 @@ d W=\frac{2 \pi}{\hbar}\left|\mathcal{M}_{f i}\right|^{2} \rho\left(E_{f}\right)
 \end{equation*}
 \]</div>
 <p>where we define <span class="math notranslate nohighlight">\(\vec{q}=\vec{p_{f}}-\vec{p_{i}}\)</span> as the momentum transfer in the collision. You can recognise the integral on the right-hand side as the 3-D Fourier transform of the potential energy. We define this Fourier transform as</p>
-<div class="math notranslate nohighlight" id="equation-eq-fq2">
-<span class="eqno">(2.10)<a class="headerlink" href="#equation-eq-fq2" title="Link to this equation">#</a></span>\[
+<div class="math notranslate nohighlight" id="equation-eq-fq2fourier">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-eq-fq2fourier" title="Link to this equation">#</a></span>\[
 \begin{equation*}
 f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}) d^{3} \mathbf{x} 
 \end{equation*}
@@ -669,7 +669,7 @@ f\left(\mathbf{q}^{2}\right)=\int e^{i(\vec{q} \cdot \vec{x}) / \hbar} U(\vec{x}
 \rho\left(E_{f}\right)=\frac{V}{(2 \pi \hbar)^{3}} \frac{p_{f}^{2}}{v_{f}} d \Omega 
 \end{equation*}
 \]</div>
-<p>Replacing this formula in the Fermi golden rule equation <a class="reference internal" href="#equation-eq-fermigoldrule">(2.3)</a>, together with the cross section dependence of equation <a class="reference internal" href="#equation-eq-diffrate">(2.2)</a> and the matrix element definition of equations <a class="reference internal" href="#equation-eq-mfi">(2.5)</a> and <a class="reference internal" href="#equation-eq-fq2">(2.10)</a> we end up with a formula for the differential cross section of</p>
+<p>Replacing this formula in the Fermi golden rule equation <a class="reference internal" href="#equation-eq-fermigoldrule">(2.3)</a>, together with the cross section dependence of equation <a class="reference internal" href="#equation-eq-diffrate">(2.2)</a> and the matrix element definition of equations <a class="reference internal" href="#equation-eq-mfi">(2.5)</a> and <a class="reference internal" href="#equation-eq-fq2fourier">(2.6)</a> we end up with a formula for the differential cross section of</p>
 <div class="math notranslate nohighlight" id="equation-eq-xsecformula">
 <span class="eqno">(2.7)<a class="headerlink" href="#equation-eq-xsecformula" title="Link to this equation">#</a></span>\[
 \begin{equation*}
@@ -824,7 +824,7 @@ Z e \rho(\vec{r})
 U(\vec{x})=-\frac{Z e^{2}}{4 \pi \epsilon_{0}} \int \frac{\rho(\vec{r})}{|\vec{x}-\vec{r}|} d^{3} \mathbf{r}
 \end{equation*}
 \]</div>
-<p>The Fourier transform <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> of equation <a class="reference internal" href="#equation-eq-fq2">(2.10)</a> is calculated by integrating the value of <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> over <span class="math notranslate nohighlight">\(d^{3} \mathbf{x}\)</span> leading to the double integral</p>
+<p>The Fourier transform <span class="math notranslate nohighlight">\(f\left(\mathbf{q}^{2}\right)\)</span> of equation <a class="reference internal" href="#equation-eq-fq2fourier">(2.6)</a> is calculated by integrating the value of <span class="math notranslate nohighlight">\(U(\vec{x})\)</span> over <span class="math notranslate nohighlight">\(d^{3} \mathbf{x}\)</span> leading to the double integral</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
