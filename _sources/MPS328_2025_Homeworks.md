@@ -52,7 +52,55 @@ To be released on 28 October
 ## Exercise A. Fermions \& Bosons 
 **(not assessed)**
 
-To be released on 14 October
+### Question A1. Proton form factor
+In the lectures, we showed that the form factor $F(q)$ is the 3-D Fourier transform of the normalised charge distribution $\rho(\boldsymbol{r})$
+
+$$
+F(q)=\int \rho(\boldsymbol{r}) e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d^{3} \boldsymbol{r}
+$$
+  
+For a simplified model of a proton's charge distribution, $\rho(r)=C \frac{e^{-r / R}}{r}$
+1. Find the constant of proportionality $C$ required to normalise $\rho$ correctly.
+2.  Show that $F(q)=\frac{1}{1+\frac{q^{2} R^{2}}{\hbar^{2}}}$.
+3.  Give an interpretation of the constant $R$
+  
+```{dropdown} Solution
+Provided on 28 October
+
+```
+
+### Question A2. Yukawa Potential
+
+Earlier in the course, we used the Born approximation to show that in the case of scattering with a momentum transfer $q$ from a spherically symmetric potential $U(r)$, the matrix element is proportional to
+
+$$
+f(\boldsymbol{q})=\int U(\boldsymbol{r}) e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d \boldsymbol{r}
+$$
+
+For the case of the Yukawa potential,
+
+$$
+U(r)=\frac{g^{2}}{r} e^{-r / R}
+$$
+
+( with $R=\hbar / m c$, and $m$ the mass of the exchanged boson mediating the force) show that the matrix element evaluates to
+
+$$
+\frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+$$
+
+When an electron scatters electromagnetically off a nucleus, the exchanged boson is the massless photon, and at low energies the nucleus can be considered to remain effectively at rest. Show that in case the scattering cross section yields to the Rutherford scattering formula with the usual angular dep$
+
+$$
+\frac{d \sigma}{d \Omega} \propto \frac{1}{\sin ^{4} \theta / 2}
+$$
+
+```{dropdown} Solution
+Provided on 28 October
+
+```
+
+
 
 ## Exercise B. Elastic and inelastic scattering 
 **(not assessed)**

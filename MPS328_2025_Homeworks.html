@@ -390,7 +390,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-2-due-on-25-november">8.2. Homework 2. Due on 25 November</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-a-fermions-bosons">8.3. Exercise A. Fermions &amp; Bosons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-a-fermions-bosons">8.3. Exercise A. Fermions &amp; Bosons</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-a1-proton-form-factor">8.3.1. Question A1. Proton form factor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-a2-yukawa-potential">8.3.2. Question A2. Yukawa Potential</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-b-elastic-and-inelastic-scattering">8.4. Exercise B. Elastic and inelastic scattering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-c-mock-paper-with-solutions">8.5. Exercise C. Mock paper with solutions</a></li>
 </ul>
@@ -451,7 +455,53 @@ Two of the exercises are assessed homeworks, which must be handed in the followi
 <section id="exercise-a-fermions-bosons">
 <h2><span class="section-number">8.3. </span>Exercise A. Fermions &amp; Bosons<a class="headerlink" href="#exercise-a-fermions-bosons" title="Link to this heading">#</a></h2>
 <p><strong>(not assessed)</strong></p>
-<p>To be released on 14 October</p>
+<section id="question-a1-proton-form-factor">
+<h3><span class="section-number">8.3.1. </span>Question A1. Proton form factor<a class="headerlink" href="#question-a1-proton-form-factor" title="Link to this heading">#</a></h3>
+<p>In the lectures, we showed that the form factor <span class="math notranslate nohighlight">\(F(q)\)</span> is the 3-D Fourier transform of the normalised charge distribution <span class="math notranslate nohighlight">\(\rho(\boldsymbol{r})\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+F(q)=\int \rho(\boldsymbol{r}) e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d^{3} \boldsymbol{r}
+\]</div>
+<p>For a simplified model of a proton’s charge distribution, <span class="math notranslate nohighlight">\(\rho(r)=C \frac{e^{-r / R}}{r}\)</span></p>
+<ol class="arabic simple">
+<li><p>Find the constant of proportionality <span class="math notranslate nohighlight">\(C\)</span> required to normalise <span class="math notranslate nohighlight">\(\rho\)</span> correctly.</p></li>
+<li><p>Show that <span class="math notranslate nohighlight">\(F(q)=\frac{1}{1+\frac{q^{2} R^{2}}{\hbar^{2}}}\)</span>.</p></li>
+<li><p>Give an interpretation of the constant <span class="math notranslate nohighlight">\(R\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Provided on 28 October</p>
+</div>
+</details></section>
+<section id="question-a2-yukawa-potential">
+<h3><span class="section-number">8.3.2. </span>Question A2. Yukawa Potential<a class="headerlink" href="#question-a2-yukawa-potential" title="Link to this heading">#</a></h3>
+<p>Earlier in the course, we used the Born approximation to show that in the case of scattering with a momentum transfer <span class="math notranslate nohighlight">\(q\)</span> from a spherically symmetric potential <span class="math notranslate nohighlight">\(U(r)\)</span>, the matrix element is proportional to</p>
+<div class="math notranslate nohighlight">
+\[
+f(\boldsymbol{q})=\int U(\boldsymbol{r}) e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d \boldsymbol{r}
+\]</div>
+<p>For the case of the Yukawa potential,</p>
+<div class="math notranslate nohighlight">
+\[
+U(r)=\frac{g^{2}}{r} e^{-r / R}
+\]</div>
+<p>( with <span class="math notranslate nohighlight">\(R=\hbar / m c\)</span>, and <span class="math notranslate nohighlight">\(m\)</span> the mass of the exchanged boson mediating the force) show that the matrix element evaluates to</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+\]</div>
+<p>When an electron scatters electromagnetically off a nucleus, the exchanged boson is the massless photon, and at low energies the nucleus can be considered to remain effectively at rest. Show that in case the scattering cross section yields to the Rutherford scattering formula with the usual angular dep$</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d \sigma}{d \Omega} \propto \frac{1}{\sin ^{4} \theta / 2}
+\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Provided on 28 October</p>
+</div>
+</details></section>
 </section>
 <section id="exercise-b-elastic-and-inelastic-scattering">
 <h2><span class="section-number">8.4. </span>Exercise B. Elastic and inelastic scattering<a class="headerlink" href="#exercise-b-elastic-and-inelastic-scattering" title="Link to this heading">#</a></h2>
@@ -526,7 +576,11 @@ Two of the exercises are assessed homeworks, which must be handed in the followi
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-2-due-on-25-november">8.2. Homework 2. Due on 25 November</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-a-fermions-bosons">8.3. Exercise A. Fermions &amp; Bosons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-a-fermions-bosons">8.3. Exercise A. Fermions &amp; Bosons</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-a1-proton-form-factor">8.3.1. Question A1. Proton form factor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-a2-yukawa-potential">8.3.2. Question A2. Yukawa Potential</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-b-elastic-and-inelastic-scattering">8.4. Exercise B. Elastic and inelastic scattering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-c-mock-paper-with-solutions">8.5. Exercise C. Mock paper with solutions</a></li>
 </ul>
