@@ -64,10 +64,93 @@ For a simplified model of a proton's charge distribution, $\rho(r)=C \frac{e^{-r
 2.  Show that $F(q)=\frac{1}{1+\frac{q^{2} R^{2}}{\hbar^{2}}}$.
 3.  Give an interpretation of the constant $R$
   
-```{dropdown} Solution
-Provided on 28 October
+````{dropdown} Solution
+**Part 1: normalisation**
 
+The normalisation factor $C$ should be such that the integral over all space of the charge distribution should be equal to 1.
+
+$$
+\begin{aligned}
+\int \rho(r) d^3 r &= 1 \\
+\int C \frac{e^{-r / R}}{r} d^3 r &=1
+\end{aligned}
+$$
+
+The integral should be done in spherical coordinates replacing 
+
+$$
+d^3 r = \sin \theta r^2\, d\theta\, d\phi\, dr 
+$$
+
+Since there is no dependency on the polar coordinates $\theta$ and $\phi$ the integral on the polar variables gives us a $4\pi$ factor hence
+
+$$
+\begin{aligned}
+1 &= \int_0^\infty C \frac{e^{-r / R}}{r} 4\pi r^2 dr  \\
+\frac{1}{4\pi C} &= \int_0^\infty r e^{-r / R} dr 
+\end{aligned}
+$$
+
+Integrating by parts we have
+
+$$
+\begin{aligned}
+\frac{1}{4\pi C} &= \left[-R e^{-r/R} r \right]_0^\infty -\int_0^\infty -R e^{-r/R} dr  \\
+\frac{1}{4\pi C} &= 0 + \left[-R^2 e^{-r/R} \right]_0^\infty    \\
+\frac{1}{4\pi C} &= R^2  \\
+C &= \frac{1}{4\pi R^2}
+\end{aligned}
+$$
+
+**Part 2: Form factor**
+We repeat the integration similarly to what was done in Example 2.3. We integrated in polar coordinates in $\phi$, $\cos \theta$ and finally on $r$. The details are
+
+$$
+\begin{aligned}
+F(q) &= \int_0^\infty \int_{-1}^{+1} \int_0^{2\pi} C \frac{e^{-r / R}}{r} e^{iqr \cos \theta / \hbar} r^2 dr\, d\cos \theta\, d\phi \\
+&= 2 \pi C \int_0^\infty r e^{-r/R} \left[ \frac{\hbar}{iqr} e^{iqr \cos\theta / \hbar} \right]_{-1}^{+1} dr \\
+&= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{-r/R} \left(e^{iqr/\hbar} -  e^{-iqr/\hbar} \right) dr \\
+&= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{\left({-\frac{1}{R} +  \frac{iq}{\hbar}}\right)r} - e^{\left( {-\frac{1}{R} -  \frac{iq}{\hbar}}\right)r} dr \\
+&= \frac{2 \pi C \hbar}{iq}  \left[ \frac{e^{\left(-\frac{1}{R} +  \frac{iq}{\hbar}\right)r}}{-\frac{1}{R} +  \frac{iq}{\hbar}} - \frac{e^{\left(-\frac{1}{R} -  \frac{iq}{\hbar} \right)r}}{-\frac{1}{R} -  \frac{iq}{\hbar}} \right]_0^\infty 
+\end{aligned}
+$$
+
+The exponential terms $e^{-r/R}$ will give us 0 for $r\rightarrow \infty$ and $1$ for $r=0$, so we can simplify as
+
+$$
+\begin{aligned}
+F(q) &= \frac{2 \pi C \hbar}{iq} \left( \frac{-1}{-\frac{1}{R} + \frac{iq}{\hbar} } - \frac{-1}{-\frac{1}{R} - \frac{iq}{\hbar} } \right) \\
+&= \frac{2 \pi C \hbar}{iq} \left( \frac{1}{\frac{1}{R} - \frac{iq}{\hbar} } - \frac{1}{\frac{1}{R} + \frac{iq}{\hbar} } \right) \\
+&= \frac{2 \pi C \hbar}{iq} \frac{\left(\frac{1}{R} + \frac{iq}{\hbar} \right) - \left(\frac{1}{R} - \frac{iq}{\hbar} \right) }{\frac{1}{R^2}+ \frac{q^2}{\hbar^2}} \\
+&= \frac{2 \pi C \hbar}{iq} \frac{2 \frac{iq}{\hbar}}{ \frac{1}{R^2} +\frac{q^2}{\hbar^2}} \\
+&= \frac{4 \pi C}{\frac{1}{R^2} +\frac{q^2}{\hbar^2}}
+\end{aligned}
+$$
+
+And finally replacing the value obtained for $C$ in part 1 we get
+
+$$
+F(q) = \frac{1}{1+\frac{q^2R^2}{\hbar^2}}
+$$
+
+We should note that for $q=0$ we get $F(q)=1$ as expected. 
+
+**Part 3: Interpretation**
+If we plot the function for $r e^{-r/R}$ we can examine the functional dependence of $\rho(r)$.  The charge distribution will have a maximum at $r=R$ as in the figure below, and will extend to larger values of $R$. Hence $R$ would correspond to the radius where the nuclear density is at a maximum. 
+
+We can exclude this distribution as, experimentally, we expect the cross section and $F(q^2)$ to have dips as a function of $q$ (see example 2.5), while for this particular charge distribution the form factor is a continuos function. 
+
+```{figure} ExA3.png
+:alt: charge distribution for exercise A1
+:name: FigHWA3
+:width: 600px
+:align: center
+$r e^{-r/R}$ distribution, plotted to study the behaviour of the function $\rho(r)$. The x-axis would represent the value of $r/R$, and we can see a maximum for $r=R$. 
 ```
+
+
+
+````
 
 ### Question A2. Yukawa Potential
 
@@ -96,9 +179,58 @@ $$
 $$
 
 ```{dropdown} Solution
-Provided on 28 October
+**Part 1: Calculations** 
 
+To calculate the integral
+
+$$
+f(q^2) = \int \frac{g^{2}}{r} e^{-r / R} e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d \boldsymbol{r}
+$$
+
+we reuse the derivation from {numref}`Sec:Coulomb` where we introduced a factor $\lambda$ and then set $\lambda=0$. The integral is the same provided we replace:
+
+$$
+\lambda = \frac{1}{R} \ \ \ \ g^2=\frac{zZe^2}{4\pi\epsilon_0}
+$$
+
+and we no longer assume that $\lambda=0$. If we take the result obtained before setting $\lambda=0$ the result of the integral becomes
+
+$$
+\begin{align}
+f(q^2) &= \frac{2 \pi g^2 \hbar}{iq} \left[\frac{1}{\lambda - \frac{iq}{\hbar}} - \frac{1}{\lambda + \frac{iq}{\hbar}} \right ]
+&= 4 \pi g^2 \hbar^2 \frac{1}{\lambda^2 \hbar^2 +q^2} 
+\end{align}
+$$
+
+Using the definition of $\lambda$ and $R$ we get
+
+$$
+\lambda^2 \hbar^2 = \frac{\hbar^2}{R^2} = m^2 c^2
+$$
+
+Yielding the final result
+
+$$
+f(q^2) = \frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+$$
+
+**Part 2: Coulomb approximations**
+
+If the propagator is a photon the formula for $f(q^2)$ reduces to the formula we derived earlier and in particular since $m=0$ we have
+
+$$
+f(q^2) \propto \frac{1}{q^2}
+$$
+
+In {numref}`Sec:Rutherford` we evaluated $q=2p \sin \theta/2$ and the cross section is proportional to the square of $f(q^2)$, e.g.
+
+$$
+\frac{d\sigma}{d\Omega} \propto \frac{1}{q^4} \propto \frac{1}{\sin^4 \theta/2}
+$$
+
+so in the case of a scattering off a point-like nucleus which is mediated by a photon we recover the formula for the Rutherford scattering as expected. 
 ```
+
 
 
 

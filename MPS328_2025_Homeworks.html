@@ -471,7 +471,76 @@ F(q)=\int \rho(\boldsymbol{r}) e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar}
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Provided on 28 October</p>
+<p class="sd-card-text"><strong>Part 1: normalisation</strong></p>
+<p class="sd-card-text">The normalisation factor <span class="math notranslate nohighlight">\(C\)</span> should be such that the integral over all space of the charge distribution should be equal to 1.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\int \rho(r) d^3 r &amp;= 1 \\
+\int C \frac{e^{-r / R}}{r} d^3 r &amp;=1
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">The integral should be done in spherical coordinates replacing</p>
+<div class="math notranslate nohighlight">
+\[
+d^3 r = \sin \theta r^2\, d\theta\, d\phi\, dr 
+\]</div>
+<p class="sd-card-text">Since there is no dependency on the polar coordinates <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> the integral on the polar variables gives us a <span class="math notranslate nohighlight">\(4\pi\)</span> factor hence</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+1 &amp;= \int_0^\infty C \frac{e^{-r / R}}{r} 4\pi r^2 dr  \\
+\frac{1}{4\pi C} &amp;= \int_0^\infty r e^{-r / R} dr 
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Integrating by parts we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\frac{1}{4\pi C} &amp;= \left[-R e^{-r/R} r \right]_0^\infty -\int_0^\infty -R e^{-r/R} dr  \\
+\frac{1}{4\pi C} &amp;= 0 + \left[-R^2 e^{-r/R} \right]_0^\infty    \\
+\frac{1}{4\pi C} &amp;= R^2  \\
+C &amp;= \frac{1}{4\pi R^2}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text"><strong>Part 2: Form factor</strong>
+We repeat the integration similarly to what was done in Example 2.3. We integrated in polar coordinates in <span class="math notranslate nohighlight">\(\phi\)</span>, <span class="math notranslate nohighlight">\(\cos \theta\)</span> and finally on <span class="math notranslate nohighlight">\(r\)</span>. The details are</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+F(q) &amp;= \int_0^\infty \int_{-1}^{+1} \int_0^{2\pi} C \frac{e^{-r / R}}{r} e^{iqr \cos \theta / \hbar} r^2 dr\, d\cos \theta\, d\phi \\
+&amp;= 2 \pi C \int_0^\infty r e^{-r/R} \left[ \frac{\hbar}{iqr} e^{iqr \cos\theta / \hbar} \right]_{-1}^{+1} dr \\
+&amp;= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{-r/R} \left(e^{iqr/\hbar} -  e^{-iqr/\hbar} \right) dr \\
+&amp;= \frac{2 \pi C \hbar}{iq} \int_0^\infty e^{\left({-\frac{1}{R} +  \frac{iq}{\hbar}}\right)r} - e^{\left( {-\frac{1}{R} -  \frac{iq}{\hbar}}\right)r} dr \\
+&amp;= \frac{2 \pi C \hbar}{iq}  \left[ \frac{e^{\left(-\frac{1}{R} +  \frac{iq}{\hbar}\right)r}}{-\frac{1}{R} +  \frac{iq}{\hbar}} - \frac{e^{\left(-\frac{1}{R} -  \frac{iq}{\hbar} \right)r}}{-\frac{1}{R} -  \frac{iq}{\hbar}} \right]_0^\infty 
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">The exponential terms <span class="math notranslate nohighlight">\(e^{-r/R}\)</span> will give us 0 for <span class="math notranslate nohighlight">\(r\rightarrow \infty\)</span> and <span class="math notranslate nohighlight">\(1\)</span> for <span class="math notranslate nohighlight">\(r=0\)</span>, so we can simplify as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+F(q) &amp;= \frac{2 \pi C \hbar}{iq} \left( \frac{-1}{-\frac{1}{R} + \frac{iq}{\hbar} } - \frac{-1}{-\frac{1}{R} - \frac{iq}{\hbar} } \right) \\
+&amp;= \frac{2 \pi C \hbar}{iq} \left( \frac{1}{\frac{1}{R} - \frac{iq}{\hbar} } - \frac{1}{\frac{1}{R} + \frac{iq}{\hbar} } \right) \\
+&amp;= \frac{2 \pi C \hbar}{iq} \frac{\left(\frac{1}{R} + \frac{iq}{\hbar} \right) - \left(\frac{1}{R} - \frac{iq}{\hbar} \right) }{\frac{1}{R^2}+ \frac{q^2}{\hbar^2}} \\
+&amp;= \frac{2 \pi C \hbar}{iq} \frac{2 \frac{iq}{\hbar}}{ \frac{1}{R^2} +\frac{q^2}{\hbar^2}} \\
+&amp;= \frac{4 \pi C}{\frac{1}{R^2} +\frac{q^2}{\hbar^2}}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">And finally replacing the value obtained for <span class="math notranslate nohighlight">\(C\)</span> in part 1 we get</p>
+<div class="math notranslate nohighlight">
+\[
+F(q) = \frac{1}{1+\frac{q^2R^2}{\hbar^2}}
+\]</div>
+<p class="sd-card-text">We should note that for <span class="math notranslate nohighlight">\(q=0\)</span> we get <span class="math notranslate nohighlight">\(F(q)=1\)</span> as expected.</p>
+<p class="sd-card-text"><strong>Part 3: Interpretation</strong>
+If we plot the function for <span class="math notranslate nohighlight">\(r e^{-r/R}\)</span> we can examine the functional dependence of <span class="math notranslate nohighlight">\(\rho(r)\)</span>.  The charge distribution will have a maximum at <span class="math notranslate nohighlight">\(r=R\)</span> as in the figure below, and will extend to larger values of <span class="math notranslate nohighlight">\(R\)</span>. Hence <span class="math notranslate nohighlight">\(R\)</span> would correspond to the radius where the nuclear density is at a maximum.</p>
+<p class="sd-card-text">We can exclude this distribution as, experimentally, we expect the cross section and <span class="math notranslate nohighlight">\(F(q^2)\)</span> to have dips as a function of <span class="math notranslate nohighlight">\(q\)</span> (see example 2.5), while for this particular charge distribution the form factor is a continuos function.</p>
+<figure class="align-center" id="fighwa3">
+<a class="reference internal image-reference" href="_images/ExA3.png"><img alt="charge distribution for exercise A1" src="_images/ExA3.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8.1 </span><span class="caption-text"><span class="math notranslate nohighlight">\(r e^{-r/R}\)</span> distribution, plotted to study the behaviour of the function <span class="math notranslate nohighlight">\(\rho(r)\)</span>. The x-axis would represent the value of <span class="math notranslate nohighlight">\(r/R\)</span>, and we can see a maximum for <span class="math notranslate nohighlight">\(r=R\)</span>.</span><a class="headerlink" href="#fighwa3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </details></section>
 <section id="question-a2-yukawa-potential">
@@ -499,7 +568,47 @@ U(r)=\frac{g^{2}}{r} e^{-r / R}
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Provided on 28 October</p>
+<p class="sd-card-text"><strong>Part 1: Calculations</strong></p>
+<p class="sd-card-text">To calculate the integral</p>
+<div class="math notranslate nohighlight">
+\[
+f(q^2) = \int \frac{g^{2}}{r} e^{-r / R} e^{i \boldsymbol{q} \cdot \boldsymbol{r} / \hbar} d \boldsymbol{r}
+\]</div>
+<p class="sd-card-text">we reuse the derivation from <a class="reference internal" href="MPS328_2025_Unit2.html#sec-coulomb"><span class="std std-numref">Section 2.4.1</span></a> where we introduced a factor <span class="math notranslate nohighlight">\(\lambda\)</span> and then set <span class="math notranslate nohighlight">\(\lambda=0\)</span>. The integral is the same provided we replace:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{1}{R} \ \ \ \ g^2=\frac{zZe^2}{4\pi\epsilon_0}
+\]</div>
+<p class="sd-card-text">and we no longer assume that <span class="math notranslate nohighlight">\(\lambda=0\)</span>. If we take the result obtained before setting <span class="math notranslate nohighlight">\(\lambda=0\)</span> the result of the integral becomes</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align}
+f(q^2) &amp;= \frac{2 \pi g^2 \hbar}{iq} \left[\frac{1}{\lambda - \frac{iq}{\hbar}} - \frac{1}{\lambda + \frac{iq}{\hbar}} \right ]
+&amp;= 4 \pi g^2 \hbar^2 \frac{1}{\lambda^2 \hbar^2 +q^2} 
+\end{align}
+\]</div>
+<p class="sd-card-text">Using the definition of <span class="math notranslate nohighlight">\(\lambda\)</span> and <span class="math notranslate nohighlight">\(R\)</span> we get</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda^2 \hbar^2 = \frac{\hbar^2}{R^2} = m^2 c^2
+\]</div>
+<p class="sd-card-text">Yielding the final result</p>
+<div class="math notranslate nohighlight">
+\[
+f(q^2) = \frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+\]</div>
+<p class="sd-card-text"><strong>Part 2: Coulomb approximations</strong></p>
+<p class="sd-card-text">If the propagator is a photon the formula for <span class="math notranslate nohighlight">\(f(q^2)\)</span> reduces to the formula we derived earlier and in particular since <span class="math notranslate nohighlight">\(m=0\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+f(q^2) \propto \frac{1}{q^2}
+\]</div>
+<p class="sd-card-text">In <a class="reference internal" href="MPS328_2025_Unit2.html#sec-rutherford"><span class="std std-numref">Section 2.4.2</span></a> we evaluated <span class="math notranslate nohighlight">\(q=2p \sin \theta/2\)</span> and the cross section is proportional to the square of <span class="math notranslate nohighlight">\(f(q^2)\)</span>, e.g.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\Omega} \propto \frac{1}{q^4} \propto \frac{1}{\sin^4 \theta/2}
+\]</div>
+<p class="sd-card-text">so in the case of a scattering off a point-like nucleus which is mediated by a photon we recover the formula for the Rutherford scattering as expected.</p>
 </div>
 </details></section>
 </section>
