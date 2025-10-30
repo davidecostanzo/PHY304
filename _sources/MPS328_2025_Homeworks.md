@@ -5,8 +5,6 @@ The purpose of the homeworks is to help your revision of the lecture material an
 Two of the exercises are assessed homeworks, which must be handed in the following week.  These will be marked (the total homework mark counting 15% towards this module), and will be returned to you, with comments, before the next homework is set.  The other exercises are no less important to your understanding of the course, and should also be attempted seriously.  Solutions will be provided two weeks after each non-assessed exercise is set.
 
 
-In this unit we introduce the elementary particles of the Standard Model, we introduce the units used to measure quantities in particle physics, and we recap the rules of relativistic kinematics. 
-
 ## Homework 1. Due on 21 October
 This homework will assess Unit 1 and is made of two questions on relativistic kinematics. 
 
@@ -44,9 +42,59 @@ Solutions to be released on 4 November
 
 
 ## Homework 2. Due on 25 November
-This homework will assess Units 2, 3 and 4.
+This homework assesses Units 2, 3 and 4.
 
-To be released on 28 October
+
+### Question 1: $\rho$ meson decays in flight
+The neutral rho meson often decays into two charged pions, $\rho^{0} \rightarrow \pi^{+} \pi^{-}$. In a monoenergetic beam of these mesons, some decays are observed where one pion is at rest. What is the energy of the particles in the beam?
+
+[Mass of the $\rho^0$ is 775 MeV/c$^2$ and mass of the pions is 135 MeV/c$^2$.]
+
+```{dropdown} Solution and feedback
+Solutions to be released on 9 December
+```
+
+### Question 2: Allowed and forbidden decays
+Which of the following reactions are allowed by lepton number conservation, and which are forbidden? Explain.
+1.  $\tau^{+} \rightarrow \mu^{+} v_{\mu} \bar{v}_{\tau}$
+2.  $\pi^{+} \rightarrow \mu^{+} \gamma$
+3.  $\pi^{+} \rightarrow \mu^{+} v_{\mu}$
+4.  $\pi^{0} \rightarrow e^{+} e^{-} \gamma$
+5.  $\tau^{+} \rightarrow e^{+} \gamma$
+6.  $\tau^{-} \rightarrow \pi^{-} v_{\tau}$
+
+```{dropdown} Solution and feedback
+Solutions to be released on 9 December
+```
+
+### Question 3: Photon-proton capture
+A high energy photon can excite the quarks in a proton, producing a short-lived state which rapidly forms a nucleon and pion. Calculate the minimum photon energy required for the following reaction to occur when the target is a stationary proton
+
+$$
+\begin{equation*}
+\gamma p \rightarrow n \pi^{+}
+\end{equation*}
+$$
+
+Hint: consider the final state in the centre of mass frame.
+
+```{dropdown} Solution and feedback
+Solutions to be released on 9 December
+```
+
+
+### Question 4: Yukawa potential
+In Exercise A, we saw that the Yukawa potential leads to an expression for the matrix element of
+
+$$
+\frac{4 \pi g^{2} \hbar^{2}}{q^{2}+m^{2} c^{2}}
+$$
+
+In the scattering of high energy neutrinos off electrons, it is observed that (after correcting for changing phase space or density-of-states effects) the differential cross-section falls by $10 \%$ as the momentum transfer $q$ increases from small values to $20 \mathrm{GeV} / c$. Use this information to estimate the mass of the exchanged boson.
+
+```{dropdown} Solution and feedback
+Solutions to be released on 9 December
+```
 
 
 ## Exercise A. Fermions \& Bosons 
@@ -243,4 +291,5 @@ To be released on 17 November
 **(not assessed)**
 
 To be released on 8 December
+
 
