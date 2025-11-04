@@ -19,8 +19,66 @@ Evaluate the energies of the muon and the neutrino in the pion rest frame.
 
 \[Mass of the pion ($\pi^+$) is 139.6 MeV/c$^2$, mass of the muon ($\mu^+$) is 105.7 MeV/c$^2$, and the neutrino ($\nu_\mu$) is masseless \]
 ```{dropdown} Solutions and feedback
-Solutions to be released on 4 November
 
+Write energy conservation
+
+$$
+m_{\pi}=E_{\mu}+p
+$$
+
+Use
+
+$$
+p=\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+$$
+
+Gives:
+
+$$
+m_{\pi}=E_{\mu}+\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+$$
+
+We can isolate the square root and have
+
+$$
+m_{\pi}-E_{\mu}=\sqrt{E_{\mu}^{2}-m_{\mu}^{2}}
+$$
+
+And square
+
+$$
+m_{\pi}^{2}+E_{\mu}^{2}-2 m_{\pi} E_{\mu}=E_{\mu}^{2}-m_{\mu}^{2}
+$$
+
+And eventually
+
+$$
+E_{\mu}=\frac{m_{\pi}^{2}+m_{\mu}^{2}}{2 m_{\pi}}=109.8 \mathrm{MeV}
+$$
+
+**Feedback:**
+
+- Many of you solved the equations to calculate the momentum of the pion and then derived the energy from there. This is correct, and was awarded full marks. However since the momentum was not required, it is faster to solve for E directly
+- If you do calculate the momentum $p$, then the easier way to get to the energy is to use the energy conservation equation written at the beginning. So
+
+$$
+E_{\mu}=m_{\pi}-p
+$$
+
+Of course you can also use the kinematic formula below, but it's just more difficult
+
+$$
+E_{\mu}=\sqrt{p^{2}+m_{\mu}^{2}}
+$$
+
+- A few people got confused with the square root. Remember that the fact that
+
+$$
+E^{2}=p^{2}+m^{2}
+$$
+
+- Does NOT mean that E=p+m (!!)
+- As a consequence the kinetic energy of a particle with mass is NOT equal to $p$ (!!)
 ```
 
 ### Question 2. Production of a a new particle (6 marks)
@@ -34,11 +92,59 @@ What is the maximum mass of $Q^0$ which can be produced?  Use any reasonable app
 
 \[Mass of electron is 0.511 MeV/c$^2$;  that of proton is 938.3 MeV/c$^2$.\]
 
-```{dropdown} Solutions and feedback
-Solutions to be released on 4 November
+````{dropdown} Solutions and feedback
+**Solution: ** 
 
+A drawing of the physics process in the lab and centre-of-mass frames is:
+
+```{figure} HW1b_figure.png
+:alt: Schematics of the $e^- + p \rightarrow e^- + p + Q^0$ process
+:name: FigHW1b
+:width: 600px
+:align: center
+Schematics of the $e^- + p \rightarrow e^- + p + Q^0$ process.
 ```
 
+For the maximum $Q^{0}$ mass, we must have minimum kinetic energy consistent with the conservation of momentum.
+In the centre-of-mass frame zero kinetic energy is possible, i.e. the three particles are all at rest in this frame. This means that the Lorentz invariant
+
+$$
+\left(\sum E\right)^{2}-\left(\sum p\right)^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2}
+$$
+
+This is calculated in the rest frame, however being an invariant, it will have the same value in any other reference frame, including the Lab frame
+
+NOTE: The fact that the invariant is equal to the sum of the three masses squared is true only because we assume that the three particles are at rest in the centre-of-mass frame (!!) This is not true in general, e.g. if the particles are moving
+
+Evaluating the Lorentz invariant in the Lab frame before the collision and equating it to the same quantity calculated after the collision
+
+$$
+\begin{gathered}
+\left(E_{e}+m_{p}\right)^{2}-p_{e}^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2} \\
+E_{e}^{2}-p_{e}^{2}+2 E_{e} m_{p}+m_{p}^{2}=\left(m_{e}+m_{p}+m_{Q}\right)^{2}
+\end{gathered}
+$$
+
+And so
+
+$$
+m_{e}+m_{p}+m_{Q}=\sqrt{m_{p}^{2}+m_{e}^{2}+2 E_{e} m_{p}}
+$$
+
+Which gives $m_{Q}=1.958 \mathrm{GeV} / \mathrm{c}^{2}$
+The mass of the electron could be neglected in the equation above as it is much smaller than all the other masses
+
+**Feedback:**
+
+- You did not need to expand the expression $\left(m_{p}+m_{e}+m_{Q}\right)^{2}$. It's perfectly OK to do it, but in the end you get a value for $m_{p}+m_{e}+m_{Q}$ to which you can subtract the known masses of the proton and the electron
+- The mass of the electron can be neglected, as it is smaller than all the other quantities. It makes the algebra a bit simpler, but perhaps not that much simpler to have to explain that.
+- Some of you confused the fact that the Lorentz invariant quantity is independent of the reference frame, and instead assumed that the total energy is invariant. The expression for the total energy $E^{*}=m_{q}+m_{e}+m_{Q}$ is only valid in the centre of mass frame. In the lab frame the energy will have a different value $E=E_{e}+m_{p}$
+- It is NOT correct to assume that $E^{*}=E$, in fact they are different
+- The quantity that is independent of the reference frame is $E^{2}-p^{2}$ and that is calculated in the centre of mass frame as $\left(m_{p}+m_{e}+m_{Q}\right)^{2}$.
+- If you do that, you'd get that the maximum mass of the Q particle is 4 GeV . This means that all the energy of the electron goes to the mass of $Q$. However it is not possible to do that, as it would violate momentum conservation
+
+
+````
 
 
 ## Homework 2. Due on 25 November
@@ -53,6 +159,7 @@ The neutral rho meson often decays into two charged pions, $\rho^{0} \rightarrow
 ```{dropdown} Solution and feedback
 Solutions to be released on 9 December
 ```
+
 
 ### Question 2: Allowed and forbidden decays
 Which of the following reactions are allowed by lepton number conservation, and which are forbidden? Explain.
