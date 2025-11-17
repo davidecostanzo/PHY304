@@ -401,7 +401,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-a2-yukawa-potential">8.3.2. Question A2. Yukawa Potential</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-b-elastic-and-inelastic-scattering">8.4. Exercise B. Elastic and inelastic scattering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-b-elastic-and-inelastic-scattering-not-assessed">8.4. Exercise B. Elastic and inelastic scattering (not assessed)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-b1-proton-form-factor">8.4.1. Question B1. Proton form factor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-b2-deep-inelastic-scattering-variables">8.4.2. Question B2. Deep inelastic scattering variables</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-c-mock-paper-with-solutions">8.5. Exercise C. Mock paper with solutions</a></li>
 </ul>
             </nav>
@@ -766,10 +770,63 @@ f(q^2) \propto \frac{1}{q^2}
 </div>
 </details></section>
 </section>
-<section id="exercise-b-elastic-and-inelastic-scattering">
-<h2><span class="section-number">8.4. </span>Exercise B. Elastic and inelastic scattering<a class="headerlink" href="#exercise-b-elastic-and-inelastic-scattering" title="Link to this heading">#</a></h2>
-<p><strong>(not assessed)</strong></p>
-<p>To be released on 17 November</p>
+<section id="exercise-b-elastic-and-inelastic-scattering-not-assessed">
+<h2><span class="section-number">8.4. </span>Exercise B. Elastic and inelastic scattering (not assessed)<a class="headerlink" href="#exercise-b-elastic-and-inelastic-scattering-not-assessed" title="Link to this heading">#</a></h2>
+<p>These exercises revisit the topic of scattering. In the first one you calculate the form factor for a proton described as a solid sphere with uniform charge. In the second one, you calculate the value of the two variables defined in the deep inelastic scattering in the laboratory frame</p>
+<section id="question-b1-proton-form-factor">
+<h3><span class="section-number">8.4.1. </span>Question B1. Proton form factor<a class="headerlink" href="#question-b1-proton-form-factor" title="Link to this heading">#</a></h3>
+<p>Use the fact that the form factor, <span class="math notranslate nohighlight">\(F(q)\)</span>, is the Fourier transform of the normalised charge distribution <span class="math notranslate nohighlight">\(\rho(r)\)</span>, which in the spherically symmetric case gives</p>
+<div class="math notranslate nohighlight">
+\[
+F(q)=\int \frac{4 \pi \hbar r}{q} \rho(r) \sin \frac{q r}{\hbar} d r
+\]</div>
+<p>to find an expression for <span class="math notranslate nohighlight">\(F(q)\)</span> for a simple model of the proton considered as a uniform spherical charge distribution of radius <span class="math notranslate nohighlight">\(R\)</span>.</p>
+<p>Show that the requirement that the wavelength associated with <span class="math notranslate nohighlight">\(q\)</span> be much greater than the proton size is equivalent to the condition</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{q R}{\hbar} \ll 1
+\]</div>
+<p>(Ignore factors like <span class="math notranslate nohighlight">\(2 \pi\)</span>.) Using your calculated expression for <span class="math notranslate nohighlight">\(F(q)\)</span>, demonstrate that in this limit the form factor reduces to 1.
+Explain why is this condition satisfied by any form factor.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Released on 2 December</p>
+</div>
+</details></section>
+<section id="question-b2-deep-inelastic-scattering-variables">
+<h3><span class="section-number">8.4.2. </span>Question B2. Deep inelastic scattering variables<a class="headerlink" href="#question-b2-deep-inelastic-scattering-variables" title="Link to this heading">#</a></h3>
+<p>We defined the deep inelastic scattering as the process</p>
+<div class="math notranslate nohighlight">
+\[
+e+p \rightarrow e+X \text { (hadrons) }
+\]</div>
+<p>And defined the variables as:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E_{i}, \boldsymbol{p}_{\boldsymbol{i}}\)</span> as the energy and momentum of the incoming electron</p></li>
+<li><p><span class="math notranslate nohighlight">\(E_{f}, \boldsymbol{p}_{f}\)</span> as the energy and momentum of the outgoing electron</p></li>
+<li><p><span class="math notranslate nohighlight">\(M\)</span> as the mass of the proton</p></li>
+<li><p><span class="math notranslate nohighlight">\(W\)</span> as the invariant mass of the hadron system, and <span class="math notranslate nohighlight">\(E_{W}, \boldsymbol{p}_{W}\)</span> the total energy and momentum of the system</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q^{2}=-\left[\left(E_{i}-E_{f}\right)^{2}-\left(\boldsymbol{p}_{\boldsymbol{i}}-\boldsymbol{p}_{f}\right)^{2}\right]\)</span></p></li>
+<li><p>The variable <span class="math notranslate nohighlight">\(\nu\)</span> defined as <span class="math notranslate nohighlight">\(2 M \nu=W^{2}+Q^{2}-M^{2}\)</span></p></li>
+</ul>
+<p>Show that in the laboratory frame, where the proton is at rest, the two variables can be written</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Q^{2}=2 E_{i} E_{f}(1-\cos \theta)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu=E_{i}-E_{f}\)</span></p></li>
+</ul>
+<p>Show that in case of an elastic scattering the ratio x is equal to 1, where</p>
+<div class="math notranslate nohighlight">
+\[
+x=\frac{Q^{2}}{2 M v}
+\]</div>
+<p>[Note the mass of the electron should be neglected]</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Released on 2 December</p>
+</div>
+</details></section>
 </section>
 <section id="exercise-c-mock-paper-with-solutions">
 <h2><span class="section-number">8.5. </span>Exercise C. Mock paper with solutions<a class="headerlink" href="#exercise-c-mock-paper-with-solutions" title="Link to this heading">#</a></h2>
@@ -850,7 +907,11 @@ f(q^2) \propto \frac{1}{q^2}
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-a2-yukawa-potential">8.3.2. Question A2. Yukawa Potential</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-b-elastic-and-inelastic-scattering">8.4. Exercise B. Elastic and inelastic scattering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-b-elastic-and-inelastic-scattering-not-assessed">8.4. Exercise B. Elastic and inelastic scattering (not assessed)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-b1-proton-form-factor">8.4.1. Question B1. Proton form factor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-b2-deep-inelastic-scattering-variables">8.4.2. Question B2. Deep inelastic scattering variables</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-c-mock-paper-with-solutions">8.5. Exercise C. Mock paper with solutions</a></li>
 </ul>
   </nav></div>

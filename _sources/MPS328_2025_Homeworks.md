@@ -389,10 +389,67 @@ so in the case of a scattering off a point-like nucleus which is mediated by a p
 
 
 
-## Exercise B. Elastic and inelastic scattering 
-**(not assessed)**
+## Exercise B. Elastic and inelastic scattering (not assessed)
 
-To be released on 17 November
+These exercises revisit the topic of scattering. In the first one you calculate the form factor for a proton described as a solid sphere with uniform charge. In the second one, you calculate the value of the two variables defined in the deep inelastic scattering in the laboratory frame
+
+### Question B1. Proton form factor
+Use the fact that the form factor, $F(q)$, is the Fourier transform of the normalised charge distribution $\rho(r)$, which in the spherically symmetric case gives
+
+$$
+F(q)=\int \frac{4 \pi \hbar r}{q} \rho(r) \sin \frac{q r}{\hbar} d r
+$$
+
+to find an expression for $F(q)$ for a simple model of the proton considered as a uniform spherical charge distribution of radius $R$.
+
+Show that the requirement that the wavelength associated with $q$ be much greater than the proton size is equivalent to the condition
+
+$$
+\frac{q R}{\hbar} \ll 1
+$$
+
+(Ignore factors like $2 \pi$.) Using your calculated expression for $F(q)$, demonstrate that in this limit the form factor reduces to 1.
+Explain why is this condition satisfied by any form factor.
+
+```{dropdown}  Solution
+Released on 2 December
+```
+
+
+### Question B2. Deep inelastic scattering variables
+We defined the deep inelastic scattering as the process
+
+$$
+e+p \rightarrow e+X \text { (hadrons) }
+$$
+
+And defined the variables as:
+
+- $E_{i}, \boldsymbol{p}_{\boldsymbol{i}}$ as the energy and momentum of the incoming electron
+- $E_{f}, \boldsymbol{p}_{f}$ as the energy and momentum of the outgoing electron
+- $M$ as the mass of the proton
+- $W$ as the invariant mass of the hadron system, and $E_{W}, \boldsymbol{p}_{W}$ the total energy and momentum of the system
+- $Q^{2}=-\left[\left(E_{i}-E_{f}\right)^{2}-\left(\boldsymbol{p}_{\boldsymbol{i}}-\boldsymbol{p}_{f}\right)^{2}\right]$
+- The variable $\nu$ defined as $2 M \nu=W^{2}+Q^{2}-M^{2}$
+
+Show that in the laboratory frame, where the proton is at rest, the two variables can be written
+
+- $Q^{2}=2 E_{i} E_{f}(1-\cos \theta)$
+- $\nu=E_{i}-E_{f}$
+
+Show that in case of an elastic scattering the ratio x is equal to 1, where
+
+$$
+x=\frac{Q^{2}}{2 M v}
+$$
+
+[Note the mass of the electron should be neglected]
+
+```{dropdown}  Solution
+Released on 2 December
+```
+
+
 
 ## Exercise C. Mock paper with solutions 
 **(not assessed)**
