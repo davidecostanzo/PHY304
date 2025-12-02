@@ -386,17 +386,17 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#particles-and-resonances">7.1. Particles and resonances</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isospin">7.2. Isospin</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#baryons-and-quark-symmetry">7.3. Baryons and Quark Symmetry</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deuteron">7.3.1. Deuteron</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-spin-and-isospin-configurations">7.3.2. <span class="math notranslate nohighlight">\(\Delta\)</span> spin and isospin configurations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">7.2. Particles and resonances</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isospin">7.3. Isospin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#baryons-and-quark-symmetry">7.4. Baryons and Quark Symmetry</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deuteron">7.4.1. Deuteron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-spin-and-isospin-configurations">7.4.2. <span class="math notranslate nohighlight">\(\Delta\)</span> spin and isospin configurations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strangeness">7.4. Strangeness</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-quarks">7.5. Further quarks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-particles-and-cabibbo-angle">7.6. Strange particles and Cabibbo angle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ckm-matrix">7.7. The CKM matrix</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-doesn-t-the-weak-neutral-current-allow-decays-like-s-rightarrow-d">7.8. Why doesn’t the Weak Neutral Current allow Decays like <span class="math notranslate nohighlight">\(s \rightarrow\)</span> d?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strangeness">7.5. Strangeness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-quarks">7.6. Further quarks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-particles-and-cabibbo-angle">7.7. Strange particles and Cabibbo angle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ckm-matrix">7.8. The CKM matrix</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-k-0-system-and-strangeness-regeneration">7.9. The <span class="math notranslate nohighlight">\(K^{0}\)</span> System and Strangeness Regeneration</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">7.10. Further reading</a></li>
 </ul>
@@ -418,16 +418,27 @@ document.write(`
 </ul>
 <section id="particles-and-resonances">
 <h2><span class="section-number">7.1. </span>Particles and resonances<a class="headerlink" href="#particles-and-resonances" title="Link to this heading">#</a></h2>
+</section>
+<section id="id1">
+<h2><span class="section-number">7.2. </span>Particles and resonances<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>In this unit we will talk about particles as bound states of quarks. Most particles have a short lifetime and decay into lower mass states. A few particles and bound states are stable, as there are no states with lower mass they can decay to. One such example is the proton, which is a bound state of three quarks. There are no allowed decays for the proton, so the proton is stable, and we know its lifetime to be longer than <span class="math notranslate nohighlight">\(10^{34}\)</span> years.</p>
 <p>For an unstable particle, the mass cannot be exactly determined because of the Heisenberg uncertainty principle. In the particle rest frame the total energy of the particle is equal to its mass (multiplied by <span class="math notranslate nohighlight">\(\mathrm{c}^{2}\)</span> ) and the uncertainty principle tells us that</p>
-<p><span class="math notranslate nohighlight">\(\Delta E \Delta t \geq \hbar\)</span></p>
-<p>Which can be used to calculate the uncertainty on the particle energy (and hence its mass). The uncertainty <span class="math notranslate nohighlight">\(\Delta E\)</span> is called the “width” of a particle and is indicated by the letter <span class="math notranslate nohighlight">\(\Gamma\)</span>. We saw how the measurement of the width of the <span class="math notranslate nohighlight">\(Z^{0}\)</span> boson can be used to constrain the number of neutrino families.</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta E \Delta t \geq \frac{\hbar}{2}
+\]</div>
+<p>Which can be used to calculate the uncertainty on the particle energy (and hence its mass). The uncertainty <span class="math notranslate nohighlight">\(\Delta E\)</span> corresponds to the half-width of the particle’s mass distribution. The <strong>full width</strong> of a particle, which is indicated by the letter <span class="math notranslate nohighlight">\(\Gamma\)</span>, is defined as <span class="math notranslate nohighlight">\(\Gamma = 2 \Delta E\)</span>. This allows the uncertainty relation to be expressed as:</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma \Delta t \geq \hbar
+\]</div>
+<p>We saw how the measurement of the width <span class="math notranslate nohighlight">\(\Gamma\)</span> of the <span class="math notranslate nohighlight">\(Z^{0}\)</span> boson can be used to constrain the number of neutrino families.</p>
 <p>In a collision experiment the cross section of a process increases when the process goes through an unstable particle as intermediate state. This sharp increase is called a “resonance” and is how new particles were observed a few decades ago.</p>
 </section>
 <section id="isospin">
-<h2><span class="section-number">7.2. </span>Isospin<a class="headerlink" href="#isospin" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.3. </span>Isospin<a class="headerlink" href="#isospin" title="Link to this heading">#</a></h2>
 <p>It was noticed that many groupings of particles of similar mass and properties fitted in to common patterns. One way to characterise these is using isotopic spin or isospin, I. This quantity has nothing to do with the real spin of the particle, but obeys the same addition laws as the quantum mechanical rules for adding angular momentum or spin. When the orientation of an isospin vector is considered, it is in some hypothetical space with axes labelled as (1,2,3) rather than ( <span class="math notranslate nohighlight">\(x, y, z)\)</span>. The strong interaction will treat particles based on their isospin, and will not distinguish states with a different charge. For instance the interaction of protons and neutrons inside a nucleus interact is mediated by the strong force which is independent on their charges.</p>
-<p>Isospin can have values that are either integers or half-integer and follows the same algebra as the spin of a particle. Due to the Heisenberg principle, we can only define the magnitude of the isospin and one of its components. By convention we choose the component 3 as the independent component that can be defined and we call that <span class="math notranslate nohighlight">\(I_{3}\)</span>.</p>
+<p>Isospin can have values that are either integers or half-integer and follows the same algebra as the spin of a particle. Due to the commutation relations of the angular momentum operators, we can only simultaneously define the magnitude of the isospin (<span class="math notranslate nohighlight">\(I^2\)</span>) and one of its components. By convention we choose the component 3 as the independent component that can be defined and we call that <span class="math notranslate nohighlight">\(I_{3}\)</span>.</p>
 <p>Nucleons ( <span class="math notranslate nohighlight">\(\mathrm{p}, \mathrm{n})\)</span>, pi mesons <span class="math notranslate nohighlight">\(\left(\pi^{+}, \pi^{0}, \pi^{-}\right)\)</span>and the baryons known as <span class="math notranslate nohighlight">\(\Delta\left(\Delta^{++}, \Delta^{+}, \Delta^{0}, \Delta^{-}\right)\)</span>are three examples of groups of similar mass particles differing in charge by one unit. These group of particles are isospin multiplets with the same isospin magnitude and different values of the component <span class="math notranslate nohighlight">\(I_{3}\)</span>. The charge <span class="math notranslate nohighlight">\(Q\)</span> in each case is due to the orientation of an “isospin vector” in our hypothetical space, therefore <span class="math notranslate nohighlight">\(Q\)</span> depends on the third component <span class="math notranslate nohighlight">\(I_{3}\)</span>. Thus the nucleons belong to an isospin doublet with <span class="math notranslate nohighlight">\(I=1 / 2\)</span></p>
 <div class="math notranslate nohighlight">
 \[
@@ -462,11 +473,11 @@ u=\left|\frac{1}{2}, \frac{1}{2}\right\rangle ; d=\left|\frac{1}{2},-\frac{1}{2}
 <p>In strong interactions, the total isospin vector (as well as <span class="math notranslate nohighlight">\(I_{3}\)</span> ) is conserved. This is not true in electromagnetic or weak interactions. The conservation of isospin has observable effects on the relative rates of strong interactions.</p>
 </section>
 <section id="baryons-and-quark-symmetry">
-<h2><span class="section-number">7.3. </span>Baryons and Quark Symmetry<a class="headerlink" href="#baryons-and-quark-symmetry" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.4. </span>Baryons and Quark Symmetry<a class="headerlink" href="#baryons-and-quark-symmetry" title="Link to this heading">#</a></h2>
 <section id="deuteron">
-<h3><span class="section-number">7.3.1. </span>Deuteron<a class="headerlink" href="#deuteron" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">7.4.1. </span>Deuteron<a class="headerlink" href="#deuteron" title="Link to this heading">#</a></h3>
 <p>After defining the isospin and as an example, we look at the combination of two objects with spin <span class="math notranslate nohighlight">\(1 / 2\)</span> and isospin <span class="math notranslate nohighlight">\(1 / 2\)</span>. Since two quarks do not form a bound state, it is helpful to consider combinations of two nucleons as these have similar quantum numbers. In other words the strong interaction sees the proton and the neutron as two different isospin states of the same particle.</p>
-<p>In this case, since there is no colour part to the total wavefunction, the product of spin and isospin states must be antisymmetric. We will denote <span class="math notranslate nohighlight">\(s_{2}=1 / 2\)</span> by <span class="math notranslate nohighlight">\(\uparrow\)</span> and <span class="math notranslate nohighlight">\(s_{2}=-1 / 2\)</span> by <span class="math notranslate nohighlight">\(\downarrow\)</span>, and <span class="math notranslate nohighlight">\(l_{3}=1 / 2\)</span> by p (proton) and <span class="math notranslate nohighlight">\(l_{3}=-1 / 2\)</span> by n (neutron).</p>
+<p>In this case, since there is no colour part to the total wavefunction, the product of spin and isospin states must be antisymmetric. We will denote <span class="math notranslate nohighlight">\(s_{2}=1 / 2\)</span> by <span class="math notranslate nohighlight">\(\uparrow\)</span> and <span class="math notranslate nohighlight">\(s_{2}=-1 / 2\)</span> by <span class="math notranslate nohighlight">\(\downarrow\)</span>, and <span class="math notranslate nohighlight">\(I_{3}=1 / 2\)</span> by p (proton) and <span class="math notranslate nohighlight">\(I_{3}=-1 / 2\)</span> by n (neutron).</p>
 <p>First consider just the isospin. There are 4 combinations of two nucleons: pp, pn, np, nn. The first and last are obviously symmetric under interchange; the other 2 do not have a defined symmetry. We can produce the following combinations:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -488,7 +499,7 @@ i) <span class="math notranslate nohighlight">\(\quad p p \rightarrow d \pi^{+}\
 </div>
 </section>
 <section id="delta-spin-and-isospin-configurations">
-<h3><span class="section-number">7.3.2. </span><span class="math notranslate nohighlight">\(\Delta\)</span> spin and isospin configurations<a class="headerlink" href="#delta-spin-and-isospin-configurations" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">7.4.2. </span><span class="math notranslate nohighlight">\(\Delta\)</span> spin and isospin configurations<a class="headerlink" href="#delta-spin-and-isospin-configurations" title="Link to this heading">#</a></h3>
 <p>We now return to the quarks, denoting <span class="math notranslate nohighlight">\(I_{3}=1 / 2\)</span> by <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(I_{3}=-1 / 2\)</span> by <span class="math notranslate nohighlight">\(d\)</span>. Once again, we assume that the strong interactions sees the <span class="math notranslate nohighlight">\(u\)</span> - and <span class="math notranslate nohighlight">\(d\)</span>-quarks as isospin states of the same particle. Since the colour part of the wavefunction is always antisymmetric, the combined</p>
 <div class="math notranslate nohighlight">
 \[
@@ -498,7 +509,7 @@ i) <span class="math notranslate nohighlight">\(\quad p p \rightarrow d \pi^{+}\
 <ul class="simple">
 <li><p>uuu is <span class="math notranslate nohighlight">\(\left(I, I_{3}\right)=(3 / 2,3 / 2)\)</span> so must be the <span class="math notranslate nohighlight">\(\Delta^{++}\)</span>.</p></li>
 <li><p>uud is <span class="math notranslate nohighlight">\(I_{3}=1 / 2\)</span>; forming combinations which are symmetric under 2-quark permutations we get <span class="math notranslate nohighlight">\(1 / \sqrt{3}(u u d+u d u+d u u)\)</span>. This must be <span class="math notranslate nohighlight">\(\left(I, I_{3}\right)=(3 / 2,1 / 2)\)</span> so the <span class="math notranslate nohighlight">\(\Delta^{+}\)</span>.</p></li>
-<li><p>Similarly <span class="math notranslate nohighlight">\(1 / \sqrt{3}(d d u+u d d+ u d u)\)</span> is <span class="math notranslate nohighlight">\(\left(I, I_{3}\right)=(3 / 2,-1 / 2)\)</span> so the <span class="math notranslate nohighlight">\(\Delta^{0}\)</span>.</p></li>
+<li><p>Similarly <span class="math notranslate nohighlight">\(1 / \sqrt{3}(d d u+u d d+ d u d)\)</span> is <span class="math notranslate nohighlight">\(\left(I, I_{3}\right)=(3 / 2,-1 / 2)\)</span> so the <span class="math notranslate nohighlight">\(\Delta^{0}\)</span>.</p></li>
 <li><p>ddd is <span class="math notranslate nohighlight">\(\left(I, I_{3}\right)=(3 / 2,-3 / 2)\)</span> so the <span class="math notranslate nohighlight">\(\Delta^{-}\)</span>.</p></li>
 </ul>
 <p>Note: The first and last state must be <span class="math notranslate nohighlight">\(I=3 / 2\)</span>. There must therefore be symmetric states with <span class="math notranslate nohighlight">\(I=3 / 2\)</span> and intermediate <span class="math notranslate nohighlight">\(I_{3}\)</span> values, and the above combinations are the only possibilities! The spin states for the <span class="math notranslate nohighlight">\(\Delta\)</span> must also be symmetric, and we can write these down in an analogous way:</p>
@@ -539,15 +550,15 @@ p \uparrow=\frac{1}{\sqrt{18}}(2 u \uparrow u \uparrow d \downarrow-u \uparrow u
 </section>
 </section>
 <section id="strangeness">
-<h2><span class="section-number">7.4. </span>Strangeness<a class="headerlink" href="#strangeness" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.5. </span>Strangeness<a class="headerlink" href="#strangeness" title="Link to this heading">#</a></h2>
 <p>It was observed that some unstable particles produced in strong interactions had a long lifetime. This unusual stability for strongly interacting particles led to the term of strangeness. Such particles are always produced in pairs (associated production), and the quantum number of strangeness, <span class="math notranslate nohighlight">\(S\)</span>, was introduced, which is conserved in strong interactions. Thus in the interaction <span class="math notranslate nohighlight">\(\pi^{-} p \rightarrow \Lambda^{0} K^{0}\)</span>, the <span class="math notranslate nohighlight">\(\Lambda^{0}\)</span> is assigned <span class="math notranslate nohighlight">\(S=-1\)</span> and the <span class="math notranslate nohighlight">\(K^{0}\)</span> has <span class="math notranslate nohighlight">\(S=+1\)</span>. These strange particles can only decay by the weak interaction, which does not conserve strangeness. Process when a change of one unit of strangeness are allowed if mediated by the charge weak interaction.</p>
-<p>The total or mean isospin <span class="math notranslate nohighlight">\(I_{3}\)</span> for the particles in a multiplet must be zero, so we need to modify the formula for the electric charge to include the strangeness quantum number</p>
+<p>The formula for the electric charge needs to be modified to include the strangeness quantum number</p>
 <div class="math notranslate nohighlight">
 \[
 Q=e\left(I_{3}+\frac{1}{2} B+\frac{1}{2} S\right)=e\left(I_{3}+\frac{1}{2} Y\right)
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(Y=B+S\)</span> is known as the hypercharge. (This formula is known as the Gell-Mann Nishijima relation).</p>
-<p>Families of particles with similar properties (e.g. same spin and parity) can be plotted in terms of <span class="math notranslate nohighlight">\(Y\)</span> versus <span class="math notranslate nohighlight">\(I_{3}\)</span>, and form regular geometrical patterns (see figures 7.1 to 7.4 and Table 7.1):</p>
+<p>Families of particles with similar properties (e.g. same spin and parity) can be plotted in terms of <span class="math notranslate nohighlight">\(Y\)</span> versus <span class="math notranslate nohighlight">\(I_{3}\)</span>, and form regular geometrical patterns (see <a class="reference internal" href="#barions"><span class="std std-numref">Fig. 7.1</span></a> and <a class="reference internal" href="#mesons"><span class="std std-numref">Fig. 7.2</span></a> and <a class="reference internal" href="#multiplets"><span class="std std-numref">Table 7.1</span></a>):</p>
 <ul class="simple">
 <li><p>mesons with spin-parity <span class="math notranslate nohighlight">\(\left(J^{\mathrm{P}}\right)=0^{-}\)</span>form an octet;</p></li>
 <li><p>mesons with <span class="math notranslate nohighlight">\(J^{\mathrm{p}}=1^{-}\)</span>form a nonet;</p></li>
@@ -555,94 +566,86 @@ Q=e\left(I_{3}+\frac{1}{2} B+\frac{1}{2} S\right)=e\left(I_{3}+\frac{1}{2} Y\rig
 <li><p>baryons with <span class="math notranslate nohighlight">\(J^{P}=3 / 2^{+}+\)</span>form a decuplet.</p></li>
 </ul>
 <p>The difference in shape (i.e. the allowed combinations of quarks) between the baryon octet and decuplet is entirely a consequence of symmetry constraints.</p>
-<div class="pst-scrollable-table-container"><table class="table">
+<p>This table shows a selection of strange and non-strange baryon and meson multiplets, detailing their quantum numbers: Baryon Number (<span class="math notranslate nohighlight">\(B\)</span>), Strangeness (<span class="math notranslate nohighlight">\(S\)</span>), Isospin (<span class="math notranslate nohighlight">\(I\)</span>), mean Electric Charge (<span class="math notranslate nohighlight">\(\langle Q \rangle / e\)</span>), and Hypercharge (<span class="math notranslate nohighlight">\(Y=B+S\)</span>).</p>
+<div class="pst-scrollable-table-container"><table class="table" id="multiplets">
+<caption><span class="caption-number">Table 7.1 </span><span class="caption-text">A selection of strange and non-strange baryon and meson multiplets.</span><a class="headerlink" href="#multiplets" title="Link to this table">#</a></caption>
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Isospin multiplet</p></th>
-<th class="head text-center"><p></p></th>
-<th class="head text-center"><p></p></th>
-<th class="head text-center"><p>B</p></th>
+<tr class="row-odd"><th class="head text-center"><p>Isospin Multiplet</p></th>
+<th class="head text-center"><p>Particles</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(S\)</span></p></th>
-<th class="head text-center"><p>I</p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(&lt;Q&gt;/ e\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(Y=B+S\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(I\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\langle Q \rangle / e\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(Y = B+S\)</span></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\Delta^{++}\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\pi^{+}\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\pi^{0}\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\pi^{+}, \pi^{0}, \pi^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\pi\)</span> Mesons</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>0</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p></p></td>
-<td class="text-center"><p>p</p></td>
-<td class="text-center"><p>n</p></td>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(p, n\)</span></p></td>
+<td class="text-center"><p>Nucleons</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>0</p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(1 / 2\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(1 / 2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
 <td class="text-center"><p>1</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\Delta^{+}\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\Delta^{0}\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\Delta^{++}, \Delta^{+}, \Delta^{0}, \Delta^{-}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Delta\)</span> Baryons</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>0</p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(3 / 2\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(1 / 2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3/2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
 <td class="text-center"><p>1</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\Lambda\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\Lambda\)</span></p></td>
+<td class="text-center"><p>Lambda Hyperon</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>-1</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>0</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\Sigma^{+}\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\Sigma^{0} \quad \Sigma\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\Sigma^{+}, \Sigma^{0}, \Sigma^{-}\)</span></p></td>
+<td class="text-center"><p>Sigma Hyperons</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>-1</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>0</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(K^{+}\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(K^{0}\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(K^{+}, K^{0}\)</span></p></td>
+<td class="text-center"><p>Kaon Mesons</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>1</p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(1 / 2\)</span></p></td>
-<td class="text-center"><p>1/2</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
 <td class="text-center"><p>1</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\overline{K^{0}}\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\overline{K^{0}}, K^{-}\)</span></p></td>
+<td class="text-center"><p>Anti-Kaon Mesons</p></td>
 <td class="text-center"><p>0</p></td>
 <td class="text-center"><p>-1</p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(1 / 2\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(-1 / 2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
 <td class="text-center"><p>-1</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\Xi^{0}\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\Xi^{0}, \Xi^{-}\)</span></p></td>
+<td class="text-center"><p>Xi Hyperons</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>-2</p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(1 / 2\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(-1 / 2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1/2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1/2\)</span></p></td>
 <td class="text-center"><p>-1</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\Omega^{-}\)</span></p></td>
+<td class="text-center"><p>Omega Hyperon</p></td>
 <td class="text-center"><p>1</p></td>
 <td class="text-center"><p>-3</p></td>
 <td class="text-center"><p>0</p></td>
@@ -652,16 +655,19 @@ Q=e\left(I_{3}+\frac{1}{2} B+\frac{1}{2} S\right)=e\left(I_{3}+\frac{1}{2} Y\rig
 </tbody>
 </table>
 </div>
-<p>Table 7.1 A selection of strange and non-strange baryon and meson multiplets.</p>
 <p>In terms of quarks we can introduce a new flavour of quark, the strange quark s. This has charge <span class="math notranslate nohighlight">\(-1 / 3\)</span> and baryon number <span class="math notranslate nohighlight">\(1 / 3\)</span> (like a d quark) but <span class="math notranslate nohighlight">\(I=0\)</span> and <span class="math notranslate nohighlight">\(S=-1\)</span>. It is also somewhat heavier than the <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(d\)</span> quarks. Since baryons consist of (qqq), it is clear why no positive baryons exist with <span class="math notranslate nohighlight">\(|S|&gt;1\)</span>, while negative baryons are found with <span class="math notranslate nohighlight">\(S=-2\)</span> or -3 .</p>
-<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_4e51fac3686e8b51b6edg-05.jpg?height=486&amp;width=803&amp;top_left_y=1936&amp;top_left_x=632" /></p>
-<p>Fig. 7.1 The lowest mass pseudoscalar-meson states <span class="math notranslate nohighlight">\(\left(\rho^{p}=0^{-}\right)\)</span>, with quark assignments indicated. (The states at the origin are displaced slightly for clarity.)</p>
-<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_4e51fac3686e8b51b6edg-06.jpg?height=512&amp;width=846&amp;top_left_y=269&amp;top_left_x=616" /></p>
-<p>Fig. 7.2 The vector-meson nonet <span class="math notranslate nohighlight">\(\left(J^{P}=1^{-}\right)\)</span>. (Quark assignments are the same as above.)</p>
-<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_4e51fac3686e8b51b6edg-06.jpg?height=546&amp;width=897&amp;top_left_y=935&amp;top_left_x=585" /></p>
-<p>Fig. 7.3 The baryon octet of spin-parity <span class="math notranslate nohighlight">\(J^{P}=\frac{1}{2}^{+}\)</span>.</p>
-<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_4e51fac3686e8b51b6edg-06.jpg?height=666&amp;width=809&amp;top_left_y=1620&amp;top_left_x=629" /></p>
-<p>Fig. 7.4 The baryon decuplet with spin-parity <span class="math notranslate nohighlight">\(J^{P}=\frac{3}{2}^{+}\)</span></p>
+<figure class="align-center" id="barions">
+<a class="reference internal image-reference" href="_images/Barions.png"><img alt="Feynman diagrams for QCD" src="_images/Barions.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">The lowest mass baryon octet with spin parity <span class="math notranslate nohighlight">\(J^P=\frac{1}{2}^+\)</span> (Left).  The lowest mass baryon decuplet with spin-parity <span class="math notranslate nohighlight">\(J^P=\frac{3}{2}^+\)</span> (Right).</span><a class="headerlink" href="#barions" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="mesons">
+<a class="reference internal image-reference" href="_images/Mesons.png"><img alt="Feynman diagrams for QCD" src="_images/Mesons.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">The lowest mass meson states with spin-parity <span class="math notranslate nohighlight">\(J^P=0^-\)</span> (Left) and <span class="math notranslate nohighlight">\(J^P=1^-\)</span> (Right).</span><a class="headerlink" href="#mesons" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition-example-7-2-strange-hadrons-spin admonition">
 <p class="admonition-title">Example 7.2: Strange hadrons spin</p>
 <p>Consider the case of hadrons with two light ( <span class="math notranslate nohighlight">\(u\)</span> or d) quarks and one <span class="math notranslate nohighlight">\(s\)</span> quark, or two <span class="math notranslate nohighlight">\(s\)</span> quarks and one light quark. Can you explain why the <span class="math notranslate nohighlight">\(\Sigma\)</span> and <span class="math notranslate nohighlight">\(\Xi\)</span> exist in both the spin <span class="math notranslate nohighlight">\(1 / 2\)</span> and spin <span class="math notranslate nohighlight">\(3 / 2\)</span> multiplets, while the <span class="math notranslate nohighlight">\(\Lambda\)</span> only exists with spin <span class="math notranslate nohighlight">\(1 / 2\)</span> ?</p>
@@ -708,10 +714,9 @@ u u s, \frac{1}{\sqrt{2}}(u d s+d u s), d d s
 </div>
 </details></section>
 <section id="further-quarks">
-<h2><span class="section-number">7.5. </span>Further quarks<a class="headerlink" href="#further-quarks" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.6. </span>Further quarks<a class="headerlink" href="#further-quarks" title="Link to this heading">#</a></h2>
 <p>Other, still heavier quarks also exist. The charm quark, <span class="math notranslate nohighlight">\(c\)</span>, has a charge of <span class="math notranslate nohighlight">\(2 / 3\)</span>, like the <span class="math notranslate nohighlight">\(u\)</span>, and can be considered as a partner to the s. In 3 dimensions (see figure 10.5) particles containing c quarks can be plotted, and again show regular patterns.</p>
 <p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_4e51fac3686e8b51b6edg-08.jpg?height=366&amp;width=684&amp;top_left_y=1356&amp;top_left_x=272" /></p>
-<p>o-Mesons</p>
 <p>(a)</p>
 <p><img alt="" src="https://cdn.mathpix.com/cropped/2024_08_10_4e51fac3686e8b51b6edg-08.jpg?height=440&amp;width=783&amp;top_left_y=1342&amp;top_left_x=1025" /></p>
 <p>(c)</p>
@@ -721,8 +726,9 @@ u u s, \frac{1}{\sqrt{2}}(u d s+d u s), d d s
 <p><span class="math notranslate nohighlight">\(\frac{3}{2}^{+}\)</span>Baryons</p>
 <p>(d)</p>
 <p>Fig. 7.5 Multiplets of hadrons containing up, down, strange and charm quarks. The slices through these figures where charm <span class="math notranslate nohighlight">\(=0\)</span> correspond to the plane figures already shown in the previous diagrams, though containing new particles in the case of the mesons composed of <span class="math notranslate nohighlight">\(c \bar{c}\)</span>.</p>
-<p>We thus have 2 doublets or generations of quarks <span class="math notranslate nohighlight">\(-(d, u)\)</span> and <span class="math notranslate nohighlight">\((s, c)\)</span>. Since there are 3 doublets of leptons, there are theoretical reasons for expecting a third doublet of quarks too. Particles containing <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span> quarks (bottom or beauty) were discovered in 1977. The <span class="math notranslate nohighlight">\(b\)</span> is an even heavier version of the d. Its partner, the <span class="math notranslate nohighlight">\(\underline{t}\)</span> (top or truth) was first seen in 1994, and it has the greatest mass of any known fundamental particle at <span class="math notranslate nohighlight">\(174 \mathrm{GeV} / \mathrm{c}^{2}\)</span>.</p>
-<div class="pst-scrollable-table-container"><table class="table">
+<p>We thus have 2 doublets or generations of quarks <span class="math notranslate nohighlight">\(-(d, u)\)</span> and <span class="math notranslate nohighlight">\((s, c)\)</span>. Since there are 3 doublets of leptons, there are theoretical reasons for expecting a third doublet of quarks too. Particles containing <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span> quarks (bottom or beauty) were discovered in 1977. The <span class="math notranslate nohighlight">\(b\)</span> is an even heavier version of the d. Its partner, the <span class="math notranslate nohighlight">\(t\)</span> (top or truth) was first seen in 1994, and it has the greatest mass of any known fundamental particle at <span class="math notranslate nohighlight">\(174 \mathrm{GeV} / \mathrm{c}^{2}\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tablequark">
+<caption><span class="caption-number">Table 7.2 </span><span class="caption-text">Quark quantum numbers and masses. Note the convention that quarks with a negative electric charge carry a negative flavour quantum number.</span><a class="headerlink" href="#tablequark" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>Flavour</p></th>
 <th class="head text-center"><p>Charge/e</p></th>
@@ -806,11 +812,10 @@ u u s, \frac{1}{\sqrt{2}}(u d s+d u s), d d s
 </tbody>
 </table>
 </div>
-<p>Table 7.2 Quark quantum numbers and masses. Note the convention that quarks with a negative electric charge carry a negative flavour quantum number.</p>
 <p>The masses quoted are “bare masses” - when bound in a hadron the effective masses differ, especially for the lightest quarks. (Binding and kinetic energies mean that the <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(d\)</span> quarks can be treated as effectively equal in mass.)</p>
 </section>
 <section id="strange-particles-and-cabibbo-angle">
-<h2><span class="section-number">7.6. </span>Strange particles and Cabibbo angle<a class="headerlink" href="#strange-particles-and-cabibbo-angle" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.7. </span>Strange particles and Cabibbo angle<a class="headerlink" href="#strange-particles-and-cabibbo-angle" title="Link to this heading">#</a></h2>
 <p>As we have already seen, the strong and electromagnetic interactions conserve quark flavour, whereas the weak interaction may change it. In many weak decays, the changes are within a generation, e.g. in the beta decay the W couples a <span class="math notranslate nohighlight">\(u\)</span> to a <span class="math notranslate nohighlight">\(d\)</span> quark, such as in the decay</p>
 <div class="math notranslate nohighlight">
 \[
@@ -846,7 +851,7 @@ simplicity, let us start by considering the first 2 generations alone. The weak 
 \[
 \alpha^{2}+\beta^{2}=1
 \]</div>
-<p>The simplest way to ensure that the sum of the square of two numbers is 1 is to indicate them as <span class="math notranslate nohighlight">\(\alpha=\sin \theta_{C}\)</span> and <span class="math notranslate nohighlight">\(\beta=\cos \theta_{C}\)</span>, where <span class="math notranslate nohighlight">\(\theta_{C}\)</span> is the Cabibbo angle. A value of <span class="math notranslate nohighlight">\(\sin \theta_{C}=0.25\)</span> is consistent with the observed apparent variation of weak coupling constant with reaction type. The relationship between weak and strong eigenstates in 2 generations can also be expressed as</p>
+<p>The simplest way to ensure that the sum of the square of two numbers is 1 is to indicate them as <span class="math notranslate nohighlight">\(\alpha=\cos \theta_{C}\)</span> and <span class="math notranslate nohighlight">\(\beta=\sin \theta_{C}\)</span>, where <span class="math notranslate nohighlight">\(\theta_{C}\)</span> is the Cabibbo angle. A value of <span class="math notranslate nohighlight">\(\sin \theta_{C}=0.25\)</span> is consistent with the observed apparent variation of weak coupling constant with reaction type. The relationship between weak and strong eigenstates in 2 generations can also be expressed as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \binom{d_{c}}{s_{c}}=\left(\begin{array}{cc}
@@ -857,7 +862,7 @@ simplicity, let us start by considering the first 2 generations alone. The weak 
 <p>In other words we can say that we transform the quark eigenstates for the strong interaction into the eigenstates for the weak interaction by performing a “rotation” with an angle <span class="math notranslate nohighlight">\(\theta_{C}\)</span>, which is experimentally measured.</p>
 </section>
 <section id="the-ckm-matrix">
-<h2><span class="section-number">7.7. </span>The CKM matrix<a class="headerlink" href="#the-ckm-matrix" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.8. </span>The CKM matrix<a class="headerlink" href="#the-ckm-matrix" title="Link to this heading">#</a></h2>
 <p>The same formalism can be used for 3 generations, and the mixing matrix, known as the Cabibbo-Kabayashi-Maskawa or CKM matrix, can be parameterised in a number of ways.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -905,29 +910,6 @@ s_{12} s_{23}-c_{12} c_{23} s_{13} e^{i \delta} &amp; -c_{12} s_{23}-s_{12} c_{2
 <p>where <span class="math notranslate nohighlight">\(c_{i j}=\cos \theta_{i j}\)</span> and <span class="math notranslate nohighlight">\(s_{i j}=\sin \theta_{i j} s\)</span> with <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(j\)</span> being generation labels <span class="math notranslate nohighlight">\(\{i, j=1,2,3\}\)</span>. In the limit <span class="math notranslate nohighlight">\(\theta_{23}=\theta_{13}=0\)</span> the third generation decouples, and the situation reduces to Cabibbo mixing of the first two generations, with <span class="math notranslate nohighlight">\(\theta_{12}\)</span> identified with the Cabibbo angle. The real angles <span class="math notranslate nohighlight">\(\theta_{12}, \theta_{13}, \theta_{23}\)</span> can all be chosen to lie in the first quadrant. <span class="math notranslate nohighlight">\(\mathrm{c}_{13}\)</span> is known to differ from unity only in the sixth decimal place.</p>
 <p>If the parameter <span class="math notranslate nohighlight">\(\delta\)</span> is non-zero, then the matrix is complex, and the small degree of CP violation present in the weak interaction can be explained naturally. It has not yet been conclusively proven that this is the explanation for all the observed CP violation!</p>
 <p>[The above parameterisation and values are taken from the Particle Physics Data Booklet, from “Review of Particle Physics”, Phys. Rev. D98, 03001 January 2018, by the Particle Data Group.]</p>
-</section>
-<section id="why-doesn-t-the-weak-neutral-current-allow-decays-like-s-rightarrow-d">
-<h2><span class="section-number">7.8. </span>Why doesn’t the Weak Neutral Current allow Decays like <span class="math notranslate nohighlight">\(s \rightarrow\)</span> d?<a class="headerlink" href="#why-doesn-t-the-weak-neutral-current-allow-decays-like-s-rightarrow-d" title="Link to this heading">#</a></h2>
-<p>You may have wondered why all the discussion of quark decays via the weak interaction has concentrated on the charged current (resulting in decays between charge <span class="math notranslate nohighlight">\(2 / 3\)</span> quarks and charge <span class="math notranslate nohighlight">\(-1 / 3\)</span> quarks or vice versa). This is because interactions involving the neutral current cannot change quark flavour (an explanation known as the GIM mechanism). It might be
-expected that, since the strong quark eigenstates are mixed in the weak interaction, a decay such as <span class="math notranslate nohighlight">\(s \rightarrow d\)</span> would be allowed The following argument should show why this is not the case. The strong eigenstates can be represented in terms of weak eigenstates using</p>
-<div class="math notranslate nohighlight">
-\[
-s=s_{C} \cos \theta+d_{C} \sin \theta
-\]</div>
-<p>The weak interaction always couples states in the same weak doublet. For the neutral current, this means coupling <span class="math notranslate nohighlight">\(s_{C}\)</span> to <span class="math notranslate nohighlight">\(s_{C}\)</span> and <span class="math notranslate nohighlight">\(d_{C}\)</span> to <span class="math notranslate nohighlight">\(d_{C}\)</span>. The produced quarks will eventually be bound in hadrons by the strong interaction, so we need to consider how the weak states are represented in terms of strong states:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-&amp; s_{C}=s \cos \theta-d \sin \theta \\
-&amp; d_{c}=d \cos \theta+s \sin \theta
-\end{aligned}
-\end{split}\]</div>
-<p>Overall, therefore, the s coupling, via the weak neutral current, would be:</p>
-<div class="math notranslate nohighlight">
-\[
-s \rightarrow(s \cos \theta-d \sin \theta) \cos \theta+(d \cos \theta+s \sin \theta) \sin \theta=s
-\]</div>
-<p>In other words, the s quark only couples via the neutral current to the s quark; there</p>
 </section>
 <section id="the-k-0-system-and-strangeness-regeneration">
 <h2><span class="section-number">7.9. </span>The <span class="math notranslate nohighlight">\(K^{0}\)</span> System and Strangeness Regeneration<a class="headerlink" href="#the-k-0-system-and-strangeness-regeneration" title="Link to this heading">#</a></h2>
@@ -1048,17 +1030,17 @@ K_{L}^{0} \rightarrow \pi^{+} \pi^{-}
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#particles-and-resonances">7.1. Particles and resonances</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isospin">7.2. Isospin</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#baryons-and-quark-symmetry">7.3. Baryons and Quark Symmetry</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deuteron">7.3.1. Deuteron</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-spin-and-isospin-configurations">7.3.2. <span class="math notranslate nohighlight">\(\Delta\)</span> spin and isospin configurations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">7.2. Particles and resonances</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isospin">7.3. Isospin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#baryons-and-quark-symmetry">7.4. Baryons and Quark Symmetry</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deuteron">7.4.1. Deuteron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-spin-and-isospin-configurations">7.4.2. <span class="math notranslate nohighlight">\(\Delta\)</span> spin and isospin configurations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strangeness">7.4. Strangeness</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-quarks">7.5. Further quarks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-particles-and-cabibbo-angle">7.6. Strange particles and Cabibbo angle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ckm-matrix">7.7. The CKM matrix</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-doesn-t-the-weak-neutral-current-allow-decays-like-s-rightarrow-d">7.8. Why doesn’t the Weak Neutral Current allow Decays like <span class="math notranslate nohighlight">\(s \rightarrow\)</span> d?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strangeness">7.5. Strangeness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-quarks">7.6. Further quarks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-particles-and-cabibbo-angle">7.7. Strange particles and Cabibbo angle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ckm-matrix">7.8. The CKM matrix</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-k-0-system-and-strangeness-regeneration">7.9. The <span class="math notranslate nohighlight">\(K^{0}\)</span> System and Strangeness Regeneration</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">7.10. Further reading</a></li>
 </ul>
