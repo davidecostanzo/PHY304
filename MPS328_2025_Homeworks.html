@@ -791,7 +791,73 @@ Explain why is this condition satisfied by any form factor.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Released on 2 December</p>
+<p class="sd-card-text">In this exercise we describe the scattering of an electron off a solid sphere target (the proton). In the form factor formula, we use  <span class="math notranslate nohighlight">\(q\)</span> as the magnitude of the momentum transferred in the collision <span class="math notranslate nohighlight">\(q=\left|\boldsymbol{p}-\boldsymbol{p}^{\prime}\right|\)</span>. We also assume that the charge distribution <span class="math notranslate nohighlight">\(\rho(r)\)</span> is normalised to 1.</p>
+<p class="sd-card-text">We define the radius of the proton as <span class="math notranslate nohighlight">\(R\)</span> and we solve the problem in four parts:</p>
+<p class="sd-card-text"><strong>Part 1: Evaluate the form factor</strong></p>
+<p class="sd-card-text">We can write an expression for <span class="math notranslate nohighlight">\(\rho(r)\)</span> as:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{ll}
+\rho(r)=\frac{3}{4 \pi R^{3}} &amp; \text { for } r&lt;R \\
+\rho(r)=0 &amp; \text { for } r \geq R
+\end{array}
+\end{split}\]</div>
+<p class="sd-card-text">We use the formula for the form factor for a charge distribution with spherical symmetry.</p>
+<div class="math notranslate nohighlight">
+\[
+F(q)=\int \frac{4 \pi \hbar r}{q} \rho(r) \sin \frac{q r}{\hbar} d r=\frac{3}{4 \pi R^{3}} \int_{0}^{R} \frac{4 \pi \hbar r}{q} \sin \frac{q r}{\hbar} d r
+\]</div>
+<p class="sd-card-text">And, as seen in the lectures, we define a new variable <span class="math notranslate nohighlight">\(z=\frac{q r}{\hbar}\)</span>. Which implies</p>
+<div class="math notranslate nohighlight">
+\[
+r=\frac{z \hbar}{q} \quad d r=\frac{\hbar}{q}
+\]</div>
+<p class="sd-card-text">Changing variables gives</p>
+<div class="math notranslate nohighlight">
+\[
+F(q)=\frac{3}{4 \pi R^{3}} \int_{0}^{\frac{q R}{\hbar}} \frac{4 \pi \hbar}{q} \frac{z \hbar}{q} \sin z \frac{\hbar}{q} d z=3\left(\frac{\hbar}{q R}\right)^{3} \int_{0}^{\frac{q R}{\hbar}} z \sin z d z
+\]</div>
+<p class="sd-card-text">for simplicity we define <span class="math notranslate nohighlight">\(b=\frac{q R}{\hbar}\)</span> and get the integral in a nice form</p>
+<div class="math notranslate nohighlight">
+\[
+F(q)=3 b^{-3} \int_{0}^{b} z \sin z d z
+\]</div>
+<p class="sd-card-text">The integral can be solved by parts to obtain</p>
+<div class="math notranslate nohighlight">
+\[
+F(q(b))=3 b^{-3}(\sin b-b \cos b)
+\]</div>
+<p class="sd-card-text">Note, that this result can be found on the textbook by Martin.</p>
+<p class="sd-card-text"><strong>Part 2: proton radius much smaller than the wavelength</strong>
+The wavelength associated with the momentum transfer <span class="math notranslate nohighlight">\(q\)</span> is given by the De Broglie expression</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda=\frac{h}{q}
+\]</div>
+<p class="sd-card-text">The fact that the proton is much smaller than the wavelength associated with the electron is expressed by</p>
+<div class="math notranslate nohighlight">
+\[
+R \ll \lambda=\frac{h}{q}
+\]</div>
+<p class="sd-card-text">which means that</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{R q}{h} \ll 1 \quad \text { or similarly } \quad b=\frac{R q}{\hbar} \ll 1
+\]</div>
+<p class="sd-card-text">**Part 3: Limit of <span class="math notranslate nohighlight">\(F(q)\)</span> for <span class="math notranslate nohighlight">\(b \ll 1\)</span> **</p>
+<p class="sd-card-text">We need to calculate</p>
+<div class="math notranslate nohighlight">
+\[
+\lim _{b \rightarrow 0} F(q)=\lim _{b \rightarrow 0} 3 \frac{\sin b-b \cos b}{b^{3}}=1
+\]</div>
+<p class="sd-card-text">and use the de l’Hopital rule (three times) to show that this limit is equal to 1. (Or alternatively a Taylor expansion up to the power of <span class="math notranslate nohighlight">\(b^{3}\)</span>.</p>
+<p class="sd-card-text">**Part 4: Form factor in the limit <span class="math notranslate nohighlight">\(R \ll \lambda\)</span> **</p>
+<p class="sd-card-text">There is a physics explanation of the reason why the form factor is 1 when the size of the charge distribution is smaller than the wavelength. In the lectures we saw that the cross section of an elastic scattering process is written as</p>
+<div class="math notranslate nohighlight">
+\[
+\left.\frac{d \sigma}{d \Omega}=|F(q)|^{2} \frac{d \sigma}{d \Omega}\right)_{\text {point-like }}
+\]</div>
+<p class="sd-card-text">in other words the form factor modifies the cross section expected for a point like object to account for an extended charge distribution. If the wavelength of the particle used to probe the distribution is much bigger than the charge distribution itself, the charge distribution is observed as a point-like distribution. Hence the form factor has to be 1 in this limit.</p>
 </div>
 </details></section>
 <section id="question-b2-deep-inelastic-scattering-variables">
@@ -824,7 +890,68 @@ x=\frac{Q^{2}}{2 M v}
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Released on 2 December</p>
+<p class="sd-card-text">The question asks to neglect the mass of the electron, which means that</p>
+<div class="math notranslate nohighlight">
+\[
+E=p \quad \text { and } \quad E^{\prime}=p^{\prime}
+\]</div>
+<p class="sd-card-text">(using, as usual <span class="math notranslate nohighlight">\(\mathrm{c=1}\)</span> )</p>
+<p class="sd-card-text"><strong>Part 1: Calculate <span class="math notranslate nohighlight">\(Q^{2}\)</span> in the centre-of-mass frame</strong></p>
+<p class="sd-card-text">Using this approximation we can write</p>
+<div class="math notranslate nohighlight">
+\[
+Q^{2}=-\left[E_i^2+E_f^2-2 E_i E_f-E_i^2-E_f^2+2 E_i E_f \cos \theta\right]=2 E_i E_f(1-\cos \theta)
+\]</div>
+<p class="sd-card-text">where we used the fact that <span class="math notranslate nohighlight">\(\left|\boldsymbol{p_i}-\boldsymbol{p_f}\right|^{2}=p_i^{2}+p_f^{2}-2 \boldsymbol{p_i} \cdot \boldsymbol{p_f}=E_i^{2}+E_f^{2}-2 E_i E_f \cos \theta\)</span>, with <span class="math notranslate nohighlight">\(\theta\)</span> being the angle between the incoming and outgoing momenta.</p>
+<p class="sd-card-text"><strong>Part 2: Calculate <span class="math notranslate nohighlight">\(\nu\)</span> in the centre-of-mass frame</strong></p>
+<p class="sd-card-text">We start by writing the equations for conservation of energy and momentum</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+&amp; E_i+M=E_f+E_{W} \\
+&amp; \boldsymbol{p_i}=\boldsymbol{p_f}+\boldsymbol{p}_{\boldsymbol{W}}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Rearranging</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+E_i-E_f&amp;=E_{W}-M \\
+\boldsymbol{p_i}-\boldsymbol{p_f}&amp;=\boldsymbol{p}_{\boldsymbol{W}}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Squaring the two and subtracting (as we usually do)</p>
+<div class="math notranslate nohighlight">
+\[
+\left(E_i-E_f\right)^{2}-\left(p_i-p_f \right)^{2}=E_{W}^{2}-p_{W}^{2}+M^{2}-2 E_{W} M
+\]</div>
+<p class="sd-card-text">The right-hand side of the equation can be recognised as <span class="math notranslate nohighlight">\(-Q^{2}\)</span>, while <span class="math notranslate nohighlight">\(E_{W}^{2}-p_{W}^{2}=W^{2}\)</span>, e.g. the invariant mass of the hadronic system. Hence</p>
+<div class="math notranslate nohighlight">
+\[
+-Q^{2}=W^{2}+M^{2}-2 E_{W} M
+\]</div>
+<p class="sd-card-text">From the energy conservation</p>
+<div class="math notranslate nohighlight">
+\[
+E_{W}=E_i-E_f+M
+\]</div>
+<p class="sd-card-text">which gives</p>
+<div class="math notranslate nohighlight">
+\[
+2 M\left(E_i-E_f \right)=W^{2}+Q^{2}-M^{2}
+\]</div>
+<p class="sd-card-text">Implying that</p>
+<div class="math notranslate nohighlight">
+\[
+\nu=E-E
+\]</div>
+<p class="sd-card-text"><strong>Part 3: Elastic scattering limit</strong></p>
+<p class="sd-card-text">If the scattering is elastic, then <span class="math notranslate nohighlight">\(\nu\)</span> and <span class="math notranslate nohighlight">\(Q^{2}\)</span> are no longer independent. In particular the hadronic component of the final state is the proton alone, which means that the invariant mass of the final system, which we indicate with <span class="math notranslate nohighlight">\(W\)</span>, is the mass of the proton. Or <span class="math notranslate nohighlight">\(W=M\)</span>. This means that for elastic scattering</p>
+<div class="math notranslate nohighlight">
+\[
+2 M v=Q^{2}
+\]</div>
+<p class="sd-card-text">leading to the ratio <span class="math notranslate nohighlight">\(x=1\)</span></p>
 </div>
 </details></section>
 </section>
