@@ -636,15 +636,17 @@ $$
 [Note the mass of the electron should be neglected]
 
 ```{dropdown}  Solution
+(Note: solutions amended on 19 Dec 2026)
+
 The question asks to neglect the mass of the electron, which means that
 
 $$
-E=p \quad \text { and } \quad E^{\prime}=p^{\prime}
+E_i=p_i \quad \text { and } \quad E_f=p_f
 $$
 
 (using, as usual $\mathrm{c=1}$ )
 
-**Part 1: Calculate $Q^{2}$ in the centre-of-mass frame**
+**Part 1: Calculate $Q^{2}$ in the lab frame**
 
 Using this approximation we can write
 
@@ -654,7 +656,7 @@ $$
 
 where we used the fact that $\left|\boldsymbol{p_i}-\boldsymbol{p_f}\right|^{2}=p_i^{2}+p_f^{2}-2 \boldsymbol{p_i} \cdot \boldsymbol{p_f}=E_i^{2}+E_f^{2}-2 E_i E_f \cos \theta$, with $\theta$ being the angle between the incoming and outgoing momenta.
 
-**Part 2: Calculate $\nu$ in the centre-of-mass frame**
+**Part 2: Calculate $\nu$ in the lab frame**
 
 We start by writing the equations for conservation of energy and momentum
 
@@ -724,6 +726,5 @@ leading to the ratio $x=1$
 ## Exercise C. Mock paper with solutions 
 **(not assessed)**
 
-To be released on 8 December
-
+Mock exam paper and solutions are available on Blackboard under "Mock Exam"
 
